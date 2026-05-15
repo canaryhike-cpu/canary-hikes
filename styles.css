@@ -1537,3 +1537,10 @@ footer p {
   .teide-diagram-real .route-label { font-size: 11px; }
   .teide-diagram-real .phase-text { font-size: 16px; }
 }
+
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+}
