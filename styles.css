@@ -1256,33 +1256,33 @@ html[lang="ru"] .acclimatize-actions .section-link {
   margin-top: 6px;
 }
 
-html[lang="ru"] .route-card-unified {
+.route-card-unified {
   max-width: none;
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
   min-height: 430px;
 }
 
-html[lang="ru"] .route-card-unified .route-copy {
+.route-card-unified .route-copy {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-html[lang="ru"] .route-card-unified > img {
+.route-card-unified > img {
   width: 100%;
   height: 100%;
   min-height: 100%;
   object-fit: cover;
 }
 
-html[lang="ru"] .route-card-unified .stats {
+.route-card-unified .stats {
   grid-template-columns: repeat(3, 1fr);
   margin-top: auto;
   gap: 10px;
 }
 
-html[lang="ru"] .route-card-unified .stats div {
+.route-card-unified .stats div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1290,25 +1290,25 @@ html[lang="ru"] .route-card-unified .stats div {
   width: 100%;
 }
 
-html[lang="ru"] .route-card-unified .stats dt,
-html[lang="ru"] .route-card-unified .stats dd {
+.route-card-unified .stats dt,
+.route-card-unified .stats dd {
   text-align: left;
 }
 
-html[lang="ru"] .route-card-unified .stats dd {
+.route-card-unified .stats dd {
   font-variant-numeric: tabular-nums;
 }
 
 
-html[lang="ru"] .route-card-unified {
+.route-card-unified {
   align-items: stretch;
 }
 
-html[lang="ru"] .route-card-unified .route-copy > p {
+.route-card-unified .route-copy > p {
   margin-bottom: 0;
 }
 
-html[lang="ru"] .route-card-unified .route-note {
+.route-card-unified .route-note {
   margin: 22px 0 0;
   padding: 16px 18px;
   border-left: 4px solid var(--acid);
@@ -1319,18 +1319,18 @@ html[lang="ru"] .route-card-unified .route-note {
   line-height: 1.5;
 }
 
-html[lang="ru"] .route-card-unified .route-note-light {
+.route-card-unified .route-note-light {
   border-left-color: var(--blue);
   background: rgba(36, 92, 255, .08);
 }
 
-html[lang="ru"] .route-card-unified .stats {
+.route-card-unified .stats {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 26px;
   gap: 12px;
 }
 
-html[lang="ru"] .route-card-unified .stats div {
+.route-card-unified .stats div {
   display: grid;
   align-content: space-between;
   gap: 8px;
@@ -1338,51 +1338,51 @@ html[lang="ru"] .route-card-unified .stats div {
   padding: 16px;
 }
 
-html[lang="ru"] .route-card-unified .stats dt {
+.route-card-unified .stats dt {
   margin-bottom: 0;
   line-height: 1.35;
 }
 
-html[lang="ru"] .route-card-unified .stats dd {
+.route-card-unified .stats dd {
   font-variant-numeric: tabular-nums;
   line-height: 1.3;
 }
 
 @media (max-width: 940px) {
-  html[lang="ru"] .route-card-unified .route-copy {
+  .route-card-unified .route-copy {
     gap: 0;
   }
 
-  html[lang="ru"] .route-card-unified .stats {
+  .route-card-unified .stats {
     margin-top: 22px;
   }
 }
 
 @media (max-width: 640px) {
-  html[lang="ru"] .mini-products article {
+  .mini-products article {
     padding: 20px;
   }
 
-  html[lang="ru"] .mini-products p {
+  .mini-products p {
     line-height: 1.55;
   }
 
-  html[lang="ru"] .route-card-unified .route-copy {
+  .route-card-unified .route-copy {
     padding: 22px;
   }
 
-  html[lang="ru"] .route-card-unified .route-note {
+  .route-card-unified .route-note {
     margin-top: 18px;
     padding: 14px 16px;
   }
 
-  html[lang="ru"] .route-card-unified .stats {
+  .route-card-unified .stats {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-top: 18px;
   }
 
-  html[lang="ru"] .route-card-unified .stats div {
+  .route-card-unified .stats div {
     min-height: 94px;
     gap: 6px;
   }
