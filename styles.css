@@ -837,7 +837,7 @@ dd {
   padding: 0 15px;
   border-radius: 999px;
   background: var(--acid);
-  color: #fff;
+  color: var(--ink);
   font-weight: 800;
   font-size: 14px;
 }
@@ -1263,6 +1263,12 @@ html[lang="ru"] .route-card-unified {
   min-height: 430px;
 }
 
+html[lang="ru"] .route-card-unified .route-copy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 html[lang="ru"] .route-card-unified > img {
   width: 100%;
   height: 100%;
@@ -1272,13 +1278,25 @@ html[lang="ru"] .route-card-unified > img {
 
 html[lang="ru"] .route-card-unified .stats {
   grid-template-columns: repeat(3, 1fr);
+  margin-top: auto;
+  gap: 10px;
 }
 
 html[lang="ru"] .route-card-unified .stats div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 92px;
+  min-height: 96px;
+  width: 100%;
+}
+
+html[lang="ru"] .route-card-unified .stats dt,
+html[lang="ru"] .route-card-unified .stats dd {
+  text-align: left;
+}
+
+html[lang="ru"] .route-card-unified .stats dd {
+  font-variant-numeric: tabular-nums;
 }
 
 @media (max-width: 940px) {
