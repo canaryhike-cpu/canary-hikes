@@ -228,6 +228,34 @@ img {
   font-size: 18px;
 }
 
+.hero-bullet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.85rem;
+}
+
+.hero-bullet-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.85rem 0.95rem;
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(11, 23, 42, 0.76), rgba(28, 52, 78, 0.58));
+  border: 1px solid rgba(224, 204, 173, 0.28);
+  box-shadow: 0 14px 32px rgba(8, 16, 29, 0.32);
+}
+
+.hero-bullet-card strong {
+  color: #f4e2c6;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-bullet-card span {
+  color: rgba(244, 248, 255, 0.92);
+}
+
 .shop-section {
   padding-top: 58px;
 }
@@ -1714,6 +1742,10 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .shop-hero .hero-copy {
     font-size: 15.5px;
+  }
+
+  .hero-bullet-grid {
+    grid-template-columns: 1fr;
   }
 
   h1 {
