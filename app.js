@@ -114,7 +114,12 @@ const content = {
       crater: "Teide crater / PNT 10",
       approach: "4.8 km approach",
       pnt07: "PNT 07 ascent",
-      cable: "Cable car line"
+      cable: "Cable car line",
+      stage1: "01 Teleférico parking · predawn",
+      stage2: "02 Montaña Blanca · blue hour",
+      stage3: "03 PNT 07 · sunrise begins",
+      stage4: "04 La Rambleta · above the clouds",
+      stage5: "05 Crater ascent · golden light"
     },
     descent: {
       eyebrow: "Descent choice", title: "Always keep a backup plan close.",
@@ -528,7 +533,12 @@ const content = {
       crater: "Cráter del Teide / PNT 10",
       approach: "Acceso 4,8 km",
       pnt07: "Subida PNT 07",
-      cable: "Línea del teleférico"
+      cable: "Línea del teleférico",
+      stage1: "01 Aparcamiento Teleférico · antes del amanecer",
+      stage2: "02 Montaña Blanca · hora azul",
+      stage3: "03 PNT 07 · empieza el amanecer",
+      stage4: "04 La Rambleta · sobre las nubes",
+      stage5: "05 Ascenso final al cráter · luz dorada"
     },
     descent: {
       eyebrow: "Descenso", title: "Ten siempre un plan B a mano.",
@@ -940,6 +950,20 @@ function initTeideDiagramMotion() {
     }, { threshold: 0.3 });
     observer.observe(diagram);
     diagram.dataset.revealBound = '1';
+  }
+
+  if (!reduceMotion && !diagram.dataset.scrollBound) {
+    const updateProgress = () => {
+      const rect = diagram.getBoundingClientRect();
+      const start = window.innerHeight * 0.9;
+      const end = -rect.height * 0.3;
+      const progress = Math.min(1, Math.max(0, (start - rect.top) / (start - end)));
+      diagram.style.setProperty('--scene-progress', progress.toFixed(3));
+    };
+    updateProgress();
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    window.addEventListener('resize', updateProgress);
+    diagram.dataset.scrollBound = '1';
   }
 
   if (!reduceMotion && !diagram.dataset.parallaxBound) {
