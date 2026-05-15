@@ -1629,11 +1629,19 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .permit-rule,
   .permit-actions,
   .columns article,
-  .gear-item,
   .timeline article,
   .compare article,
   .tip-grid article {
     padding: 20px;
+  }
+
+  .gear-item {
+    padding: 24px;
+  }
+
+  .gear-item p,
+  .gear-item li {
+    overflow-wrap: anywhere;
   }
 
   .acclimatize {
@@ -1642,13 +1650,19 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 
   .route-card.compact > img,
-  .route-card.featured img {
-    min-height: 220px;
+  .route-card.featured img,
+  .route-card-unified > img,
+  .visual-card img {
+    min-height: 0;
     height: auto;
     max-height: none;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-    background: transparent;
+    background: rgba(11, 17, 20, 0.04);
+  }
+
+  .visual-card {
+    height: auto;
   }
 
   p,
