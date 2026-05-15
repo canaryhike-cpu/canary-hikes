@@ -20,7 +20,14 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
 }
 
 body {
