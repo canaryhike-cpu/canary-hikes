@@ -836,7 +836,7 @@ dd {
   justify-content: center;
   padding: 0 15px;
   border-radius: 999px;
-  background: var(--moss);
+  background: var(--acid);
   color: #fff;
   font-weight: 800;
   font-size: 14px;
@@ -1247,6 +1247,40 @@ footer p {
   color: #fff;
 }
 
+
+html[lang="ru"] .acclimatize-actions {
+  justify-items: center;
+}
+
+html[lang="ru"] .acclimatize-actions .section-link {
+  margin-top: 6px;
+}
+
+html[lang="ru"] .route-card-unified {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+  min-height: 430px;
+}
+
+html[lang="ru"] .route-card-unified > img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+html[lang="ru"] .route-card-unified .stats {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+html[lang="ru"] .route-card-unified .stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 92px;
+}
+
 @media (max-width: 940px) {
   .topbar {
     grid-template-columns: 1fr auto;
@@ -1302,7 +1336,8 @@ footer p {
     min-height: 0;
   }
 
-  .route-card.compact {
+  .route-card.compact,
+  .route-card-unified {
     grid-template-columns: 1fr;
     min-height: 0;
   }
@@ -1313,7 +1348,8 @@ footer p {
   }
 
   .route-card.featured,
-  .route-card.compact {
+  .route-card.compact,
+  .route-card-unified {
     grid-column: 1 / -1;
   }
 
