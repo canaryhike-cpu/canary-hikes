@@ -1483,17 +1483,37 @@ footer p {
 .teide-diagram-real .hiker-single .hiker-pack { fill: #f97316; }
 .teide-diagram-real .hiker-single .hiker-body { stroke: #0f172a; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: hike-step .48s ease-in-out infinite alternate; }
 .teide-diagram-real .car-real path,.teide-diagram-real .car-real circle { fill: #121a24; }
+.teide-diagram-real .car-real { animation: phase-car 18s linear infinite; transform-origin: center; }
 .teide-diagram-real .hiker-real .hiker-head,.teide-diagram-real .hiker-real .hiker-arm,.teide-diagram-real .hiker-real .hiker-body { fill: none; stroke: #101a28; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; }
 .teide-diagram-real .hiker-real .hiker-head { fill: #101a28; stroke: none; }
 .teide-diagram-real .hiker-real .hiker-pack { fill: #1f2937; }
+.teide-diagram-real .hiker-real { animation: phase-hiker 18s linear infinite; }
+.teide-diagram-real .hiker-single { animation: phase-walk 18s linear infinite; }
 .teide-diagram-real .cable-cabin-real rect { fill: #172130; stroke: #cdd9ea; stroke-width: 1.2; }
 .teide-diagram-real .cable-cabin-real .window { fill: #dde8f6; stroke: none; }
 .teide-diagram-real .cable-cabin-real .hanger { stroke: #d3deec; stroke-width: 2; }
+.teide-diagram-real .cable-cabin-real { animation: phase-cable 18s linear infinite; }
+.teide-diagram-real .phase-text { fill: #111827; font-size: 22px; font-weight: 600; opacity: 0; text-shadow: 0 2px 0 rgba(255,255,255,.76); }
+.teide-diagram-real .ph-1 { animation: phase-text-1 18s linear infinite; }
+.teide-diagram-real .ph-2 { animation: phase-text-2 18s linear infinite; }
+.teide-diagram-real .ph-3 { animation: phase-text-3 18s linear infinite; }
+.teide-diagram-real .ph-4 { animation: phase-text-4 18s linear infinite; }
+.teide-diagram-real .ph-5 { animation: phase-text-5 18s linear infinite; }
 @keyframes stage-pulse { 0%,12%,100% { opacity:.22; transform: scale(1);} 6% { opacity:1; transform: scale(1.35);} }
 @keyframes hike-step { from { transform: translateY(0);} to { transform: translateY(.9px);} }
 @keyframes draw-route { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -140; } }
+@keyframes phase-car { 0%,17% { opacity: 1; } 24%,100% { opacity: .32; } }
+@keyframes phase-hiker { 0%,16% { opacity: 0; } 20%,100% { opacity: 1; } }
+@keyframes phase-walk { 0%,19% { opacity: 0; } 24%,88% { opacity: 1; } 94%,100% { opacity: .08; } }
+@keyframes phase-cable { 0%,74% { opacity: 0; } 79%,100% { opacity: 1; } }
+@keyframes phase-text-1 { 0%,17% { opacity: 1; } 20%,100% { opacity: 0; } }
+@keyframes phase-text-2 { 20%,37% { opacity: 1; } 40%,100% { opacity: 0; } }
+@keyframes phase-text-3 { 40%,57% { opacity: 1; } 60%,100% { opacity: 0; } }
+@keyframes phase-text-4 { 60%,77% { opacity: 1; } 80%,100% { opacity: 0; } }
+@keyframes phase-text-5 { 80%,97% { opacity: 1; } 100% { opacity: 0; } }
 
 @media (max-width: 900px) {
   .teide-diagram-real .label text { font-size: 12px; }
   .teide-diagram-real .route-label { font-size: 11px; }
+  .teide-diagram-real .phase-text { font-size: 16px; }
 }
