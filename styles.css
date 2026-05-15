@@ -370,6 +370,12 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero h1 {
+  max-width: 680px;
+  font-size: clamp(36px, 5.4vw, 72px);
+  line-height: 0.96;
+}
+
 h2 {
   margin-bottom: 0;
   font-family: "Arial Black", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
@@ -1611,6 +1617,11 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   h1 {
     font-size: 52px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1;
   }
 
   h2 {
