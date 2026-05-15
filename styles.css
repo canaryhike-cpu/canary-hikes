@@ -1469,11 +1469,21 @@ footer p {
 .teide-diagram-real .seg-pnt10 { stroke: #7a3d23; stroke-dasharray: 3 5; animation: draw-route 7s ease-in-out infinite; }
 .teide-diagram-real .seg-cable { stroke: #667f8f; stroke-dasharray: 2 6; }
 .teide-diagram-real .node { fill: #fff; stroke: #223; stroke-width: 1.2; }
+
+.teide-diagram-real .label-base { fill: rgba(255,255,255,.72); stroke: rgba(41,54,70,.25); stroke-width: 1; filter: drop-shadow(0 8px 14px rgba(24,35,49,.18)); }
 .teide-diagram-real .label text { fill: #1f2733; font-size: 16px; font-weight: 500; }
-.teide-diagram-real .route-label { fill: #1f2733; font-size: 15px; font-weight: 500; }
-.teide-diagram-real .car circle { fill: #1e88e5; }
-.teide-diagram-real .hiker circle { fill: #111827; }
-.teide-diagram-real .cab rect { fill: #f3f4f6; stroke: #384252; stroke-width: 1.2; }
+.teide-diagram-real .route-label { fill: #1f2733; font-size: 15px; font-weight: 500; text-shadow: 0 1px 0 rgba(255,255,255,.7); }
+.teide-diagram-real .stage-dot { fill: #f97316; opacity: .35; animation: stage-pulse 18s ease-in-out infinite; }
+.teide-diagram-real .sd-2 { animation-delay: 3.6s; }
+.teide-diagram-real .sd-3 { animation-delay: 9.9s; }
+.teide-diagram-real .sd-4 { animation-delay: 14.7s; }
+.teide-diagram-real .sd-5 { animation-delay: 17.2s; }
+.teide-diagram-real .hiker-single .hiker-shadow { fill: rgba(26,33,45,.38); }
+.teide-diagram-real .hiker-single .hiker-head { fill: #111827; }
+.teide-diagram-real .hiker-single .hiker-pack { fill: #f97316; }
+.teide-diagram-real .hiker-single .hiker-body { stroke: #0f172a; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: hike-step .48s ease-in-out infinite alternate; }
+@keyframes stage-pulse { 0%,12%,100% { opacity:.22; transform: scale(1);} 6% { opacity:1; transform: scale(1.35);} }
+@keyframes hike-step { from { transform: translateY(0);} to { transform: translateY(.9px);} }
 @keyframes draw-route { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -140; } }
 
 @media (max-width: 900px) {

@@ -120,30 +120,29 @@
             <circle class="node" cx="748" cy="136" r="6"/>
             <circle class="node" cx="820" cy="96" r="6"/>
 
-            <g class="label"><text x="72" y="496">1) Parking Teleférico del Teide</text><text x="72" y="518">28.2714, -16.6265</text></g>
-            <g class="label"><text x="432" y="510">2) Parking Montaña Blanca</text><text x="432" y="532">28.2540, -16.6407</text></g>
-            <g class="label"><text x="770" y="166">4) La Rambleta (верхняя станция)</text><text x="770" y="188">28.2718, -16.6422</text></g>
-            <g class="label"><text x="856" y="86">5) Pico del Teide (кратер)</text><text x="856" y="108">28.2724, -16.6425</text></g>
+            <g class="label"><rect class="label-base" x="66" y="475" width="322" height="54" rx="8"/><text x="72" y="496">1) Parking Teleférico del Teide</text><text x="72" y="518">28.2714, -16.6265</text></g>
+            <g class="label"><rect class="label-base" x="426" y="489" width="286" height="54" rx="8"/><text x="432" y="510">2) Parking Montaña Blanca</text><text x="432" y="532">28.2540, -16.6407</text></g>
+            <g class="label"><rect class="label-base" x="764" y="145" width="366" height="54" rx="8"/><text x="770" y="166">4) La Rambleta (верхняя станция)</text><text x="770" y="188">28.2718, -16.6422</text></g>
+            <g class="label"><rect class="label-base" x="850" y="65" width="306" height="54" rx="8"/><text x="856" y="86">5) Pico del Teide (кратер)</text><text x="856" y="108">28.2724, -16.6425</text></g>
             <text class="route-label" x="258" y="468">Ровная асфальтовая дорога до Montaña Blanca</text>
             <text class="route-label" x="540" y="300">Маршрут PNT 07 (основной подъём)</text>
             <text class="route-label" x="792" y="132">Финальный участок PNT 10</text>
             <text class="route-label" x="454" y="258">Спуск на канатке</text>
 
-            <g class="car">
-              <circle r="8"/>
-              <animateMotion dur="12s" repeatCount="indefinite" path="M176 514 C248 500 332 492 418 475"/>
+            <g class="stage-dots">
+              <circle class="stage-dot sd-1" cx="176" cy="514" r="8"/>
+              <circle class="stage-dot sd-2" cx="418" cy="475" r="8"/>
+              <circle class="stage-dot sd-3" cx="620" cy="334" r="8"/>
+              <circle class="stage-dot sd-4" cx="748" cy="136" r="8"/>
+              <circle class="stage-dot sd-5" cx="820" cy="96" r="8"/>
             </g>
-            <g class="hiker hiker-road">
-              <circle r="5"/>
-              <animateMotion begin="2s" dur="10s" repeatCount="indefinite" path="M176 514 C248 500 332 492 418 475"/>
-            </g>
-            <g class="hiker hiker-up">
-              <circle r="5"/>
-              <animateMotion begin="5s" dur="11s" repeatCount="indefinite" path="M418 475 C492 448 560 402 620 334 C680 266 719 196 748 136 C770 120 794 106 820 96"/>
-            </g>
-            <g class="cab">
-              <rect x="-7" y="-7" width="14" height="14" rx="2"/>
-              <animateMotion begin="11s" dur="7s" repeatCount="indefinite" path="M748 136 C640 208 510 306 370 410 C298 462 236 494 176 514"/>
+
+            <g class="hiker hiker-single">
+              <ellipse class="hiker-shadow" cx="0" cy="6.5" rx="6" ry="2.8"/>
+              <rect class="hiker-pack" x="-2.6" y="-5" width="4.2" height="5.8" rx="1.1"/>
+              <circle class="hiker-head" cx="0" cy="-6.2" r="2.6"/>
+              <path class="hiker-body" d="M0 -3.4 L0 3.9 M0 -1.1 L-3.6 2.2 M0 -1 L3.3 1.1 M0 3.8 L-2.8 8.1 M0 3.8 L2.5 7.8"/>
+              <animateMotion dur="18s" repeatCount="indefinite" rotate="auto" keyTimes="0;0.2;0.55;0.82;1" keySplines="0.42 0 0.58 1;0.35 0 0.65 1;0.4 0 0.6 1;0.4 0 0.6 1" calcMode="spline" path="M176 514 C248 500 332 492 418 475 C492 448 560 402 620 334 C680 266 719 196 748 136 C770 120 794 106 820 96"/>
             </g>
           </svg>
         </div>
