@@ -176,7 +176,9 @@ img {
   position: relative;
   height: clamp(680px, 94vh, 980px);
   display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 270px);
   align-items: end;
+  column-gap: clamp(20px, 4vw, 46px);
   overflow: hidden;
   padding: 132px max(24px, calc((100vw - var(--max)) / 2)) 92px;
   background: #050708;
@@ -436,9 +438,9 @@ img {
   position: relative;
   max-width: 760px;
   padding: clamp(20px, 3vw, 34px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 14px;
-  background: linear-gradient(132deg, rgba(8, 10, 11, 0.68), rgba(8, 10, 11, 0.34));
+  background: linear-gradient(132deg, rgba(8, 10, 11, 0.56), rgba(8, 10, 11, 0.22));
   backdrop-filter: blur(8px);
   color: #fff;
   text-shadow: 0 2px 28px rgba(0, 0, 0, 0.46);
@@ -547,9 +549,7 @@ dd {
 }
 
 .summit-panel {
-  position: absolute;
-  right: max(24px, calc((100vw - var(--max)) / 2));
-  bottom: 72px;
+  position: relative;
   width: min(270px, calc(100vw - 48px));
   padding: 18px;
   color: #fff;
@@ -1523,6 +1523,12 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .hero-content {
     max-width: min(760px, calc(100% - 320px));
   }
+
+  .summit-panel {
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -1566,6 +1572,11 @@ html[lang="ru"] .acclimatize-actions .section-link {
 }
 
 @media (max-width: 940px) {
+  .hero {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
   .topbar {
     grid-template-columns: 1fr auto;
     align-items: center;
