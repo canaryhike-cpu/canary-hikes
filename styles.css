@@ -689,6 +689,14 @@ dd {
   min-height: 100%;
 }
 
+.route-card.compact.reverse .route-copy {
+  order: 2;
+}
+
+.route-card.compact.reverse > img {
+  order: 1;
+}
+
 .route-note {
   margin: 22px 0 0;
   padding: 18px 18px 18px 20px;
@@ -1286,6 +1294,11 @@ footer p {
   .route-card.compact {
     grid-template-columns: 1fr;
     min-height: 0;
+  }
+
+  .route-card.compact.reverse .route-copy,
+  .route-card.compact.reverse > img {
+    order: initial;
   }
 
   .route-card.featured,

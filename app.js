@@ -54,9 +54,13 @@ const content = {
       wild: "Wilder volcanic option",
       pnt09Title: "PNT 09: Teide and Pico Viejo",
       pnt09Text: "A dramatic volcanic route through the huge Pico Viejo crater, lava fields and black landscapes. Officially it is described as a descent, but some hikers reverse it as a harder ascent.",
-      pnt09Warning: "Permit required. As an ascent, PNT 09 is much harder than PNT 07 and is not recommended for a first Teide climb."
+      pnt09Warning: "Permit required. As an ascent, PNT 09 is much harder than PNT 07 and is not recommended for a first Teide climb.",
+      crater: "Final crater section",
+      pnt10Title: "PNT 10: La Rambleta to Teide crater",
+      pnt10Text: "The short but iconic summit section from La Rambleta to Spain’s highest point. Even with low distance, altitude and wind can make the final push feel harder than expected.",
+      pnt10Warning: "Separate permit required. PNT 10 is always booked in addition to the ascent route."
     },
-    stats: { distance: "Distance", time: "Time", ascentTime: "Ascent time", gain: "Gain", start: "Start", routeType: "Type", highest: "Highest", difficulty: "Difficulty", high: "High", veryHigh: "Very high", descent: "Descent", reverse: "Reverse ascent", reverseAscent: "Reverse ascent" },
+    stats: { distance: "Distance", time: "Time", ascentTime: "Ascent time", gain: "Gain", start: "Start", routeType: "Type", highest: "Highest", difficulty: "Difficulty", medium: "Medium", high: "High", veryHigh: "Very high", descent: "Descent", reverse: "Reverse ascent", reverseAscent: "Reverse ascent" },
     permits: {
       eyebrow: "Access rules", title: "Permits are part of the route, not admin afterthoughts.",
       allTitle: "You need permits for every chosen trail",
@@ -200,9 +204,12 @@ const content = {
       pnt07Warning: "Genehmigung erforderlich. PNT 07 ist für den ersten Aufstieg empfohlen, braucht aber trotzdem eine Routengenehmigung.",
       wild: "Wildere Vulkanroute", pnt09Title: "PNT 09: Teide und Pico Viejo",
       pnt09Text: "Eine eindrucksvolle Vulkanroute durch den großen Krater Pico Viejo, Lavafelder und schwarze Landschaften. Offiziell ist sie als Abstieg beschrieben, manche gehen sie umgekehrt als deutlich härteren Aufstieg.",
-      pnt09Warning: "Genehmigung erforderlich. Als Aufstieg ist PNT 09 deutlich schwerer als PNT 07 und nicht für den ersten Teide-Aufstieg empfohlen."
+      pnt09Warning: "Genehmigung erforderlich. Als Aufstieg ist PNT 09 deutlich schwerer als PNT 07 und nicht für den ersten Teide-Aufstieg empfohlen.",
+      crater: "Finaler Kraterabschnitt", pnt10Title: "PNT 10: La Rambleta zum Teide-Krater",
+      pnt10Text: "Der kurze, aber ikonische Gipfelabschnitt von La Rambleta bis zum höchsten Punkt Spaniens. Trotz kurzer Distanz können Höhe und Wind den letzten Anstieg überraschend fordernd machen.",
+      pnt10Warning: "Separate Genehmigung erforderlich. PNT 10 wird immer zusätzlich zur Aufstiegsroute gebucht."
     },
-    stats: { distance: "Distanz", time: "Zeit", ascentTime: "Aufstiegszeit", gain: "Aufstieg", start: "Start", routeType: "Typ", highest: "Höchster Punkt", difficulty: "Schwierigkeit", high: "Hoch", veryHigh: "Sehr hoch", descent: "Abstieg", reverse: "Umgekehrter Aufstieg", reverseAscent: "Umgekehrter Aufstieg" },
+    stats: { distance: "Distanz", time: "Zeit", ascentTime: "Aufstiegszeit", gain: "Aufstieg", start: "Start", routeType: "Typ", highest: "Höchster Punkt", difficulty: "Schwierigkeit", medium: "Mittel", high: "Hoch", veryHigh: "Sehr hoch", descent: "Abstieg", reverse: "Umgekehrter Aufstieg", reverseAscent: "Umgekehrter Aufstieg" },
     permits: {
       eyebrow: "Zugang", title: "Genehmigungen sind Teil der Route, kein Detail am Rand.",
       allTitle: "Du brauchst Genehmigungen für alle gewählten Wege",
@@ -338,9 +345,12 @@ const content = {
       pnt07Warning: "Нужно разрешение. PNT 07 рекомендуется для первого подъема, но на него все равно нужно оформить доступ.",
       wild: "Более дикий вулканический вариант", pnt09Title: "PNT 09: Teide → Pico Viejo",
       pnt09Text: "Очень красивый вулканический маршрут через огромный кратер Pico Viejo, лавовые поля и черные пейзажи. Официально он описан как спуск, но некоторые проходят его в обратном направлении как более тяжелый подъем.",
-      pnt09Warning: "Нужно разрешение. Если идти PNT 09 на подъем, он сильно сложнее PNT 07 и не рекомендуется для первого восхождения."
+      pnt09Warning: "Нужно разрешение. Если идти PNT 09 на подъем, он сильно сложнее PNT 07 и не рекомендуется для первого восхождения.",
+      crater: "Финальный участок к кратеру", pnt10Title: "PNT 10: La Rambleta → кратер Тейде",
+      pnt10Text: "Короткий, но знаковый финальный участок от La Rambleta до самой высокой точки Испании. Даже при небольшой длине высота и ветер могут заметно усложнить последний рывок.",
+      pnt10Warning: "Нужно отдельное разрешение. PNT 10 всегда оформляется дополнительно к маршруту подъема."
     },
-    stats: { distance: "Длина", time: "Время", ascentTime: "Время подъема", gain: "Набор", start: "Старт", routeType: "Тип", highest: "Максимум", difficulty: "Сложность", high: "Высокая", veryHigh: "Очень высокая", descent: "Спуск", reverse: "Подъем обратно", reverseAscent: "Подъем в обратном направлении" },
+    stats: { distance: "Длина", time: "Время", ascentTime: "Время подъема", gain: "Набор", start: "Старт", routeType: "Тип", highest: "Максимум", difficulty: "Сложность", medium: "Средняя", high: "Высокая", veryHigh: "Очень высокая", descent: "Спуск", reverse: "Подъем обратно", reverseAscent: "Подъем в обратном направлении" },
     permits: {
       eyebrow: "Правила доступа", title: "Разрешения — часть маршрута, а не формальность.",
       allTitle: "Разрешения нужны на все выбранные маршруты",
@@ -476,9 +486,12 @@ const content = {
       pnt07Warning: "Requiere permiso. PNT 07 es la primera subida recomendada, pero también necesita permiso de ruta.",
       wild: "Opción volcánica más salvaje", pnt09Title: "PNT 09: Teide y Pico Viejo",
       pnt09Text: "Una ruta volcánica espectacular por el gran cráter de Pico Viejo, campos de lava y paisajes negros. Oficialmente se describe como descenso, pero algunos la hacen al revés como ascenso mucho más duro.",
-      pnt09Warning: "Requiere permiso. Como ascenso, PNT 09 es mucho más duro que PNT 07 y no se recomienda para una primera subida al Teide."
+      pnt09Warning: "Requiere permiso. Como ascenso, PNT 09 es mucho más duro que PNT 07 y no se recomienda para una primera subida al Teide.",
+      crater: "Tramo final al cráter", pnt10Title: "PNT 10: La Rambleta al cráter del Teide",
+      pnt10Text: "El tramo final, corto pero icónico, desde La Rambleta hasta el punto más alto de España. Aunque la distancia es baja, la altitud y el viento pueden hacer más duro el último esfuerzo.",
+      pnt10Warning: "Requiere permiso separado. PNT 10 siempre se reserva además de la ruta de subida."
     },
-    stats: { distance: "Distancia", time: "Tiempo", ascentTime: "Tiempo de subida", gain: "Subida", start: "Inicio", routeType: "Tipo", highest: "Altura máx.", difficulty: "Dificultad", high: "Alta", veryHigh: "Muy alta", descent: "Bajada", reverse: "Ascenso inverso", reverseAscent: "Ascenso inverso" },
+    stats: { distance: "Distancia", time: "Tiempo", ascentTime: "Tiempo de subida", gain: "Subida", start: "Inicio", routeType: "Tipo", highest: "Altura máx.", difficulty: "Dificultad", medium: "Media", high: "Alta", veryHigh: "Muy alta", descent: "Bajada", reverse: "Ascenso inverso", reverseAscent: "Ascenso inverso" },
     permits: {
       eyebrow: "Reglas de acceso", title: "Los permisos son parte de la ruta, no un detalle administrativo.",
       allTitle: "Necesitas permisos para cada sendero elegido",
