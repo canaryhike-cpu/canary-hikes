@@ -1399,7 +1399,9 @@ html[lang="ru"] .acclimatize-actions .section-link {
     order: 3;
     grid-column: 1 / -1;
     justify-content: flex-start;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    row-gap: 8px;
+    overflow-x: visible;
     padding-bottom: 2px;
   }
 
@@ -1409,6 +1411,9 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .lang-switch {
     order: 2;
+    justify-self: end;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .summit-panel {
@@ -1480,8 +1485,9 @@ html[lang="ru"] .acclimatize-actions .section-link {
     top: 8px;
     width: calc(100% - 16px);
     min-height: 0;
-    gap: 9px;
-    padding: 9px;
+    gap: 8px;
+    padding: 10px;
+    grid-template-columns: 1fr;
   }
 
   .brand span:last-child {
@@ -1496,28 +1502,34 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .nav {
     gap: 6px;
     padding-bottom: 1px;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .nav a {
-    min-height: 40px;
-    padding: 0 12px;
-    font-size: 13px;
+    min-height: 38px;
+    padding: 0 10px;
+    font-size: 12px;
+    flex: 1 1 calc(33.333% - 6px);
   }
 
   .lang-switch {
-    justify-self: end;
+    justify-self: stretch;
+    width: 100%;
+    justify-content: space-between;
   }
 
   .lang-switch a {
-    min-width: 38px;
-    min-height: 38px;
-    padding: 0 9px;
-    font-size: 13px;
+    min-width: 0;
+    min-height: 36px;
+    padding: 0 8px;
+    font-size: 12px;
+    flex: 1 1 0;
   }
 
   .hero {
-    min-height: 94vh;
-    padding: 104px 18px 44px;
+    min-height: auto;
+    padding: 176px 18px 44px;
   }
 
   .shop-hero {
@@ -1544,7 +1556,7 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .section-pad {
     width: calc(100% - 28px);
-    padding: 76px 0;
+    padding: 64px 0;
   }
 
   .plan-flow,
@@ -1564,8 +1576,9 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 
   .intro p:last-child {
-    margin-top: 8px;
-    font-size: 18px;
+    margin-top: 14px;
+    font-size: 17px;
+    line-height: 1.65;
   }
 
   .visual-card {
@@ -1593,7 +1606,17 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .route-card.compact > img,
   .route-card.featured img {
-    min-height: 280px;
+    min-height: 0;
+    height: auto;
+    max-height: 260px;
+    object-fit: contain;
+    background: #0b1114;
+  }
+
+  p,
+  li,
+  dd {
+    line-height: 1.72;
   }
 
   .teide-diagram svg {
