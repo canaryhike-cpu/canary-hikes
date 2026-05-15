@@ -134,7 +134,7 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Altitude first",
-      title: "Acclimatization route before Teide.",
+      title: "Acclimatization before Teide.",
       copy: "Teide starts where many people already feel altitude. A shorter route before summit night helps you test pace, layers and breathing before committing to a cold, dark climb.",
       routeOne: "Guajara acclimatization loop",
       routeOneText: "A strong but calmer high-altitude day in Teide National Park.",
@@ -272,7 +272,7 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Erst die Höhe testen",
-      title: "Akklimatisierungsroute vor dem Teide.",
+      title: "Akklimatisierung vor dem Teide.",
       copy: "Der Teide beginnt dort, wo viele die Höhe schon spüren. Eine kürzere Route vor der Gipfelnacht zeigt dir Tempo, Kleidung und Atmung, bevor du dich auf einen kalten Nachtaufstieg festlegst.",
       routeOne: "Guajara-Akklimatisierungsrunde",
       routeOneText: "Ein kräftiger, aber ruhigerer Höhentag im Teide-Nationalpark.",
@@ -410,7 +410,7 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Сначала высота",
-      title: "Акклиматизационный маршрут перед Тейде.",
+      title: "Акклиматизация перед Тейде.",
       copy: "Тейде начинается там, где многие уже чувствуют высоту. Один подготовительный маршрут поможет проверить темп, одежду и дыхание до ночного подъема: там будет холодно, темно и заметно тяжелее.",
       routeOne: "Акклиматизационный круг на Guajara",
       routeOneText: "Сильный, но более спокойный день на высоте в нацпарке Тейде.",
@@ -548,7 +548,7 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Primero la altitud",
-      title: "Ruta de aclimatación antes del Teide.",
+      title: "Aclimatación antes del Teide.",
       copy: "El Teide empieza donde mucha gente ya nota la altitud. Una ruta más corta antes de la noche de cumbre te ayuda a probar ritmo, capas y respiración antes de una subida fría y oscura.",
       routeOne: "Circular de aclimatación a Guajara",
       routeOneText: "Un día de altura potente pero más tranquilo en el Parque Nacional del Teide.",
