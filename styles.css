@@ -62,7 +62,7 @@ img {
   min-height: 64px;
   transform: translateX(-50%);
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: 14px;
   padding: 10px 12px;
@@ -126,19 +126,20 @@ img {
 }
 
 .nav {
+  min-width: 0;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
-
 .nav a,
 .lang-switch a {
   min-height: 42px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 16px;
+  padding: 0 14px;
   border-radius: 999px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 850;
   line-height: 1;
   color: rgba(255, 255, 255, 0.68);
@@ -1356,6 +1357,29 @@ html[lang="ru"] .acclimatize-actions .section-link {
 .route-card-unified .stats dd {
   font-variant-numeric: tabular-nums;
   line-height: 1.3;
+}
+
+@media (max-width: 1180px) {
+  .topbar {
+    gap: 10px;
+    padding-inline: 10px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+  }
+
+  .nav a,
+  .lang-switch a {
+    min-height: 38px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 940px) {
