@@ -104,51 +104,59 @@
         <div class="teide-diagram" aria-hidden="true">
           <svg viewBox="0 0 1100 560" role="img">
             <defs>
-              <linearGradient id="volcanoFill" x1="0" x2="1" y1="1" y2="0">
-                <stop offset="0" stop-color="#1b2728" />
-                <stop offset="0.42" stop-color="#35443f" />
-                <stop offset="0.82" stop-color="#5c6c66" />
-                <stop offset="1" stop-color="#a9be81" />
+              <linearGradient id="skyGlow" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#0a1220" />
+                <stop offset="0.5" stop-color="#172434" />
+                <stop offset="1" stop-color="#2f2522" />
               </linearGradient>
+              <linearGradient id="volcanoCore" x1="0.08" x2="0.82" y1="1" y2="0">
+                <stop offset="0" stop-color="#1a1a1d" />
+                <stop offset="0.42" stop-color="#3e312d" />
+                <stop offset="1" stop-color="#6b5345" />
+              </linearGradient>
+              <linearGradient id="routeGlow" x1="0" x2="1" y1="1" y2="0">
+                <stop offset="0" stop-color="#f2f8ff" />
+                <stop offset="1" stop-color="#d8ff65" />
+              </linearGradient>
+              <filter id="softBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14" /></filter>
+              <filter id="routeBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" /></filter>
             </defs>
-            <path class="land" d="M64 488 C146 458 214 446 282 436 C350 426 420 410 478 376 C530 346 568 314 600 272 C626 238 646 204 664 168 C678 140 694 112 718 98 C738 88 758 98 772 126 C788 154 806 196 836 234 C874 280 920 320 966 356 C1008 390 1034 432 1042 488 Z" />
-            <path class="ridge" d="M636 130 C612 198 594 244 548 296 C512 336 456 374 396 402" />
-            <path class="ridge" d="M636 130 C668 195 708 249 770 301 C824 346 878 378 944 410" />
-            <path class="road approach" d="M170 456 C236 444 294 430 372 408" />
-            <path class="walk pnt07" d="M372 408 C394 398 412 378 430 354 C446 332 458 306 474 284 C488 264 508 248 522 230 C540 208 556 184 572 166 C590 148 610 136 636 130" />
-            <path class="walk pnt10" d="M636 130 C650 120 666 108 684 92" />
-            <path class="cable-line" d="M202 452 C312 390 434 286 602 146" />
-            <rect class="label-plate" x="104" y="480" width="222" height="36" rx="12"></rect>
-            <rect class="label-plate" x="286" y="360" width="258" height="36" rx="12"></rect>
-            <rect class="label-plate" x="454" y="114" width="150" height="34" rx="12"></rect>
-            <rect class="label-plate" x="696" y="66" width="278" height="34" rx="12"></rect>
-            <g class="node node-cable"><circle cx="170" cy="456" r="15" /><text x="118" y="506" data-i18n-svg="schema.teleferico">Парковка Teleférico</text></g>
-            <g class="node node-montana"><circle cx="372" cy="408" r="15" /><text x="300" y="386" data-i18n-svg="schema.montana">Парковка Montaña Blanca</text></g>
-            <g class="node node-rambleta"><circle cx="602" cy="146" r="13" /><text x="468" y="140" data-i18n-svg="schema.rambleta">La Rambleta</text></g>
-            <g class="node node-crater"><circle cx="684" cy="92" r="14" /><text x="706" y="92" data-i18n-svg="schema.crater">Кратер Тейде / PNT 10</text></g>
-            <text class="path-label" x="250" y="440" data-i18n-svg="schema.approach">Подход 4,8 км</text>
-            <text class="path-label" x="470" y="282" data-i18n-svg="schema.pnt07">Подъём PNT 07</text>
-            <text class="path-label" x="254" y="314" data-i18n-svg="schema.cable">Линия канатки</text>
-            <g class="parking-car" transform="translate(134 468)">
-              <rect x="-20" y="-11" width="40" height="16" rx="5"></rect>
-              <rect x="-8" y="-18" width="16" height="8" rx="3"></rect>
-              <circle cx="-12" cy="8" r="4"></circle>
-              <circle cx="12" cy="8" r="4"></circle>
+            <rect class="sky-layer" x="0" y="0" width="1100" height="560" />
+            <ellipse class="summit-aura" cx="702" cy="86" rx="220" ry="90" />
+            <g class="parallax-back">
+              <path class="mountain-back" d="M32 502 C180 412 260 404 372 334 C480 266 554 126 618 66 C678 126 748 276 864 344 C948 392 1028 426 1080 504 Z" />
+              <path class="terrain-ridge" d="M614 74 C590 148 562 206 520 252" />
+              <path class="terrain-ridge" d="M616 82 C656 174 704 252 782 326" />
             </g>
-            <g class="hiker hiker-walk">
-              <circle class="skin" cx="0" cy="-2" r="6"></circle><path class="body" d="M-2 4 L-2 20 M-2 8 L10 14 M-1 11 L-12 22 M-2 20 L8 34 M-2 20 L-12 34"></path><path class="pack" d="M-10 6 C-14 10 -13 19 -8 22 L-4 22 L-4 6 Z"></path><path class="pole" d="M11 14 L14 36"></path>
+            <g class="parallax-mid">
+              <path class="mountain-front" d="M44 520 C196 452 284 444 406 364 C504 300 570 178 626 98 C680 170 730 290 844 364 C932 420 1018 456 1062 522 Z" />
+              <path class="volcanic-glow" d="M624 96 C638 106 646 122 642 138 C632 126 620 112 624 96 Z" />
             </g>
-            <g class="hiker hiker-climb-one">
-              <circle class="skin" cx="0" cy="-2" r="6"></circle><path class="body" d="M-2 4 L-2 20 M-2 8 L10 14 M-1 11 L-12 22 M-2 20 L8 34 M-2 20 L-12 34"></path><path class="pack" d="M-10 6 C-14 10 -13 19 -8 22 L-4 22 L-4 6 Z"></path><path class="pole" d="M11 14 L14 36"></path>
+            <g class="fog-layer fog-one"><path d="M42 386 C192 344 350 362 468 338 C620 308 742 326 906 304 C978 294 1046 302 1080 318 L1080 560 L42 560 Z" /></g>
+            <g class="fog-layer fog-two"><path d="M0 432 C152 404 312 418 470 396 C636 372 776 392 934 370 C1016 358 1068 368 1100 380 L1100 560 L0 560 Z" /></g>
+
+            <g class="route-group">
+              <path class="route-base approach" d="M174 474 C252 452 312 444 386 420" />
+              <path class="route-base pnt07" d="M386 420 C468 358 528 292 568 214 C586 178 602 136 626 98" />
+              <path class="route-base pnt10" d="M626 98 C654 92 680 82 702 66" />
+              <path class="route-glow" d="M174 474 C252 452 312 444 386 420 C468 358 528 292 568 214 C586 178 602 136 626 98 C654 92 680 82 702 66" />
+              <path class="route-light" d="M174 474 C252 452 312 444 386 420 C468 358 528 292 568 214 C586 178 602 136 626 98 C654 92 680 82 702 66" />
             </g>
-            <g class="hiker hiker-climb-two">
-              <circle class="skin" cx="0" cy="-2" r="6"></circle><path class="body" d="M-2 4 L-2 20 M-2 8 L10 14 M-1 11 L-12 22 M-2 20 L8 34 M-2 20 L-12 34"></path><path class="pack" d="M-10 6 C-14 10 -13 19 -8 22 L-4 22 L-4 6 Z"></path><path class="pole" d="M11 14 L14 36"></path>
+
+            <path class="cable-line" d="M208 468 C318 412 438 300 592 148" />
+            <path class="cable-spark" d="M208 468 C318 412 438 300 592 148" />
+
+            <g class="checkpoints">
+              <g class="node node-cable float-a"><circle cx="174" cy="474" r="12" /><rect class="label-plate" x="76" y="494" width="224" height="44" rx="20" /><text x="188" y="522" text-anchor="middle" data-i18n-svg="schema.teleferico">Teleférico parking</text></g>
+              <g class="node node-montana float-b"><circle cx="386" cy="420" r="12" /><rect class="label-plate" x="282" y="352" width="238" height="44" rx="20" /><text x="401" y="380" text-anchor="middle" data-i18n-svg="schema.montana">Montaña Blanca parking</text></g>
+              <g class="node node-rambleta float-c"><circle cx="592" cy="148" r="11" /><rect class="label-plate" x="536" y="160" width="162" height="42" rx="18" /><text x="617" y="187" text-anchor="middle" data-i18n-svg="schema.rambleta">La Rambleta</text></g>
+              <g class="node node-crater float-b"><circle cx="702" cy="66" r="12" /><rect class="label-plate" x="726" y="38" width="248" height="44" rx="20" /><text x="850" y="66" text-anchor="middle" data-i18n-svg="schema.crater">Teide crater / PNT 10</text></g>
             </g>
-            <g class="cabin">
-              <rect class="cabin-shell" x="-14" y="-11" width="28" height="22" rx="6"></rect>
-              <rect class="cabin-window" x="-10" y="-7" width="20" height="10" rx="3"></rect>
-              <line class="cabin-hanger" x1="0" y1="-11" x2="0" y2="-22"></line>
-            </g>
+
+            <text class="path-label" x="250" y="456" data-i18n-svg="schema.approach">4.8 km approach</text>
+            <text class="path-label" x="470" y="302" data-i18n-svg="schema.pnt07">PNT 07 ascent</text>
+            <text class="path-label cable-text" x="286" y="322" data-i18n-svg="schema.cable">Cable car line</text>
+            <g class="ambient-particles"><circle cx="248" cy="266" r="2.3" /><circle cx="394" cy="216" r="1.9" /><circle cx="552" cy="188" r="2.1" /><circle cx="748" cy="202" r="1.8" /></g>
           </svg>
         </div>
       </section>
