@@ -1008,4 +1008,34 @@ document.querySelectorAll("[data-lang]").forEach((button) => {
   });
 });
 
+const topbar = document.querySelector(".topbar");
+const menuToggle = document.querySelector(".menu-toggle");
+if (topbar && menuToggle) {
+  const closeMenu = () => {
+    topbar.classList.remove("menu-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.textContent = "☰";
+  };
+  menuToggle.addEventListener("click", () => {
+    const isOpen = topbar.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+  });
+  topbar.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => closeMenu());
+  });
+}
+
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+  if (!topbar) return;
+  const y = window.scrollY;
+  if (y < 24 || y < lastScrollY) {
+    topbar.classList.remove("topbar-hidden");
+  } else if (y > lastScrollY + 8) {
+    topbar.classList.add("topbar-hidden");
+  }
+  lastScrollY = y;
+}, { passive: true });
+
 setLanguage(route.lang || localStorage.getItem("teide-lang") || "en", route.page);
