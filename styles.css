@@ -455,7 +455,7 @@ dd {
 .section-pad {
   width: min(calc(100% - 36px), var(--max));
   margin: 0 auto;
-  padding: 112px 0;
+  padding: 118px 0;
   scroll-margin-top: 118px;
 }
 
@@ -836,10 +836,14 @@ dd {
   justify-content: center;
   padding: 0 15px;
   border-radius: 999px;
-  background: #2f9e44;
+  background: var(--moss);
   color: #fff;
   font-weight: 800;
   font-size: 14px;
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .permit-links a::after {
