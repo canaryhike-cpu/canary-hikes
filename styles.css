@@ -1149,7 +1149,9 @@ ol {
   margin-bottom: 14px;
   font-size: clamp(34px, 4vw, 58px);
   line-height: 1.12;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .acclimatize p:not(.eyebrow) {
@@ -1198,12 +1200,16 @@ ol {
   font-family: "Arial Black", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.2;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .mini-products p {
   margin: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
   color: rgba(255,255,255,.68);
   font-size: 14px;
 }
