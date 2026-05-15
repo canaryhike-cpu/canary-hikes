@@ -249,6 +249,24 @@ img {
   box-shadow: 0 22px 70px rgba(16, 17, 16, .07);
 }
 
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card h3 {
+  margin: 0 0 10px;
+  min-height: 52px;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(160deg, rgba(36,92,255,.05), transparent 36%);
+}
+
 .product-index {
   display: inline-flex;
   width: fit-content;

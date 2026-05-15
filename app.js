@@ -695,11 +695,12 @@ const pageContent = {
         alt: "Вулканический хайкинг-маршрут на Тенерифе"
       },
       products: [
-        ["Anaga Cloud Forest Route Pack", "Лавровый лес, смотровые точки и парковки для зеленого дня на севере Тенерифе.", "Легко-средний", "1 день", "€9"],
-        ["Masca Gorge Day Hike", "Понятный план для легендарного ущелья: тайминг, разрешения, лодка и варианты возврата.", "Средний", "1 день", "€12"],
-        ["Chinyero Volcano Loop", "Спокойная вулканическая петля с лавовыми полями, сосновым лесом и простой навигацией.", "Легкий", "3-4 ч", "€7"],
-        ["Benijo Sunrise Trail", "Драматичный маршрут в Anaga: скалы, дикий пляж и красивый утренний свет.", "Средний", "4-5 ч", "€9"],
-        ["Teide National Park Easy Hikes", "Короткие маршруты по нацпарку, когда хочется видов без подъема на вершину.", "Легкий", "Полдня", "€10"]
+        ["Гуахара", "Маршрут к старинной обсерватории и на лучшую закатную точку Тенерифе: масштабные панорамы кальдеры, мягкий свет и ощущение, что остров лежит у вас на ладони.", "⚡ Сложный", "🔁 Круговой", "€14"],
+        ["Пико Вьехо", "Настоящее вулканическое приключение к огромному кратеру: лавовые поля, марсианские оттенки и одна из самых впечатляющих геологических сцен на острове.", "⚡ Сложный", "➡️ Линейный", "€15"],
+        ["Самый красивый маршрут по Анаге", "Горы, пляж и лучшие виды на побережье в одном треке: драматичные гребни, океанский горизонт и фотогеничные остановки на каждом участке.", "⚡ Сложный", "🔁 Круговой", "€13"],
+        ["Йфонче", "Семейный маршрут по зеленому лесу с панорамами южной части острова: спокойный ритм, приятная тень и идеальный формат для красивой прогулки без спешки.", "🟡 Средний", "🔁 Круговой", "€10"],
+        ["Пляж Антекера", "Скрытая жемчужина Анаги: путь к уединенному пляжу через дикий рельеф, бирюзовую воду и те самые виды, ради которых едут на север острова.", "⚡ Сложный", "🔁 Круговой", "€14"],
+        ["Тень", "Больше чем маршрут к маяку: лунные пейзажи, захватывающие виды, остановка для купания и секретный обратный путь, который превращает трек в полноценное приключение.", "⚡ Сложный", "🔁 Круговой", "€14"]
       ]
     },
     road: {
@@ -798,7 +799,7 @@ function ensureMeta(selector, create) {
 const shopUi = {
   en: { products: "Digital guides", metaDifficulty: "Difficulty", metaTime: "Time", order: "Order on Instagram", footer: "Digital Tenerife route guides by Canary.Hikes. Message us on Instagram to order or ask what fits your trip." },
   de: { products: "Digitale Guides", metaDifficulty: "Schwierigkeit", metaTime: "Dauer", order: "Auf Instagram bestellen", footer: "Digitale Teneriffa-Routenguides von Canary.Hikes. Schreib uns auf Instagram, wenn du bestellen willst oder Hilfe bei der Auswahl brauchst." },
-  ru: { products: "Цифровые гайды", metaDifficulty: "Сложность", metaTime: "Время", order: "Заказать в Instagram", footer: "Цифровые маршруты по Тенерифе от Canary.Hikes. Напишите нам в Instagram, чтобы заказать гайд или выбрать подходящий маршрут." },
+  ru: { products: "Цифровые гайды", metaDifficulty: "Сложность", metaTime: "Тип маршрута", order: "Заказать в Instagram", footer: "Цифровые маршруты по Тенерифе от Canary.Hikes. Напишите нам в Instagram, чтобы заказать гайд или выбрать подходящий маршрут." },
   es: { products: "Guías digitales", metaDifficulty: "Dificultad", metaTime: "Duración", order: "Pedir por Instagram", footer: "Guías digitales de Tenerife por Canary.Hikes. Escríbenos en Instagram para pedir una guía o elegir la ruta que mejor encaja con tu viaje." }
 };
 
