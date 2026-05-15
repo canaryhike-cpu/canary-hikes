@@ -1482,6 +1482,13 @@ footer p {
 .teide-diagram-real .hiker-single .hiker-head { fill: #111827; }
 .teide-diagram-real .hiker-single .hiker-pack { fill: #f97316; }
 .teide-diagram-real .hiker-single .hiker-body { stroke: #0f172a; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; fill: none; animation: hike-step .48s ease-in-out infinite alternate; }
+.teide-diagram-real .car-real path,.teide-diagram-real .car-real circle { fill: #121a24; }
+.teide-diagram-real .hiker-real .hiker-head,.teide-diagram-real .hiker-real .hiker-arm,.teide-diagram-real .hiker-real .hiker-body { fill: none; stroke: #101a28; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; }
+.teide-diagram-real .hiker-real .hiker-head { fill: #101a28; stroke: none; }
+.teide-diagram-real .hiker-real .hiker-pack { fill: #1f2937; }
+.teide-diagram-real .cable-cabin-real rect { fill: #172130; stroke: #cdd9ea; stroke-width: 1.2; }
+.teide-diagram-real .cable-cabin-real .window { fill: #dde8f6; stroke: none; }
+.teide-diagram-real .cable-cabin-real .hanger { stroke: #d3deec; stroke-width: 2; }
 @keyframes stage-pulse { 0%,12%,100% { opacity:.22; transform: scale(1);} 6% { opacity:1; transform: scale(1.35);} }
 @keyframes hike-step { from { transform: translateY(0);} to { transform: translateY(.9px);} }
 @keyframes draw-route { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -140; } }
