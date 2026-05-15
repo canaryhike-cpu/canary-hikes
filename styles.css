@@ -1147,7 +1147,8 @@ ol {
 .acclimatize h2 {
   max-width: 780px;
   font-size: clamp(34px, 4vw, 58px);
-  line-height: .96;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .acclimatize p:not(.eyebrow) {
