@@ -836,7 +836,7 @@ dd {
   justify-content: center;
   padding: 0 15px;
   border-radius: 999px;
-  background: var(--ink);
+  background: #2f9e44;
   color: #fff;
   font-weight: 800;
   font-size: 14px;
