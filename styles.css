@@ -173,7 +173,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: 94vh;
+  height: clamp(680px, 94vh, 980px);
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -187,7 +187,7 @@ img {
 
 .shop-hero {
   position: relative;
-  min-height: 62vh;
+  height: clamp(520px, 62vh, 760px);
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -1565,11 +1565,13 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 
   .hero {
+    height: auto;
     min-height: auto;
     padding: 176px 18px 44px;
   }
 
   .shop-hero {
+    height: auto;
     min-height: 66vh;
     padding: 128px 18px 42px;
   }
