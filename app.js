@@ -10,7 +10,7 @@ const content = {
     nav: { routes: "Routes", permits: "Permits", cable: "Cable car", gear: "Gear", logistics: "Logistics" },
     hero: {
       eyebrow: "Action guide",
-      title: "Climb Mount Teide with a clear Tenerife hiking plan.",
+      title: "How to climb Mount Teide: route, permits and descent",
       copy: "A practical guide to the Mount Teide sunrise hike: PNT 07 via Montaña Blanca, Teide permits, cable car tickets, parking, gear, descent options and high-altitude realities.",
       imageAlt: "Sunrise above the clouds on the Mount Teide hiking route in Tenerife",
       cta: "Plan the ascent",
