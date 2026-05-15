@@ -1517,6 +1517,14 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 }
 
+
+
+@media (min-width: 941px) {
+  .hero-content {
+    max-width: min(760px, calc(100% - 320px));
+  }
+}
+
 @media (max-width: 940px) {
   .route-card-unified .route-copy {
     gap: 0;
