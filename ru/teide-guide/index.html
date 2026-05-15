@@ -95,24 +95,56 @@
         </div>
       </section>
 
-      <section class="route-schema section-pad" aria-label="Mount Teide cinematic ascent scene">
+      <section class="route-schema section-pad" aria-label="Схема подъёма на Тейде">
         <div class="section-head">
-          <p class="eyebrow" data-i18n="schema.eyebrow">Cinematic ascent story</p>
-          <h2 data-i18n="schema.title">Feel the dawn ascent to Teide, scene by scene.</h2>
-          <p data-i18n="schema.copy">A cinematic interpretation of the climb: darkness, blue-hour approach, sunrise over PNT 07, clouds below La Rambleta, and a final golden push to the crater.</p>
+          <p class="eyebrow">Анимированная схема</p>
+          <h2>Реальный порядок подъёма на Тейде: от парковки до кратера и обратно</h2>
+          <p>Силуэт горы и контрольные точки нанесены по реальным точкам: нижняя станция Teleférico del Teide → парковка Montaña Blanca → подъём по PNT 07 к La Rambleta → финальный участок PNT 10 к кратеру → спуск на канатке.</p>
         </div>
-        <div class="teide-diagram" data-cinematic-scene aria-hidden="true">
+        <div class="teide-diagram teide-diagram-real" data-cinematic-scene aria-hidden="true">
           <svg viewBox="0 0 1200 620" role="img">
-            <defs><linearGradient id="nightSky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#04060d"/><stop offset="0.58" stop-color="#0d1b2b"/><stop offset="1" stop-color="#38271f"/></linearGradient><linearGradient id="dawnWash" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffbe79" stop-opacity=".55"/><stop offset="1" stop-color="#ffbe79" stop-opacity="0"/></linearGradient><linearGradient id="summitRoute" x1="0" x2="1" y1="1" y2="0"><stop offset="0" stop-color="#fff4db"/><stop offset=".62" stop-color="#ffe38d"/><stop offset="1" stop-color="#fff9cc"/></linearGradient><filter id="blurSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter></defs>
-            <rect class="sky-night" x="0" y="0" width="1200" height="620"/><rect class="sky-dawn" x="0" y="0" width="1200" height="620"/>
-            <g class="stars-layer"><circle cx="188" cy="90" r="1.6"/><circle cx="280" cy="62" r="1.3"/><circle cx="424" cy="126" r="1.7"/><circle cx="596" cy="84" r="1.2"/><circle cx="734" cy="132" r="1.5"/><circle cx="910" cy="66" r="1.8"/></g>
-            <ellipse class="sun-halo" cx="825" cy="142" rx="220" ry="120"/>
-            <g class="parallax-back"><path class="bg-volcano" d="M30 560 C220 472 332 448 482 340 C594 258 658 156 704 108 C760 162 824 274 950 360 C1032 416 1108 464 1174 560 Z"/></g>
-            <g class="parallax-mid"><path class="main-volcano" d="M32 584 C250 530 390 502 542 408 C648 342 724 228 766 154 C816 236 864 340 1008 434 C1080 474 1142 520 1188 584 Z"/></g>
-            <g class="cloud-sea cloud-a"><path d="M0 410 C146 378 270 396 416 372 C588 344 720 366 872 340 C1014 316 1100 328 1200 314 L1200 620 L0 620 Z"/></g><g class="cloud-sea cloud-b"><path d="M0 448 C162 420 328 438 504 414 C660 392 820 412 988 392 C1076 382 1142 392 1200 374 L1200 620 L0 620 Z"/></g><g class="fog-veil"><path d="M0 520 C220 492 434 510 676 488 C882 470 1038 490 1200 476 L1200 620 L0 620 Z"/></g>
-            <g class="route-group"><path class="route-track" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/><path class="route-glow" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/><path class="route-travel" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/></g>
-            <path class="cable-line" d="M190 510 C332 444 486 330 666 226"/><path class="cable-lights" d="M190 510 C332 444 486 330 666 226"/>
-            <g class="checkpoints"><g class="node stage-1"><circle cx="170" cy="520" r="11"/><text x="200" y="528" data-i18n-svg="schema.stage1">01 Teleférico parking · predawn</text></g><g class="node stage-2"><circle cx="428" cy="462" r="10"/><text x="458" y="470" data-i18n-svg="schema.stage2">02 Montaña Blanca · blue hour</text></g><g class="node stage-3"><circle cx="640" cy="312" r="10"/><text x="670" y="320" data-i18n-svg="schema.stage3">03 PNT 07 · sunrise starts</text></g><g class="node stage-4"><circle cx="766" cy="154" r="10"/><text x="796" y="162" data-i18n-svg="schema.stage4">04 La Rambleta · above clouds</text></g><g class="node stage-5"><circle cx="870" cy="108" r="11"/><text x="900" y="116" data-i18n-svg="schema.stage5">05 Crater ridge · golden light</text></g></g>
+            <defs>
+              <linearGradient id="skyReal" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f3f7ff"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+              <linearGradient id="teideReal" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8e7b6f"/><stop offset="1" stop-color="#6d5e55"/></linearGradient>
+            </defs>
+            <rect x="0" y="0" width="1200" height="620" fill="url(#skyReal)"/>
+            <path class="teide-silhouette" d="M70 560 C176 540 268 510 340 478 C430 438 508 362 578 286 C642 220 688 162 724 120 C742 100 754 92 768 88 C787 108 820 154 866 228 C912 304 964 376 1018 430 C1068 476 1120 516 1166 560 Z"/>
+
+            <path id="walkRoad" class="seg-road" d="M176 514 C248 500 332 492 418 475"/>
+            <path id="pnt07" class="seg-pnt07" d="M418 475 C492 448 560 402 620 334 C680 266 719 196 748 136"/>
+            <path id="pnt10" class="seg-pnt10" d="M748 136 C770 120 794 106 820 96"/>
+            <path id="cableDown" class="seg-cable" d="M748 136 C640 208 510 306 370 410 C298 462 236 494 176 514"/>
+
+            <circle class="node" cx="176" cy="514" r="6"/>
+            <circle class="node" cx="418" cy="475" r="6"/>
+            <circle class="node" cx="748" cy="136" r="6"/>
+            <circle class="node" cx="820" cy="96" r="6"/>
+
+            <g class="label"><text x="72" y="496">1) Parking Teleférico del Teide</text><text x="72" y="518">28.2714, -16.6265</text></g>
+            <g class="label"><text x="432" y="510">2) Parking Montaña Blanca</text><text x="432" y="532">28.2540, -16.6407</text></g>
+            <g class="label"><text x="770" y="166">4) La Rambleta (верхняя станция)</text><text x="770" y="188">28.2718, -16.6422</text></g>
+            <g class="label"><text x="856" y="86">5) Pico del Teide (кратер)</text><text x="856" y="108">28.2724, -16.6425</text></g>
+            <text class="route-label" x="258" y="468">Ровная асфальтовая дорога до Montaña Blanca</text>
+            <text class="route-label" x="540" y="300">Маршрут PNT 07 (основной подъём)</text>
+            <text class="route-label" x="792" y="132">Финальный участок PNT 10</text>
+            <text class="route-label" x="454" y="258">Спуск на канатке</text>
+
+            <g class="car">
+              <circle r="8"/>
+              <animateMotion dur="12s" repeatCount="indefinite" path="M176 514 C248 500 332 492 418 475"/>
+            </g>
+            <g class="hiker hiker-road">
+              <circle r="5"/>
+              <animateMotion begin="2s" dur="10s" repeatCount="indefinite" path="M176 514 C248 500 332 492 418 475"/>
+            </g>
+            <g class="hiker hiker-up">
+              <circle r="5"/>
+              <animateMotion begin="5s" dur="11s" repeatCount="indefinite" path="M418 475 C492 448 560 402 620 334 C680 266 719 196 748 136 C770 120 794 106 820 96"/>
+            </g>
+            <g class="cab">
+              <rect x="-7" y="-7" width="14" height="14" rx="2"/>
+              <animateMotion begin="11s" dur="7s" repeatCount="indefinite" path="M748 136 C640 208 510 306 370 410 C298 462 236 494 176 514"/>
+            </g>
           </svg>
         </div>
       </section>

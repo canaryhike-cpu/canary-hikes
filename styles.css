@@ -1451,3 +1451,32 @@ footer p {
     transform: none;
   }
 }
+
+/* Real Teide route diagram (RU page) */
+.teide-diagram-real { --line: #2f3f57; --accent: #7f5f3f; }
+.teide-diagram-real .teide-silhouette { fill: url(#teideReal); opacity: .92; }
+.teide-diagram-real .seg-road,
+.teide-diagram-real .seg-pnt07,
+.teide-diagram-real .seg-pnt10,
+.teide-diagram-real .seg-cable {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+.teide-diagram-real .seg-road { stroke: #3f6f9a; stroke-dasharray: 4 7; }
+.teide-diagram-real .seg-pnt07 { stroke: #2d3f54; stroke-dasharray: 5 6; animation: draw-route 7s ease-in-out infinite; }
+.teide-diagram-real .seg-pnt10 { stroke: #7a3d23; stroke-dasharray: 3 5; animation: draw-route 7s ease-in-out infinite; }
+.teide-diagram-real .seg-cable { stroke: #667f8f; stroke-dasharray: 2 6; }
+.teide-diagram-real .node { fill: #fff; stroke: #223; stroke-width: 1.2; }
+.teide-diagram-real .label text { fill: #1f2733; font-size: 16px; font-weight: 500; }
+.teide-diagram-real .route-label { fill: #1f2733; font-size: 15px; font-weight: 500; }
+.teide-diagram-real .car circle { fill: #1e88e5; }
+.teide-diagram-real .hiker circle { fill: #111827; }
+.teide-diagram-real .cab rect { fill: #f3f4f6; stroke: #384252; stroke-width: 1.2; }
+@keyframes draw-route { 0% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: -140; } }
+
+@media (max-width: 900px) {
+  .teide-diagram-real .label text { font-size: 12px; }
+  .teide-diagram-real .route-label { font-size: 11px; }
+}
