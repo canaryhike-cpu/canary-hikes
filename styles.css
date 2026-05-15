@@ -340,16 +340,82 @@ img {
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(4, 7, 8, 0.94), rgba(8, 10, 10, 0.58) 48%, rgba(8, 10, 10, 0.18)),
-    linear-gradient(0deg, rgba(5, 7, 8, 0.84), rgba(8, 10, 10, 0.06) 62%);
+    linear-gradient(102deg, rgba(3, 6, 7, 0.92) 8%, rgba(7, 9, 10, 0.66) 42%, rgba(7, 10, 10, 0.2) 76%),
+    linear-gradient(0deg, rgba(4, 6, 7, 0.9) 3%, rgba(9, 10, 11, 0.24) 56%, rgba(9, 10, 11, 0.32) 100%);
+  z-index: 1;
+}
+
+.hero-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.haze,
+.ridge,
+.sun-glow {
+  position: absolute;
+}
+
+.haze {
+  inset: auto -18% 0;
+  height: 54%;
+  background: radial-gradient(ellipse at center, rgba(227, 236, 255, 0.2) 0%, rgba(227, 236, 255, 0) 72%);
+  filter: blur(8px);
+}
+
+.haze-back {
+  bottom: 14%;
+  opacity: 0.34;
+  animation: drift 28s ease-in-out infinite alternate;
+}
+
+.haze-front {
+  bottom: -8%;
+  opacity: 0.24;
+  animation: drift 34s ease-in-out infinite alternate-reverse;
+}
+
+.ridge {
+  inset: auto -8% -2%;
+  height: 46%;
+  background: linear-gradient(180deg, rgba(21, 25, 27, 0.08), rgba(10, 13, 14, 0.78) 54%, rgba(7, 8, 9, 0.95));
+  clip-path: polygon(0% 100%, 10% 71%, 18% 79%, 29% 59%, 42% 73%, 55% 48%, 63% 58%, 75% 37%, 88% 55%, 100% 44%, 100% 100%);
+}
+
+.ridge-two {
+  inset: auto -15% -1%;
+  height: 38%;
+  opacity: 0.78;
+  filter: blur(2px);
+  clip-path: polygon(0% 100%, 8% 84%, 22% 68%, 34% 79%, 48% 62%, 62% 70%, 75% 57%, 91% 65%, 100% 52%, 100% 100%);
+}
+
+.sun-glow {
+  top: 9%;
+  right: 7%;
+  width: min(420px, 46vw);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 194, 109, 0.38), rgba(255, 194, 109, 0.02) 70%);
+  filter: blur(4px);
+  animation: pulse-light 16s ease-in-out infinite alternate;
 }
 
 .hero-content {
   position: relative;
-  max-width: 720px;
+  max-width: 760px;
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: linear-gradient(132deg, rgba(8, 10, 11, 0.68), rgba(8, 10, 11, 0.34));
+  backdrop-filter: blur(8px);
   color: #fff;
   text-shadow: 0 2px 28px rgba(0, 0, 0, 0.46);
   z-index: 2;
+  animation: hero-reveal .9s ease-out both;
 }
 
 .eyebrow {
@@ -389,9 +455,10 @@ h1 {
 }
 
 .hero h1 {
-  max-width: 680px;
-  font-size: clamp(36px, 5.4vw, 72px);
-  line-height: 0.96;
+  max-width: 760px;
+  margin-bottom: 16px;
+  font-size: clamp(42px, 5.8vw, 82px);
+  line-height: 0.93;
 }
 
 h2 {
@@ -417,9 +484,10 @@ dd {
 }
 
 .hero-copy {
-  max-width: 620px;
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 18px;
+  max-width: 54ch;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(17px, 2vw, 21px);
+  line-height: 1.5;
 }
 
 .hero-actions {
@@ -442,7 +510,7 @@ dd {
 .primary-btn {
   background: var(--acid);
   color: var(--ink);
-  box-shadow: 0 18px 50px rgba(204,255,61,.2);
+  box-shadow: 0 14px 34px rgba(204,255,61,.28);
 }
 
 .ghost-btn {
@@ -462,6 +530,21 @@ dd {
   background: rgba(11, 17, 20, .62);
   backdrop-filter: blur(20px) saturate(1.15);
   z-index: 2;
+}
+
+@keyframes drift {
+  0% { transform: translate3d(-2%, 0, 0) scale(1); }
+  100% { transform: translate3d(2%, -1.5%, 0) scale(1.04); }
+}
+
+@keyframes pulse-light {
+  0% { transform: scale(1); opacity: 0.28; }
+  100% { transform: scale(1.1); opacity: 0.42; }
+}
+
+@keyframes hero-reveal {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .summit-panel span {
@@ -1615,7 +1698,7 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .hero {
     height: auto;
     min-height: auto;
-    padding: 176px 18px 44px;
+    padding: 150px 18px 40px;
   }
 
   .shop-hero {
@@ -1638,8 +1721,26 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 
   .hero h1 {
-    font-size: 38px;
-    line-height: 1;
+    font-size: clamp(34px, 8.6vw, 44px);
+    line-height: 0.97;
+  }
+
+  .hero-content {
+    padding: 18px;
+  }
+
+  .hero-copy {
+    max-width: 34ch;
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .primary-btn {
+    width: 100%;
+    max-width: 280px;
   }
 
   h2 {
