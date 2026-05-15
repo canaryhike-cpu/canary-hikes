@@ -1173,7 +1173,7 @@ ol {
 }
 
 .mini-products article {
-  min-height: 170px;
+  min-height: 0;
   padding: 18px;
   border: 1px solid rgba(255,255,255,.14);
   border-radius: 8px;
@@ -1182,18 +1182,20 @@ ol {
 
 .mini-products span {
   display: inline-flex;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   color: var(--acid);
   font-size: 12px;
   font-weight: 900;
+  line-height: 1.25;
 }
 
 .mini-products strong {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-family: "Arial Black", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
-  line-height: 1.05;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .mini-products p {
