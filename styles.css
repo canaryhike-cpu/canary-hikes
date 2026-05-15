@@ -1635,8 +1635,12 @@ html[lang="ru"] .acclimatize-actions .section-link {
     padding: 20px;
   }
 
+  .gear.section-pad {
+    width: calc(100% - 36px);
+  }
+
   .gear-item {
-    padding: 24px;
+    padding: 26px;
   }
 
   .gear-item p,
