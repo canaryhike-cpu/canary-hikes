@@ -1146,13 +1146,15 @@ ol {
 
 .acclimatize h2 {
   max-width: 780px;
+  margin-bottom: 14px;
   font-size: clamp(34px, 4vw, 58px);
-  line-height: 1.08;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
 }
 
 .acclimatize p:not(.eyebrow) {
   max-width: 820px;
-  margin-top: 20px;
+  margin-top: 0;
   color: rgba(255,255,255,.72);
 }
 
@@ -1182,7 +1184,8 @@ ol {
 
 .mini-products span {
   display: inline-flex;
-  margin-bottom: 14px;
+  width: 100%;
+  margin-bottom: 12px;
   color: var(--acid);
   font-size: 12px;
   font-weight: 900;
@@ -1191,7 +1194,7 @@ ol {
 
 .mini-products strong {
   display: block;
-  margin-bottom: 12px;
+  margin: 0 0 10px;
   font-family: "Arial Black", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
   font-size: 20px;
   line-height: 1.2;
@@ -1200,6 +1203,7 @@ ol {
 
 .mini-products p {
   margin: 0;
+  overflow-wrap: anywhere;
   color: rgba(255,255,255,.68);
   font-size: 14px;
 }
