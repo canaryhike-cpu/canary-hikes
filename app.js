@@ -924,6 +924,39 @@ function renderShop(lang, page) {
   document.querySelector("footer p").textContent = ui.footer;
 }
 
+
+function initTeideDiagramMotion() {
+  const diagram = document.querySelector('.teide-diagram');
+  if (!diagram) return;
+  const back = diagram.querySelector('.parallax-back');
+  const mid = diagram.querySelector('.parallax-mid');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!diagram.dataset.revealBound) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) diagram.classList.add('is-visible');
+      });
+    }, { threshold: 0.3 });
+    observer.observe(diagram);
+    diagram.dataset.revealBound = '1';
+  }
+
+  if (!reduceMotion && !diagram.dataset.parallaxBound) {
+    diagram.addEventListener('pointermove', (event) => {
+      const rect = diagram.getBoundingClientRect();
+      const dx = (event.clientX - rect.left) / rect.width - 0.5;
+      const dy = (event.clientY - rect.top) / rect.height - 0.5;
+      if (back) back.style.transform = `translate(${dx * 12}px, ${dy * 10}px)`;
+      if (mid) mid.style.transform = `translate(${dx * 18}px, ${dy * 14}px)`;
+    });
+    diagram.addEventListener('pointerleave', () => {
+      if (back) back.style.transform = '';
+      if (mid) mid.style.transform = '';
+    });
+    diagram.dataset.parallaxBound = '1';
+  }
+}
 function renderTeide(lang) {
   const main = document.querySelector("main");
   if (main.classList.contains("shop-page")) {
@@ -942,6 +975,7 @@ function renderTeide(lang) {
   renderList(lists.cable, content[lang].cable.list);
   renderGear(content[lang].gear.groups);
   renderTips(content[lang].tips.items);
+  initTeideDiagramMotion();
 }
 
 function updateChrome(lang, page) {
