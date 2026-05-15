@@ -629,17 +629,23 @@ dd {
 }
 
 .teide-diagram .walk,
-.teide-diagram .cable-line,
-.teide-diagram .cable-down {
+.teide-diagram .road,
+.teide-diagram .cable-line {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
+.teide-diagram .road {
+  stroke: #b8c1c9;
+  stroke-width: 10;
+  opacity: .85;
+}
+
 .teide-diagram .approach {
-  stroke: #fff;
-  stroke-width: 7;
-  stroke-dasharray: 14 14;
+  stroke: #f7f9fb;
+  stroke-width: 4;
+  stroke-dasharray: 14 10;
 }
 
 .teide-diagram .pnt07 {
@@ -656,13 +662,6 @@ dd {
   stroke: rgba(199,231,255,.88);
   stroke-width: 4;
   stroke-dasharray: 8 10;
-}
-
-.teide-diagram .cable-down {
-  stroke: rgba(153, 212, 255, .8);
-  stroke-width: 4;
-  stroke-dasharray: 8 10;
-  opacity: 0;
 }
 
 .teide-diagram .node circle {
@@ -710,30 +709,67 @@ dd {
 
 .teide-diagram .hiker {
   fill: none;
-  stroke: #f4fff0;
-  stroke-width: 2.5;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
   opacity: 0;
 }
 
-.teide-diagram .hiker circle {
-  fill: #f4fff0;
-  stroke: none;
+.teide-diagram .hiker .skin {
+  fill: #e9c7a2;
 }
 
-.teide-diagram .cabin rect {
-  fill: #e8f6ff;
-  stroke: #7ca5bc;
-  stroke-width: 2;
+.teide-diagram .hiker .body {
+  stroke: #f3f9f0;
+}
+
+.teide-diagram .hiker .pack {
+  fill: #415d43;
+  stroke: rgba(228,244,226,.8);
+  stroke-width: 1.2;
+}
+
+.teide-diagram .hiker .pole {
+  stroke: #b8c7d1;
+}
+
+.teide-diagram .parking-car rect {
+  fill: #dce4eb;
+  stroke: #6e7f8d;
+  stroke-width: 1.4;
+}
+
+.teide-diagram .parking-car circle {
+  fill: #11161a;
+  stroke: #909da8;
+  stroke-width: 1.3;
+}
+
+.teide-diagram .cabin .cabin-shell {
+  fill: #e8f4ff;
+  stroke: #698ea5;
+  stroke-width: 1.8;
+}
+
+.teide-diagram .cabin .cabin-window {
+  fill: #8db8d3;
+  stroke: #527791;
+  stroke-width: 1;
+}
+
+.teide-diagram .cabin .cabin-hanger {
+  stroke: #a7c4d8;
+  stroke-width: 2.2;
+}
+
+.teide-diagram .cabin {
   opacity: 0;
 }
 
 .teide-diagram:hover .hiker-walk { animation: move-walk 2.8s ease-in-out forwards; }
 .teide-diagram:hover .hiker-climb-one { animation: move-climb-one 3.2s ease-in-out 2.7s forwards; }
 .teide-diagram:hover .hiker-climb-two { animation: move-climb-two 1.8s ease-in-out 5.8s forwards; }
-.teide-diagram:hover .cable-down { animation: cable-reveal 2.6s ease-in-out 7.6s forwards; }
-.teide-diagram:hover .cabin rect { animation: cabin-ride 2.8s ease-in-out 7.4s forwards; }
+.teide-diagram:hover .cabin { animation: cabin-ride 2.8s ease-in-out 7.4s forwards; }
 
 @keyframes move-walk {
   0% { transform: translate(170px, 456px); opacity: 0; }
@@ -753,15 +789,10 @@ dd {
   100% { transform: translate(684px, 92px); opacity: 1; }
 }
 
-@keyframes cable-reveal {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 @keyframes cabin-ride {
   0% { transform: translate(602px, 146px); opacity: 0; }
   8% { opacity: 1; }
-  100% { transform: translate(196px, 452px); opacity: 1; }
+  100% { transform: translate(202px, 452px); opacity: 1; }
 }
 
 .route-card {
