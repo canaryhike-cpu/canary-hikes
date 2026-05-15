@@ -604,57 +604,52 @@ dd {
  .teide-diagram {
   overflow: hidden;
   position: relative;
-  border: 1px solid rgba(193, 212, 229, .26);
-  border-radius: 18px;
-  background: radial-gradient(circle at 70% 14%, rgba(255, 164, 84, .2), transparent 36%), #0d151f;
-  box-shadow: 0 34px 90px rgba(8, 10, 16, .48), inset 0 0 0 1px rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 22px;
+  background: #040911;
+  box-shadow: 0 34px 90px rgba(8, 10, 16, .54), inset 0 0 0 1px rgba(255,255,255,.06);
   transform: translateY(26px);
   opacity: 0;
-  transition: opacity .9s ease, transform .9s cubic-bezier(.22,.7,.2,1);
+  --scene-progress: 0;
+  transition: opacity 1s ease, transform 1s cubic-bezier(.22,.7,.2,1);
 }
 .teide-diagram.is-visible { opacity: 1; transform: translateY(0); }
-.teide-diagram svg { display:block; width:100%; height:auto; }
-.teide-diagram .sky-layer { fill: url(#skyGlow); }
-.teide-diagram .summit-aura { fill: rgba(255,143,88,.36); filter: url(#softBlur); animation: summit-pulse 7.4s ease-in-out infinite; }
-.teide-diagram .mountain-back { fill: rgba(28,37,51,.65); }
-.teide-diagram .mountain-front { fill: url(#volcanoCore); }
-.teide-diagram .terrain-ridge { fill:none; stroke: rgba(255,255,255,.2); stroke-width:2.4; }
-.teide-diagram .volcanic-glow { fill: rgba(255,120,68,.62); filter: url(#routeBlur); animation: lava-breath 5.8s ease-in-out infinite; }
-.teide-diagram .fog-layer path { fill: rgba(187, 201, 220, .13); filter: blur(5px); }
-.teide-diagram .fog-one { animation: fog-drift-one 16s ease-in-out infinite alternate; }
-.teide-diagram .fog-two { animation: fog-drift-two 22s ease-in-out infinite alternate; }
-.teide-diagram .route-base,.teide-diagram .cable-line,.teide-diagram .route-glow,.teide-diagram .route-light,.teide-diagram .cable-spark { fill:none; stroke-linecap:round; stroke-linejoin:round; }
-.teide-diagram .approach { stroke: rgba(225,239,255,.94); stroke-width: 5.5; stroke-dasharray: 10 10; }
-.teide-diagram .pnt07 { stroke: #d8ff65; stroke-width: 7; }
-.teide-diagram .pnt10 { stroke: #ff995f; stroke-width: 6; }
-.teide-diagram .route-glow { stroke: url(#routeGlow); stroke-width: 14; opacity:.34; filter: url(#routeBlur); animation: route-pulse 3.8s ease-in-out infinite; }
-.teide-diagram .route-light { stroke: rgba(255,255,255,.95); stroke-width: 3.2; stroke-dasharray: 34 420; animation: route-travel 5.6s linear infinite; }
-.teide-diagram .cable-line { stroke: rgba(177,226,255,.84); stroke-width:3.8; stroke-dasharray: 8 9; }
-.teide-diagram .cable-spark { stroke: rgba(230,247,255,.94); stroke-width:2; stroke-dasharray: 24 190; animation: cable-shimmer 4.8s linear infinite; }
-.teide-diagram .node circle { fill:#f8fcff; stroke:#0d1a26; stroke-width:4; filter: drop-shadow(0 6px 18px rgba(8,14,25,.5)); }
-.teide-diagram .label-plate { fill: rgba(14, 24, 37, .54); stroke: rgba(233, 245, 255, .46); backdrop-filter: blur(4px); }
-.teide-diagram text { fill:#f3f8ff; font-family:"SF Pro Display","Inter",sans-serif; font-weight:500; letter-spacing:.1px; font-size:18px; }
-.teide-diagram .path-label { fill: rgba(227,241,255,.95); font-size: 15px; font-weight: 600; }
-.teide-diagram .cable-text { fill: #bce6ff; }
-.teide-diagram .node text,.teide-diagram .path-label { filter: drop-shadow(0 6px 14px rgba(7, 11, 18, .65)); }
-.teide-diagram .ambient-particles circle { fill: rgba(240,248,255,.7); animation: particle-float 7s ease-in-out infinite; }
-.teide-diagram .ambient-particles circle:nth-child(2){ animation-delay:1.4s; }
-.teide-diagram .ambient-particles circle:nth-child(3){ animation-delay:2.6s; }
-.teide-diagram .ambient-particles circle:nth-child(4){ animation-delay:.8s; }
-.teide-diagram .float-a{ animation: label-float 4.4s ease-in-out infinite; }
-.teide-diagram .float-b{ animation: label-float 5.2s ease-in-out infinite .5s; }
-.teide-diagram .float-c{ animation: label-float 4.8s ease-in-out infinite 1s; }
-.teide-diagram:hover .label-plate { fill: rgba(20, 34, 53, .68); }
+.teide-diagram svg { display: block; width: 100%; height: auto; }
+.teide-diagram .sky-night { fill: url(#nightSky); }
+.teide-diagram .sky-dawn { fill: url(#dawnWash); opacity: calc(var(--scene-progress) * .9); }
+.teide-diagram .stars-layer { opacity: calc(1 - var(--scene-progress)); }
+.teide-diagram .stars-layer circle { fill: rgba(240, 245, 255, .95); animation: star-twinkle 4.8s ease-in-out infinite; }
+.teide-diagram .sun-halo { fill: rgba(255, 191, 112, .52); filter: url(#blurSoft); opacity: calc(var(--scene-progress) * .95); transform-origin: center; animation: sunrise-breathe 9s ease-in-out infinite; }
+.teide-diagram .bg-volcano { fill: rgba(31,43,60,.7); }
+.teide-diagram .main-volcano { fill: rgba(68,53,43,.88); filter: brightness(calc(.62 + var(--scene-progress) * .6)); }
+.teide-diagram .cloud-sea path { fill: rgba(196,214,236,.24); filter: blur(4px); }
+.teide-diagram .cloud-a { animation: cloud-drift-a 18s ease-in-out infinite alternate; }
+.teide-diagram .cloud-b { animation: cloud-drift-b 24s ease-in-out infinite alternate; }
+.teide-diagram .fog-veil path { fill: rgba(218,228,242,.18); filter: blur(7px); animation: fog-drift 16s ease-in-out infinite alternate; }
+.teide-diagram .route-track,.teide-diagram .route-glow,.teide-diagram .route-travel,.teide-diagram .cable-line,.teide-diagram .cable-lights { fill:none; stroke-linecap:round; stroke-linejoin:round; }
+.teide-diagram .route-track { stroke: rgba(255,236,194,.58); stroke-width: 4.2; stroke-dasharray: 8 9; }
+.teide-diagram .route-glow { stroke: url(#summitRoute); stroke-width: 12; opacity: calc(.25 + var(--scene-progress) * .55); filter: blur(2px); }
+.teide-diagram .route-travel { stroke: #fffef2; stroke-width: 2.8; stroke-dasharray: 46 500; animation: route-climb 6s linear infinite; }
+.teide-diagram .cable-line { stroke: rgba(170,212,248,.65); stroke-width: 3.5; stroke-dasharray: 8 10; }
+.teide-diagram .cable-lights { stroke: rgba(245,251,255,.95); stroke-width: 1.8; stroke-dasharray: 20 220; animation: cable-move 5.2s linear infinite; }
+.teide-diagram .node { opacity: .62; }
+.teide-diagram .node circle { fill: #fff8dd; stroke: rgba(29,25,20,.85); stroke-width: 3; }
+.teide-diagram .node text { fill: rgba(250,252,255,.95); font-size: 20px; font-weight: 500; letter-spacing: .2px; filter: drop-shadow(0 4px 10px rgba(0,0,0,.55)); }
+.teide-diagram .stage-1,.teide-diagram .stage-2,.teide-diagram .stage-3,.teide-diagram .stage-4,.teide-diagram .stage-5 { animation: checkpoint-float 5s ease-in-out infinite; }
+.teide-diagram .stage-2 { animation-delay: .4s; } .teide-diagram .stage-3 { animation-delay: .8s; } .teide-diagram .stage-4 { animation-delay: 1.2s; } .teide-diagram .stage-5 { animation-delay: 1.6s; }
 .teide-diagram .parallax-back,.teide-diagram .parallax-mid { transition: transform .5s ease-out; }
-@keyframes summit-pulse { 0%,100%{ opacity:.34; } 50%{ opacity:.58; } }
-@keyframes lava-breath { 0%,100%{ opacity:.42; transform:scale(1);}50%{ opacity:.78; transform:scale(1.08);} }
-@keyframes route-pulse { 0%,100%{ opacity:.25;}50%{ opacity:.44;} }
-@keyframes route-travel { to { stroke-dashoffset: -454; } }
-@keyframes cable-shimmer { to { stroke-dashoffset: -214; } }
-@keyframes fog-drift-one { from { transform: translateX(-16px);} to { transform: translateX(16px);} }
-@keyframes fog-drift-two { from { transform: translateX(18px);} to { transform: translateX(-18px);} }
-@keyframes label-float { 0%,100%{ transform: translateY(0);} 50% { transform: translateY(-5px);} }
-@keyframes particle-float { 0%,100%{ opacity:.35; transform:translateY(0);}50%{ opacity:.9; transform:translateY(-10px);} }
+@keyframes star-twinkle { 0%,100%{opacity:.5}50%{opacity:1} }
+@keyframes sunrise-breathe { 0%,100%{ transform:scale(1);}50%{ transform:scale(1.06);} }
+@keyframes route-climb { to { stroke-dashoffset: -546; } }
+@keyframes cable-move { to { stroke-dashoffset: -240; } }
+@keyframes cloud-drift-a { from { transform:translateX(-18px);} to { transform:translateX(20px);} }
+@keyframes cloud-drift-b { from { transform:translateX(22px);} to { transform:translateX(-22px);} }
+@keyframes fog-drift { from { transform:translateX(-14px);} to { transform:translateX(14px);} }
+@keyframes checkpoint-float { 0%,100%{ transform:translateY(0);}50%{ transform:translateY(-5px);} }
+
+@media (max-width: 760px) {
+  .teide-diagram .node text { font-size: 14px; }
+}
 
 .route-card {
   overflow: hidden;

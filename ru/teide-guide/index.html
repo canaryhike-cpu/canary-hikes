@@ -95,68 +95,24 @@
         </div>
       </section>
 
-      <section class="route-schema section-pad" aria-label="Схема маршрута на Тейде">
+      <section class="route-schema section-pad" aria-label="Mount Teide cinematic ascent scene">
         <div class="section-head">
-          <p class="eyebrow" data-i18n="schema.eyebrow">Схема маршрута</p>
-          <h2 data-i18n="schema.title">Как связаны парковка, PNT 07, PNT 10 и канатка</h2>
-          <p data-i18n="schema.copy">Упрощённая схема по реальному расположению точек: парковка у канатной дороги находится ниже и западнее, Монтанья-Бланка — обычная точка старта восточнее, PNT 07 поднимается к Ла-Рамблете, PNT 10 ведёт к кратеру, а канатка спускает обратно к Teleférico.</p>
+          <p class="eyebrow" data-i18n="schema.eyebrow">Cinematic ascent story</p>
+          <h2 data-i18n="schema.title">Feel the dawn ascent to Teide, scene by scene.</h2>
+          <p data-i18n="schema.copy">A cinematic interpretation of the climb: darkness, blue-hour approach, sunrise over PNT 07, clouds below La Rambleta, and a final golden push to the crater.</p>
         </div>
-        <div class="teide-diagram" aria-hidden="true">
-          <svg viewBox="0 0 1100 560" role="img">
-            <defs>
-              <linearGradient id="skyGlow" x1="0" x2="0" y1="0" y2="1">
-                <stop offset="0" stop-color="#0a1220" />
-                <stop offset="0.5" stop-color="#172434" />
-                <stop offset="1" stop-color="#2f2522" />
-              </linearGradient>
-              <linearGradient id="volcanoCore" x1="0.08" x2="0.82" y1="1" y2="0">
-                <stop offset="0" stop-color="#1a1a1d" />
-                <stop offset="0.42" stop-color="#3e312d" />
-                <stop offset="1" stop-color="#6b5345" />
-              </linearGradient>
-              <linearGradient id="routeGlow" x1="0" x2="1" y1="1" y2="0">
-                <stop offset="0" stop-color="#f2f8ff" />
-                <stop offset="1" stop-color="#d8ff65" />
-              </linearGradient>
-              <filter id="softBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14" /></filter>
-              <filter id="routeBlur" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="5" /></filter>
-            </defs>
-            <rect class="sky-layer" x="0" y="0" width="1100" height="560" />
-            <ellipse class="summit-aura" cx="702" cy="86" rx="220" ry="90" />
-            <g class="parallax-back">
-              <path class="mountain-back" d="M32 502 C180 412 260 404 372 334 C480 266 554 126 618 66 C678 126 748 276 864 344 C948 392 1028 426 1080 504 Z" />
-              <path class="terrain-ridge" d="M614 74 C590 148 562 206 520 252" />
-              <path class="terrain-ridge" d="M616 82 C656 174 704 252 782 326" />
-            </g>
-            <g class="parallax-mid">
-              <path class="mountain-front" d="M44 520 C196 452 284 444 406 364 C504 300 570 178 626 98 C680 170 730 290 844 364 C932 420 1018 456 1062 522 Z" />
-              <path class="volcanic-glow" d="M624 96 C638 106 646 122 642 138 C632 126 620 112 624 96 Z" />
-            </g>
-            <g class="fog-layer fog-one"><path d="M42 386 C192 344 350 362 468 338 C620 308 742 326 906 304 C978 294 1046 302 1080 318 L1080 560 L42 560 Z" /></g>
-            <g class="fog-layer fog-two"><path d="M0 432 C152 404 312 418 470 396 C636 372 776 392 934 370 C1016 358 1068 368 1100 380 L1100 560 L0 560 Z" /></g>
-
-            <g class="route-group">
-              <path class="route-base approach" d="M174 474 C252 452 312 444 386 420" />
-              <path class="route-base pnt07" d="M386 420 C468 358 528 292 568 214 C586 178 602 136 626 98" />
-              <path class="route-base pnt10" d="M626 98 C654 92 680 82 702 66" />
-              <path class="route-glow" d="M174 474 C252 452 312 444 386 420 C468 358 528 292 568 214 C586 178 602 136 626 98 C654 92 680 82 702 66" />
-              <path class="route-light" d="M174 474 C252 452 312 444 386 420 C468 358 528 292 568 214 C586 178 602 136 626 98 C654 92 680 82 702 66" />
-            </g>
-
-            <path class="cable-line" d="M208 468 C318 412 438 300 592 148" />
-            <path class="cable-spark" d="M208 468 C318 412 438 300 592 148" />
-
-            <g class="checkpoints">
-              <g class="node node-cable float-a"><circle cx="174" cy="474" r="12" /><rect class="label-plate" x="76" y="494" width="224" height="44" rx="20" /><text x="188" y="522" text-anchor="middle" data-i18n-svg="schema.teleferico">Teleférico parking</text></g>
-              <g class="node node-montana float-b"><circle cx="386" cy="420" r="12" /><rect class="label-plate" x="282" y="352" width="238" height="44" rx="20" /><text x="401" y="380" text-anchor="middle" data-i18n-svg="schema.montana">Montaña Blanca parking</text></g>
-              <g class="node node-rambleta float-c"><circle cx="592" cy="148" r="11" /><rect class="label-plate" x="536" y="160" width="162" height="42" rx="18" /><text x="617" y="187" text-anchor="middle" data-i18n-svg="schema.rambleta">La Rambleta</text></g>
-              <g class="node node-crater float-b"><circle cx="702" cy="66" r="12" /><rect class="label-plate" x="726" y="38" width="248" height="44" rx="20" /><text x="850" y="66" text-anchor="middle" data-i18n-svg="schema.crater">Teide crater / PNT 10</text></g>
-            </g>
-
-            <text class="path-label" x="250" y="456" data-i18n-svg="schema.approach">4.8 km approach</text>
-            <text class="path-label" x="470" y="302" data-i18n-svg="schema.pnt07">PNT 07 ascent</text>
-            <text class="path-label cable-text" x="286" y="322" data-i18n-svg="schema.cable">Cable car line</text>
-            <g class="ambient-particles"><circle cx="248" cy="266" r="2.3" /><circle cx="394" cy="216" r="1.9" /><circle cx="552" cy="188" r="2.1" /><circle cx="748" cy="202" r="1.8" /></g>
+        <div class="teide-diagram" data-cinematic-scene aria-hidden="true">
+          <svg viewBox="0 0 1200 620" role="img">
+            <defs><linearGradient id="nightSky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#04060d"/><stop offset="0.58" stop-color="#0d1b2b"/><stop offset="1" stop-color="#38271f"/></linearGradient><linearGradient id="dawnWash" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffbe79" stop-opacity=".55"/><stop offset="1" stop-color="#ffbe79" stop-opacity="0"/></linearGradient><linearGradient id="summitRoute" x1="0" x2="1" y1="1" y2="0"><stop offset="0" stop-color="#fff4db"/><stop offset=".62" stop-color="#ffe38d"/><stop offset="1" stop-color="#fff9cc"/></linearGradient><filter id="blurSoft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="18"/></filter></defs>
+            <rect class="sky-night" x="0" y="0" width="1200" height="620"/><rect class="sky-dawn" x="0" y="0" width="1200" height="620"/>
+            <g class="stars-layer"><circle cx="188" cy="90" r="1.6"/><circle cx="280" cy="62" r="1.3"/><circle cx="424" cy="126" r="1.7"/><circle cx="596" cy="84" r="1.2"/><circle cx="734" cy="132" r="1.5"/><circle cx="910" cy="66" r="1.8"/></g>
+            <ellipse class="sun-halo" cx="825" cy="142" rx="220" ry="120"/>
+            <g class="parallax-back"><path class="bg-volcano" d="M30 560 C220 472 332 448 482 340 C594 258 658 156 704 108 C760 162 824 274 950 360 C1032 416 1108 464 1174 560 Z"/></g>
+            <g class="parallax-mid"><path class="main-volcano" d="M32 584 C250 530 390 502 542 408 C648 342 724 228 766 154 C816 236 864 340 1008 434 C1080 474 1142 520 1188 584 Z"/></g>
+            <g class="cloud-sea cloud-a"><path d="M0 410 C146 378 270 396 416 372 C588 344 720 366 872 340 C1014 316 1100 328 1200 314 L1200 620 L0 620 Z"/></g><g class="cloud-sea cloud-b"><path d="M0 448 C162 420 328 438 504 414 C660 392 820 412 988 392 C1076 382 1142 392 1200 374 L1200 620 L0 620 Z"/></g><g class="fog-veil"><path d="M0 520 C220 492 434 510 676 488 C882 470 1038 490 1200 476 L1200 620 L0 620 Z"/></g>
+            <g class="route-group"><path class="route-track" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/><path class="route-glow" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/><path class="route-travel" d="M170 520 C258 498 342 490 428 462 C520 430 586 378 640 312 C688 252 722 198 766 154 C800 136 834 124 870 108"/></g>
+            <path class="cable-line" d="M190 510 C332 444 486 330 666 226"/><path class="cable-lights" d="M190 510 C332 444 486 330 666 226"/>
+            <g class="checkpoints"><g class="node stage-1"><circle cx="170" cy="520" r="11"/><text x="200" y="528" data-i18n-svg="schema.stage1">01 Teleférico parking · predawn</text></g><g class="node stage-2"><circle cx="428" cy="462" r="10"/><text x="458" y="470" data-i18n-svg="schema.stage2">02 Montaña Blanca · blue hour</text></g><g class="node stage-3"><circle cx="640" cy="312" r="10"/><text x="670" y="320" data-i18n-svg="schema.stage3">03 PNT 07 · sunrise starts</text></g><g class="node stage-4"><circle cx="766" cy="154" r="10"/><text x="796" y="162" data-i18n-svg="schema.stage4">04 La Rambleta · above clouds</text></g><g class="node stage-5"><circle cx="870" cy="108" r="11"/><text x="900" y="116" data-i18n-svg="schema.stage5">05 Crater ridge · golden light</text></g></g>
           </svg>
         </div>
       </section>
