@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Панорама Анаги и скал Бенихо на закате">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1f3c"/>
+      <stop offset="45%" stop-color="#1f3f63"/>
+      <stop offset="100%" stop-color="#8ba1b1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="48%" r="28%">
+      <stop offset="0%" stop-color="#f0c18f" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f0c18f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect y="560" width="1920" height="30" fill="#a0b0bc" opacity="0.22"/>
+  <path d="M0 640 L180 590 L430 650 L720 580 L990 670 L1260 590 L1570 680 L1920 600 L1920 1080 L0 1080 Z" fill="#4f6377"/>
+  <path d="M0 720 L210 650 L470 740 L770 670 L1030 760 L1320 690 L1600 790 L1920 700 L1920 1080 L0 1080 Z" fill="#3b4a59"/>
+  <path d="M1240 700 L1360 390 L1450 710 Z" fill="#171b22"/>
+  <path d="M1440 740 L1570 430 L1670 760 Z" fill="#10151b"/>
+  <path d="M1640 790 L1770 500 L1880 830 Z" fill="#0d1218"/>
+  <path d="M0 840 L240 770 L530 860 L890 760 L1220 880 L1540 800 L1920 890 L1920 1080 L0 1080 Z" fill="#1a1f27"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+</svg>
