@@ -220,13 +220,13 @@ img {
 }
 
 .shop-hero-hiking .shop-hero-content {
-  max-width: 720px;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  backdrop-filter: none;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.28);
+  max-width: min(760px, 100%);
+  padding: clamp(26px, 3vw, 38px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  background: linear-gradient(124deg, rgba(9, 30, 50, 0.16), rgba(16, 43, 66, 0.05));
+  backdrop-filter: blur(4px);
+  text-shadow: none;
 }
 
 .shop-hero-hiking .shop-hero-content .eyebrow {
@@ -241,7 +241,8 @@ img {
 }
 
 .shop-hero-hiking .shop-hero-content .hero-copy {
-  max-width: 64ch;
+  max-width: 48ch;
+  line-height: 1.62;
 }
 
 .shop-hero h1 {
@@ -258,6 +259,20 @@ img {
 
 .shop-hero .hero-copy > .hero-bullet-grid {
   margin-top: 16px;
+}
+
+.shop-hero-hiking h1 {
+  margin-bottom: 22px;
+}
+
+.shop-hero-hiking .hero-actions {
+  margin-top: 34px;
+}
+
+.shop-hero-hiking .hero-shade {
+  background:
+    radial-gradient(78% 66% at 18% 44%, rgba(11, 34, 56, 0.17) 0%, rgba(11, 34, 56, 0.07) 52%, rgba(11, 34, 56, 0) 80%),
+    linear-gradient(180deg, rgba(11, 31, 50, 0.02) 0%, rgba(11, 31, 50, 0.01) 46%, rgba(11, 31, 50, 0.08) 100%);
 }
 
 .hero-bullet-grid {
@@ -1854,6 +1869,20 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .shop-hero .hero-copy {
     font-size: 15.5px;
+  }
+
+  .shop-hero-hiking {
+    padding: 112px 16px 40px;
+  }
+
+  .shop-hero-hiking .shop-hero-content {
+    max-width: 100%;
+    padding: 22px 16px;
+  }
+
+  .shop-hero-hiking .shop-hero-content .hero-copy {
+    max-width: 33ch;
+    line-height: 1.56;
   }
 
   .hero-bullet-grid {
