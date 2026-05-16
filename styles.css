@@ -2260,6 +2260,17 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .hero-routes .hero-actions .primary-btn {
     width: 100%;
   }
+
+  .teide-guide-page .hero {
+    padding-top: 108px;
+    padding-bottom: 30px;
+  }
+
+  .teide-guide-page .hero h1 {
+    max-width: 13ch;
+    font-size: clamp(27px, 8vw, 34px);
+    line-height: 1;
+  }
 }
 
 
@@ -2278,9 +2289,50 @@ html[lang="ru"] .acclimatize-actions .section-link {
   max-width: 68ch;
 }
 
+.teide-guide-page .hero-content {
+  max-width: min(54ch, 100%);
+  padding: clamp(18px, 2.1vw, 26px);
+}
+
+.teide-guide-page .hero h1 {
+  max-width: 16ch;
+  margin-bottom: 12px;
+  font-size: clamp(30px, 3.7vw, 52px);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.teide-guide-page .hero-actions {
+  margin-top: 16px;
+}
+
+.teide-guide-page p,
+.teide-guide-page li,
+.teide-guide-page dd {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.teide-guide-page .intro p,
+.teide-guide-page .acclimatize-copy p,
+.teide-guide-page .permit-rule p,
+.teide-guide-page .permit-actions p,
+.teide-guide-page .route-card-unified .route-copy > p,
+.teide-guide-page footer p {
+  max-width: 62ch;
+  text-wrap: pretty;
+}
+
+@media (max-width: 980px) {
+  .teide-guide-page .hero h1 {
+    max-width: 15ch;
+    font-size: clamp(28px, 7.2vw, 42px);
+    line-height: 0.98;
+  }
+}
+
 .plan-flow,
 .mini-products,
 .permit-grid {
   align-items: stretch;
 }
-
