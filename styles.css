@@ -656,55 +656,6 @@ dd {
   filter: brightness(1.04) saturate(1.03);
 }
 
-
-.hero-routes-ru .hero-shade {
-  background:
-    radial-gradient(72% 64% at 18% 36%, rgba(7, 12, 16, 0.62) 0%, rgba(7, 12, 16, 0.24) 54%, rgba(7, 12, 16, 0) 100%),
-    linear-gradient(180deg, rgba(10, 13, 11, 0.04) 0%, rgba(10, 13, 11, 0.22) 100%);
-}
-
-.hero-routes-ru .hero-content {
-  position: relative;
-  isolation: isolate;
-}
-
-.hero-routes-ru .hero-content::before {
-  content: "";
-  position: absolute;
-  inset: -14% -10% -18% -11%;
-  z-index: -1;
-  pointer-events: none;
-  background:
-    radial-gradient(120% 96% at 18% 40%, rgba(8, 12, 15, 0.64) 0%, rgba(8, 12, 15, 0.28) 48%, rgba(8, 12, 15, 0) 100%),
-    linear-gradient(100deg, rgba(8, 12, 15, 0.40) 0%, rgba(8, 12, 15, 0.18) 56%, rgba(8, 12, 15, 0) 100%);
-}
-
-.hero-routes-ru .hero-content h1,
-.hero-routes-ru .hero-copy {
-  color: #f5f8f6;
-}
-
-.hero-routes-ru .hero-copy {
-  text-shadow: 0 3px 20px rgba(0,0,0,.35);
-}
-
-.hero-routes-ru > img {
-  filter: brightness(1.02) saturate(1.04);
-}
-
-.hero-routes-ru .eyebrow {
-  display: inline-flex;
-  min-height: 30px;
-  align-items: center;
-  padding: 0 12px;
-  border: 1px solid rgba(204,255,61,.45);
-  border-radius: 999px;
-  background: rgba(204,255,61,.14);
-  color: var(--acid);
-  letter-spacing: 0.04em;
-  text-transform: none;
-}
-
 .hero-benefits {
   list-style: none;
   margin: 14px 0 0;
@@ -2055,10 +2006,6 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
   .hero-routes .hero-content::before {
     inset: -14% -7% -16% -7%;
-  }
-
-  .hero-routes-ru .hero-content::before {
-    inset: -16% -8% -18% -8%;
   }
 
   .hero-routes .hero-content h1 {
