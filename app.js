@@ -687,10 +687,11 @@ const pageContent = {
         ogDescription: "Готовые маршруты по Тенерифе с картой, таймингом, парковками и локальными подсказками."
       },
       hero: {
-        eyebrow: "",
-        title: "Self-guided hiking маршруты по Тенерифе",
-        copy: "<span class=\"hero-bullet-grid\"><span class=\"hero-bullet-card\"><strong>Самостоятельно</strong><span>Идёте в своём ритме и не зависите от группы.</span></span><span class=\"hero-bullet-card\"><strong>Безопасно</strong><span>Мы прошли каждый маршрут, проверили треки и инструкции — можно уверенно идти по шагам.</span></span><span class=\"hero-bullet-card\"><strong>Проверено</strong><span>Рекомендуем только лучшие маршруты острова, которые прошли лично.</span></span><span class=\"hero-bullet-card\"><strong>Легко подготовиться</strong><span>В каждом гайде есть полная подготовка от и до перед стартом.</span></span></span>",
-        cta: "Смотреть маршруты",
+        eyebrow: "Canary.Hikes · Self-guided",
+        title: "Готовые self-guided хайкинговые маршруты по Канарским островам",
+        copy: "Треки, парковки, точки старта, логистика и честные подсказки — чтобы не собирать маршрут из блогов, карт и десятка хайкинг-приложений.",
+        benefits: ["Без хаоса из блогов и приложений", "Не нужно тратить отпуск на планирование", "Без толп и экскурсионных групп"],
+        cta: "Выбрать маршрут",
         image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Панорама Анаги и скал Бенихо"
       },
@@ -903,7 +904,7 @@ function renderShop(lang, page) {
   const ui = shopUi[lang];
   document.querySelector("main").className = "shop-page";
   document.querySelector("main").innerHTML = `
-    <section class="shop-hero">
+    <section class="shop-hero shop-hero-${page}">
       <img src="${pageData.hero.image}" alt="${pageData.hero.alt}" />
       <div class="hero-shade"></div>
       <div class="shop-hero-content">
@@ -913,6 +914,7 @@ function renderShop(lang, page) {
         <div class="hero-actions">
           <a class="primary-btn" href="#products">${pageData.hero.cta}</a>
         </div>
+        ${Array.isArray(pageData.hero.benefits) && pageData.hero.benefits.length ? `<ul class="hero-benefits">${pageData.hero.benefits.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
       </div>
     </section>
     <section id="products" class="shop-section section-pad">
