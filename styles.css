@@ -596,8 +596,25 @@ dd {
 
 .hero-routes .hero-shade {
   background:
-    linear-gradient(98deg, rgba(8, 10, 8, 0.72) 0%, rgba(8, 10, 8, 0.38) 52%, rgba(8, 10, 8, 0.1) 100%),
-    linear-gradient(180deg, rgba(10, 13, 11, 0) 58%, rgba(10, 13, 11, 0.34) 100%);
+    radial-gradient(84% 72% at 24% 42%, rgba(6, 10, 13, 0.46) 0%, rgba(6, 10, 13, 0.18) 56%, rgba(6, 10, 13, 0) 100%),
+    linear-gradient(180deg, rgba(10, 13, 11, 0.06) 0%, rgba(10, 13, 11, 0.28) 100%);
+}
+
+.hero-routes .hero-content {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-routes .hero-content::before {
+  content: "";
+  position: absolute;
+  inset: -12% -9% -16% -10%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(130% 100% at 22% 42%, rgba(8, 12, 15, 0.56) 0%, rgba(8, 12, 15, 0.24) 52%, rgba(8, 12, 15, 0) 100%),
+    linear-gradient(100deg, rgba(8, 12, 15, 0.34) 0%, rgba(8, 12, 15, 0.14) 54%, rgba(8, 12, 15, 0) 100%);
+  filter: blur(2px);
 }
 
 .hero-routes .hero-content h1 {
@@ -610,7 +627,7 @@ dd {
 }
 
 .hero-routes .hero-copy {
-  color: rgba(236, 243, 238, 0.9);
+  color: rgba(242, 246, 243, 0.92);
   max-width: 620px;
   font-size: clamp(18px, 1.9vw, 21px);
   line-height: 1.55;
@@ -636,7 +653,56 @@ dd {
 .hero-routes > img {
   object-fit: cover;
   object-position: 55% center;
-  filter: brightness(1.1) saturate(1.02);
+  filter: brightness(1.04) saturate(1.03);
+}
+
+
+.hero-routes-ru .hero-shade {
+  background:
+    radial-gradient(72% 64% at 18% 36%, rgba(7, 12, 16, 0.62) 0%, rgba(7, 12, 16, 0.24) 54%, rgba(7, 12, 16, 0) 100%),
+    linear-gradient(180deg, rgba(10, 13, 11, 0.04) 0%, rgba(10, 13, 11, 0.22) 100%);
+}
+
+.hero-routes-ru .hero-content {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-routes-ru .hero-content::before {
+  content: "";
+  position: absolute;
+  inset: -14% -10% -18% -11%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 96% at 18% 40%, rgba(8, 12, 15, 0.64) 0%, rgba(8, 12, 15, 0.28) 48%, rgba(8, 12, 15, 0) 100%),
+    linear-gradient(100deg, rgba(8, 12, 15, 0.40) 0%, rgba(8, 12, 15, 0.18) 56%, rgba(8, 12, 15, 0) 100%);
+}
+
+.hero-routes-ru .hero-content h1,
+.hero-routes-ru .hero-copy {
+  color: #f5f8f6;
+}
+
+.hero-routes-ru .hero-copy {
+  text-shadow: 0 3px 20px rgba(0,0,0,.35);
+}
+
+.hero-routes-ru > img {
+  filter: brightness(1.02) saturate(1.04);
+}
+
+.hero-routes-ru .eyebrow {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(204,255,61,.45);
+  border-radius: 999px;
+  background: rgba(204,255,61,.14);
+  color: var(--acid);
+  letter-spacing: 0.04em;
+  text-transform: none;
 }
 
 .hero-benefits {
@@ -1985,6 +2051,14 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .hero-routes .hero-content {
     max-width: 100%;
     padding: 0;
+  }
+
+  .hero-routes .hero-content::before {
+    inset: -14% -7% -16% -7%;
+  }
+
+  .hero-routes-ru .hero-content::before {
+    inset: -16% -8% -18% -8%;
   }
 
   .hero-routes .hero-content h1 {
