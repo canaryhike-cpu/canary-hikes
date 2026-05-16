@@ -687,10 +687,10 @@ const pageContent = {
         ogDescription: "Готовые маршруты по Тенерифе с картой, таймингом, парковками и локальными подсказками."
       },
       hero: {
-        eyebrow: "",
-        title: "Self-guided hiking маршруты по Тенерифе",
+        eyebrow: "Canary.Hikes · Self-guided",
+        title: "Готовые self-guided хайкинговые маршруты по Канарским островам",
         copy: "<span class=\"hero-bullet-grid\"><span class=\"hero-bullet-card\"><strong>Самостоятельно</strong><span>Идёте в своём ритме и не зависите от группы.</span></span><span class=\"hero-bullet-card\"><strong>Безопасно</strong><span>Мы прошли каждый маршрут, проверили треки и инструкции — можно уверенно идти по шагам.</span></span><span class=\"hero-bullet-card\"><strong>Проверено</strong><span>Рекомендуем только лучшие маршруты острова, которые прошли лично.</span></span><span class=\"hero-bullet-card\"><strong>Легко подготовиться</strong><span>В каждом гайде есть полная подготовка от и до перед стартом.</span></span></span>",
-        cta: "Смотреть маршруты",
+        cta: "Выбрать маршрут",
         image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Панорама Анаги и скал Бенихо"
       },
@@ -903,7 +903,7 @@ function renderShop(lang, page) {
   const ui = shopUi[lang];
   document.querySelector("main").className = "shop-page";
   document.querySelector("main").innerHTML = `
-    <section class="shop-hero">
+    <section class="shop-hero shop-hero-${page}">
       <img src="${pageData.hero.image}" alt="${pageData.hero.alt}" />
       <div class="hero-shade"></div>
       <div class="shop-hero-content">
