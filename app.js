@@ -9,9 +9,9 @@ const content = {
     siteNav: { hiking: "Hiking Routes", road: "Road Trips", teide: "Teide Guide" },
     nav: { routes: "Routes", permits: "Permits", cable: "Cable car", gear: "Gear", logistics: "Logistics" },
     hero: {
-      eyebrow: "Action guide",
-      title: "How to climb Mount Teide: route, permits and descent",
-      copy: "A practical guide to the Mount Teide sunrise hike: PNT 07 via Montaña Blanca, Teide permits, cable car tickets, parking, gear, descent options and high-altitude realities.",
+      eyebrow: "Canary.Hikes · summit guide",
+      title: "Climb Teide with a clear summit plan",
+      copy: "A practical guide to climbing Teide: routes via Montaña Blanca, permits, parking, cable car logistics and high-altitude considerations.",
       imageAlt: "Sunrise above the clouds on the Mount Teide hiking route in Tenerife",
       cta: "Plan the ascent",
       panelLabel: "Summit",
@@ -25,24 +25,24 @@ const content = {
     },
     intro: {
       eyebrow: "Read this first",
-      title: "This is not a walk. It is a real high-mountain ascent.",
-      copy: "Mount Teide is one of the most beautiful hikes in Tenerife and the Canary Islands. Close to the summit the route becomes colder, windier and more physical: volcanic scree, thin air and slower pace are part of the ascent. With preparation, the sunrise above the clouds becomes unforgettable."
+      title: "This is not a casual walk — it is a real high-altitude ascent.",
+      copy: "Teide is one of the most impressive hiking routes on Tenerife and across the Canary Islands. Higher up the mountain the air gets thinner, the terrain rougher and the pace slower. But sunrise above the clouds makes the climb unforgettable."
     },
     plan: {
       eyebrow: "Step by step",
       title: "Four decisions for a clean Teide ascent.",
       copy: "For a first Teide ascent, keep the sequence simple: solve parking and the approach to Montaña Blanca, climb PNT 07 to La Rambleta with a route permit, add the separate PNT 10 permit for the crater, then follow your descent plan.",
       step1: "Parking and approach",
-      step1Text: "Leave the car at Teleférico del Teide, or use two cars, then walk the easy 4.8 km to Montaña Blanca.",
+      step1Text: "Leave the car at Teleférico del Teide or use two cars, then walk the calm 4.8 km approach to Montaña Blanca.",
       step1Link: "Open logistics",
       step2: "Main ascent PNT 07",
-      step2Text: "This route also needs a permit. It is the main climb to La Rambleta: the longest part of the ascent, with the biggest elevation gain.",
+      step2Text: "This permit is required for the main ascent towards La Rambleta and covers the longest climbing section with most of the elevation gain.",
       step2Link: "Open PNT 07",
       step3: "Separate PNT 10",
-      step3Text: "After the ascent-route permit, add a separate PNT 10 permit if you go from La Rambleta to the crater.",
+      step3Text: "If you want to continue from La Rambleta to the crater, apply separately for the PNT 10 permit in advance.",
       step3Link: "Permits",
       step4: "Descent plan",
-      step4Text: "Descend by cable car if it is running, or switch to the walking backup if wind closes it.",
+      step4Text: "Descend by cable car if it operates, or keep the hiking descent as a backup option in case of strong wind.",
       step4Link: "Descent options"
     },
     routes: {
@@ -62,9 +62,9 @@ const content = {
     },
     stats: { distance: "Distance", time: "Time", ascentTime: "Ascent time", gain: "Gain", start: "Start", routeType: "Type", highest: "Highest", difficulty: "Difficulty", medium: "Medium", high: "High", veryHigh: "Very high", descent: "Descent", reverse: "Reverse ascent", reverseAscent: "Reverse ascent" },
     permits: {
-      eyebrow: "Access rules", title: "Permits are part of the route, not admin afterthoughts.",
+      eyebrow: "Access rules", title: "Permits are part of the route — not a formality.",
       allTitle: "You need permits for every chosen trail",
-      allText: "Book the permit for your ascent route, plus PNT 10 if you go to the crater. Park staff check permits on the trail.",
+      allText: "Choose your ascent route first, then apply for the matching permit. If you plan to continue to the crater, PNT 10 requires a separate permit. Rangers may check permits directly on the trail.",
       linksTitle: "Official permit pages",
       linksText: "Book through Tenerife ON. You may need to register or log in before selecting a date.",
       miniRoute: "Route permit",
@@ -100,7 +100,7 @@ const content = {
     },
     logistics: {
       eyebrow: "Parking and route flow", title: "Start at Montaña Blanca. Finish at your car.",
-      copy: "The cleanest setup is to park at the lower cable-car station, walk 4.8 km to Montaña Blanca, climb to the summit area, then descend by Teleférico back to the car.",
+      copy: "The cleanest setup is leaving the car at the lower Teleférico del Teide station, walking 4.8 km to Montaña Blanca, climbing towards the summit area and descending back by cable car.",
       twoCars: "Another good option is two cars: leave one at the start and one at the finish. This is especially useful if you choose a long route or a walking descent.",
       step1: "Park at Teleférico del Teide", step1Text: "The simplest option if you plan to descend by cable car.",
       step2: "Walk to Montaña Blanca", step2Text: "About 4.8 km, 50-60 minutes at a calm pace, minimal height difference.",
@@ -143,12 +143,12 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Altitude first",
-      title: "Acclimatization before Teide.",
-      copy: "Teide starts where many people already feel altitude. A shorter route before summit night helps you test pace, layers and breathing before committing to a cold, dark climb.",
+      title: "Do an acclimatization hike before Teide.",
+      copy: "The Teide ascent already starts high above sea level, where many hikers first notice thinner air and slower pace. A shorter acclimatization hike helps test breathing, rhythm and overall comfort before summit night.",
       routeOne: "Guajara acclimatization loop",
-      routeOneText: "A strong but calmer high-altitude day in Teide National Park.",
+      routeOneText: "Route to the summit of Guajara with remains of the old observatory and wide panoramic views towards Teide. A calmer acclimatization hike with steady elevation gain and beautiful evening light in the national park.",
       routeTwo: "Pico Viejo crater route",
-      routeTwoText: "Volcanic terrain, big views and a good test before the summit.",
+      routeTwoText: "Volcanic route towards the massive Pico Viejo crater with stronger elevation gain and a more alpine atmosphere. A very good preparation before the main Teide ascent.",
       cta: "Choose a prep route",
       note: "These routes are part of the Canary.Hikes route shop."
     },
@@ -165,8 +165,8 @@ const content = {
     nav: { routes: "Routen", permits: "Genehmigungen", cable: "Seilbahn", gear: "Ausrüstung", logistics: "Logistik" },
     hero: {
       eyebrow: "Handlungsleitfaden",
-      title: "Besteige den Teide mit einem klaren Wanderplan.",
-      copy: "Ein praktischer Guide für die Teide Wanderung bei Nacht: PNT 07 über Montaña Blanca, Genehmigungen, PNT 10 zum Krater, Seilbahn, Parken, Ausrüstung, Abstieg und Höhenrealität.",
+      title: "Mit einem klaren Plan auf den Teide steigen",
+      copy: "Praktischer Guide für den Teide-Aufstieg: Route über Montaña Blanca, Genehmigungen, Parken, Seilbahn und Höhenbedingungen.",
       imageAlt: "Sonnenaufgang über den Wolken auf der Teide Wanderroute auf Teneriffa",
       cta: "Aufstieg planen", panelLabel: "Gipfel", panelText: "Höchster Punkt Spaniens und der atlantischen Inseln."
     },
@@ -185,16 +185,16 @@ const content = {
       title: "Vier Entscheidungen für einen sauberen Teide-Aufstieg.",
       copy: "Für den ersten Teide-Aufstieg bleibt die Reihenfolge einfach: Parken und Zustieg nach Montaña Blanca klären, PNT 07 mit Routengenehmigung nach La Rambleta steigen, die separate PNT-10-Genehmigung zum Krater ergänzen und danach dem Abstiegsplan folgen.",
       step1: "Parken und Zustieg",
-      step1Text: "Lass das Auto am Teleférico del Teide oder nutze zwei Autos und gehe dann die einfachen 4,8 km nach Montaña Blanca.",
+      step1Text: "Lass das Auto am Teleférico del Teide oder nutze zwei Autos und gehe anschließend die ruhigen 4,8 km bis Montaña Blanca.",
       step1Link: "Logistik öffnen",
       step2: "Hauptaufstieg PNT 07",
-      step2Text: "Auch für diese Route brauchst du eine Genehmigung. Das ist der Hauptaufstieg nach La Rambleta: der längste Teil der Route mit dem größten Höhenunterschied.",
+      step2Text: "Diese Genehmigung ist für den Hauptaufstieg Richtung La Rambleta erforderlich und deckt den längsten Abschnitt mit dem größten Höhengewinn ab.",
       step2Link: "PNT 07 öffnen",
       step3: "Separates PNT 10",
-      step3Text: "Nach der Genehmigung für die Aufstiegsroute brauchst du zusätzlich eine separate PNT-10-Genehmigung, wenn du von La Rambleta zum Krater gehst.",
+      step3Text: "Wenn du von La Rambleta weiter zum Krater willst, beantrage die PNT-10-Genehmigung separat und rechtzeitig im Voraus.",
       step3Link: "Genehmigungen",
       step4: "Abstiegsplan",
-      step4Text: "Steige per Seilbahn ab, wenn sie fährt, oder wechsle auf den Fußabstieg, falls Wind sie schließt.",
+      step4Text: "Steige mit der Seilbahn ab, wenn sie fährt, oder halte den Fußabstieg als Reserve bei starkem Wind bereit.",
       step4Link: "Abstieg"
     },
     routes: {
@@ -211,9 +211,9 @@ const content = {
     },
     stats: { distance: "Distanz", time: "Zeit", ascentTime: "Aufstiegszeit", gain: "Aufstieg", start: "Start", routeType: "Typ", highest: "Höchster Punkt", difficulty: "Schwierigkeit", medium: "Mittel", high: "Hoch", veryHigh: "Sehr hoch", descent: "Abstieg", reverse: "Umgekehrter Aufstieg", reverseAscent: "Umgekehrter Aufstieg" },
     permits: {
-      eyebrow: "Zugang", title: "Genehmigungen sind Teil der Route, kein Detail am Rand.",
+      eyebrow: "Zugang", title: "Genehmigungen sind Teil der Route — keine Formalität.",
       allTitle: "Du brauchst Genehmigungen für alle gewählten Wege",
-      allText: "Buche die Genehmigung für deine Aufstiegsroute plus PNT 10 für den Krater. Der Nationalpark kontrolliert auf dem Weg.",
+      allText: "Wähle zuerst deine Aufstiegsroute und beantrage dann die passende Genehmigung. Für den Weiterweg zum Krater ist PNT 10 separat erforderlich. Ranger können Genehmigungen direkt auf dem Weg kontrollieren.",
       linksTitle: "Offizielle Genehmigungsseiten",
       linksText: "Buche über Tenerife ON. Für die Datumsauswahl musst du dich eventuell registrieren oder einloggen.",
       miniRoute: "Routengenehmigung",
@@ -246,7 +246,7 @@ const content = {
     },
     logistics: {
       eyebrow: "Parken und Ablauf", title: "Starte an Montaña Blanca. Ende bei deinem Auto.",
-      copy: "Am saubersten ist: Auto an der unteren Seilbahnstation lassen, 4,8 km nach Montaña Blanca gehen, zum Gipfelbereich aufsteigen und mit dem Teleférico zurück zum Auto fahren.",
+      copy: "Am saubersten ist es, das Auto an der unteren Station des Teleférico del Teide zu lassen, 4,8 km bis Montaña Blanca zu gehen, Richtung Gipfelbereich aufzusteigen und mit der Seilbahn zurückzufahren.",
       twoCars: "Eine zweite gute Option sind zwei Autos: eins am Start und eins am Ziel. Das ist besonders praktisch bei einer langen Route oder einem Abstieg zu Fuß.",
       step1: "Am Teleférico del Teide parken", step1Text: "Die einfachste Option, wenn du mit der Seilbahn absteigen willst.",
       step2: "Nach Montaña Blanca gehen", step2Text: "Etwa 4,8 km, 50-60 Minuten ruhig, kaum Höhenunterschied.",
@@ -305,11 +305,11 @@ const content = {
     siteNav: { hiking: "Хайкинг маршруты", road: "Автомаршруты", teide: "Гид по Тейде" },
     nav: { routes: "Маршруты", permits: "Разрешения", cable: "Канатка", gear: "Снаряжение", logistics: "Логистика" },
     hero: {
-      eyebrow: "РУКОВОДСТВО К ДЕЙСТВИЮ",
-      title: "Поднимитесь на Тейде с понятным планом",
-      copy: "Пошаговый план восхождения, разрешения, логистика и снаряжение — чтобы пройти маршрут спокойно и безопасно.",
+      eyebrow: "Canary.Hikes · путеводитель по восхождению",
+      title: "Поднимитесь на Тейде с понятным планом восхождения",
+      copy: "Практический гид по восхождению на Тейде: маршрут через Montaña Blanca, разрешения, парковки, канатная дорога, варианты спуска и особенности высоты.",
       imageAlt: "Рассвет над облаками на маршруте восхождения на Тейде на Тенерифе",
-      cta: "Спланировать подъем", panelLabel: "Вершина", panelText: "Высшая точка Испании и Атлантических островов."
+      cta: "Спланировать восхождение", panelLabel: "Вершина", panelText: "Высшая точка Испании и Атлантических островов."
     },
     quick: {
       height: "Большая высота", heightText: "После 3000 м падает темп и становится тяжелее дышать.",
@@ -329,13 +329,13 @@ const content = {
       step1Text: "Можно оставить машину у Teleférico del Teide или поехать двумя машинами. Дальше — пройти 4,8 км до Montaña Blanca.",
       step1Link: "Смотреть логистику",
       step2: "Основной подъем PNT 07",
-      step2Text: "На этот маршрут необходимо разрешение. Это основной подъем к La Rambleta: самая протяженная часть маршрута с самым большим перепадом высоты.",
+      step2Text: "На этот маршрут необходимо разрешение. Это основной подъём к La Rambleta и самая длинная часть восхождения с главным набором высоты.",
       step2Link: "Открыть PNT 07",
       step3: "Финальный участок PNT 10",
       step3Text: "На этот маршрут также требуется разрешение. Это финальный участок подъема от La Rambleta к кратеру.",
       step3Link: "Разрешения",
       step4: "Спуск",
-      step4Text: "Спускайтесь на канатке, если она работает, или переходите на пеший запасной план, если ее закроет ветер.",
+      step4Text: "Спускайтесь на канатке, если она работает, или держите пеший спуск как запасной вариант на случай ветра.",
       step4Link: "Варианты спуска"
     },
     routes: {
@@ -419,12 +419,12 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Сначала высота",
-      title: "Перед Тейде стоит сделать акклиматизационный маршрут.",
+      title: "Перед Тейде стоит пройти акклиматизационный маршрут.",
       copy: "Восхождение на Тейде начинается уже выше 2500 метров, где многие начинают чувствовать высоту и нехватку воздуха.\n\nОдин акклиматизационный маршрут перед восхождением поможет проверить темп, дыхание и самочувствие перед ночным стартом.",
       routeOne: "Маршрут на Guajara",
-      routeOneText: "Сильный акклиматизационный маршрут: стабильный набор высоты, ровный темп и ощущение настоящего высокогорья. На вершине видны остатки старой обсерватории, а главные впечатления — рельеф, воздух и широкие панорамы Тейде.",
+      routeOneText: "Маршрут на вершину Guajara с остатками старой обсерватории и панорамными видами на Тейде. Хороший вариант для спокойной акклиматизации, ощущения высоты и заката в национальном парке.",
       routeTwo: "Маршрут к кратеру Pico Viejo",
-      routeTwoText: "Выразительный вулканический маршрут с хорошим набором высоты, живым рельефом и большими видами перед штурмом вершины. Это такой же полноценный тест на темп, дыхание и ощущение высокогорья перед Тейде.",
+      routeTwoText: "Вулканический маршрут к огромному кратеру Pico Viejo с хорошим набором высоты и ощущением настоящего высокогорья. Отличная подготовка перед основным восхождением на Тейде.",
       cta: "Выбрать маршрут для подготовки",
       note: "Эти маршруты будут в магазине хайкинг-маршрутов Canary.Hikes."
     },
@@ -441,8 +441,8 @@ const content = {
     nav: { routes: "Rutas", permits: "Permisos", cable: "Teleférico", gear: "Equipo", logistics: "Logística" },
     hero: {
       eyebrow: "Guía de acción",
-      title: "Sube al Teide con un plan claro.",
-      copy: "Una guía práctica para subir al Teide en Tenerife: ruta PNT 07 por Montaña Blanca, permisos, PNT 10 al cráter, teleférico, aparcamiento, equipo, descenso y realidad de la altitud.",
+      title: "Sube al Teide con un plan claro de ascenso",
+      copy: "Guía práctica para subir al Teide: ruta por Montaña Blanca, permisos, aparcamiento, teleférico y condiciones de altura.",
       imageAlt: "Amanecer sobre las nubes en la ruta para subir al Teide en Tenerife",
       cta: "Planificar ascenso", panelLabel: "Cumbre", panelText: "Punto más alto de España y de las islas atlánticas."
     },
@@ -461,16 +461,16 @@ const content = {
       title: "Cuatro decisiones para subir al Teide sin caos.",
       copy: "Para una primera subida al Teide, mantén una secuencia simple: resuelve aparcamiento y aproximación a Montaña Blanca, sube por PNT 07 a La Rambleta con permiso de ruta, añade el permiso PNT 10 separado para el cráter y separa el plan de descenso.",
       step1: "Aparcamiento y aproximación",
-      step1Text: "Deja el coche en Teleférico del Teide o usa dos coches, y camina los 4,8 km fáciles hasta Montaña Blanca.",
+      step1Text: "Deja el coche en Teleférico del Teide o usa dos coches, y recorre con calma los 4,8 km de aproximación hasta Montaña Blanca.",
       step1Link: "Abrir logística",
       step2: "Ascenso principal PNT 07",
-      step2Text: "Esta ruta también necesita permiso. Es la subida principal hasta La Rambleta: la parte más larga de la ruta y con mayor desnivel.",
+      step2Text: "Este permiso es obligatorio para la subida principal hacia La Rambleta y cubre el tramo más largo con la mayor parte del desnivel.",
       step2Link: "Abrir PNT 07",
       step3: "PNT 10 separado",
-      step3Text: "Después del permiso para la ruta de subida, añade un permiso PNT 10 separado si vas desde La Rambleta hasta el cráter.",
+      step3Text: "Si quieres continuar desde La Rambleta hasta el cráter, solicita por separado el permiso PNT 10 con antelación.",
       step3Link: "Permisos",
       step4: "Plan de descenso",
-      step4Text: "Baja en teleférico si funciona, o cambia al plan B a pie si el viento lo cierra.",
+      step4Text: "Baja en teleférico si está operativo, o conserva el descenso a pie como opción de respaldo en caso de viento fuerte.",
       step4Link: "Opciones de descenso"
     },
     routes: {
@@ -487,9 +487,9 @@ const content = {
     },
     stats: { distance: "Distancia", time: "Tiempo", ascentTime: "Tiempo de subida", gain: "Subida", start: "Inicio", routeType: "Tipo", highest: "Altura máx.", difficulty: "Dificultad", medium: "Media", high: "Alta", veryHigh: "Muy alta", descent: "Bajada", reverse: "Ascenso inverso", reverseAscent: "Ascenso inverso" },
     permits: {
-      eyebrow: "Reglas de acceso", title: "Los permisos son parte de la ruta, no un detalle administrativo.",
+      eyebrow: "Reglas de acceso", title: "Los permisos son parte de la ruta — no una formalidad.",
       allTitle: "Necesitas permisos para cada sendero elegido",
-      allText: "Reserva el permiso de tu ruta de subida y PNT 10 si vas al cráter. El parque revisa permisos en el sendero.",
+      allText: "Elige primero tu ruta de ascenso y luego solicita el permiso correspondiente. Si planeas continuar al cráter, PNT 10 requiere un permiso separado. Los guardas pueden revisar permisos directamente en el sendero.",
       linksTitle: "Páginas oficiales de permisos",
       linksText: "Reserva a través de Tenerife ON. Puede que tengas que registrarte o iniciar sesión antes de elegir fecha.",
       miniRoute: "Permiso de ruta",
@@ -522,7 +522,7 @@ const content = {
     },
     logistics: {
       eyebrow: "Aparcamiento y recorrido", title: "Empieza en Montaña Blanca. Termina en tu coche.",
-      copy: "La opción más cómoda: dejar el coche en la estación inferior del teleférico, caminar 4,8 km hasta Montaña Blanca, subir a la zona de cumbre y bajar en el Teleférico hasta el coche.",
+      copy: "La configuración más limpia es dejar el coche en la estación inferior del Teleférico del Teide, caminar 4,8 km hasta Montaña Blanca, subir hacia la zona de cumbre y bajar de regreso en teleférico.",
       twoCars: "Otra buena opción son dos coches: uno en el inicio y otro en el final. Es especialmente útil para una ruta larga o una bajada a pie.",
       step1: "Aparcar en Teleférico del Teide", step1Text: "La opción más sencilla si planeas bajar en teleférico.",
       step2: "Caminar a Montaña Blanca", step2Text: "Unos 4,8 km, 50-60 minutos a ritmo tranquilo, con poco desnivel.",

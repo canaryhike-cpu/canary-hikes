@@ -2261,3 +2261,26 @@ html[lang="ru"] .acclimatize-actions .section-link {
     width: 100%;
   }
 }
+
+
+.hero-content h1,
+.section-head h2,
+.acclimatize h2 {
+  text-wrap: balance;
+  hyphens: none;
+}
+
+.hero-copy,
+.intro p,
+.acclimatize-copy p,
+.permit-rule p,
+.permit-actions p {
+  max-width: 68ch;
+}
+
+.plan-flow,
+.mini-products,
+.permit-grid {
+  align-items: stretch;
+}
+
