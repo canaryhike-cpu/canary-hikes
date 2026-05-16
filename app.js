@@ -73,7 +73,7 @@ const content = {
       miniCraterText: "PNT 10 is separate for the final crater section.",
       miniCheck: "Trail check",
       miniCheckText: "Park staff can check permits at any time.",
-      pnt10Title: "PNT 10: Telesforo Bravo",
+      pnt10Title: "PNT 10: тропа Телесфоро Браво",
       pnt10Text: "The final 700 m from La Rambleta to the Teide crater needs a separate permit, even if you already have PNT 07 or PNT 09 permission. Park staff check permits directly on the trail, day or night.",
       bookTitle: "Book early",
       bookText: "Permits can disappear quickly in summer, on weekends, during full moon and for popular sunrise dates.",
@@ -222,7 +222,7 @@ const content = {
       miniCraterText: "PNT 10 ist separat für das letzte Kraterstück.",
       miniCheck: "Kontrolle",
       miniCheckText: "Parkmitarbeiter können jederzeit kontrollieren.",
-      pnt10Title: "PNT 10: Telesforo Bravo", pnt10Text: "Die letzten 700 m von La Rambleta zum Teide-Krater brauchen eine separate Genehmigung, auch wenn du PNT 07 oder PNT 09 gebucht hast. Parkmitarbeiter kontrollieren direkt auf dem Weg, tagsüber und nachts.",
+      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "Die letzten 700 m von La Rambleta zum Teide-Krater brauchen eine separate Genehmigung, auch wenn du PNT 07 oder PNT 09 gebucht hast. Parkmitarbeiter kontrollieren direkt auf dem Weg, tagsüber und nachts.",
       bookTitle: "Früh buchen", bookText: "Genehmigungen sind im Sommer, an Wochenenden, bei Vollmond und für beliebte Sonnenaufgangsdaten schnell weg.",
       summitTitle: "Letztes Gipfelstück", summitText: "PNT 10 gewinnt rund 160 m in 40-50 Minuten, mit Schwefelgeruch, kaltem Wind, Kraterfelsen und Sonnenaufgang über den Wolken."
     },
@@ -357,7 +357,7 @@ const content = {
       allText: "Оформите разрешение на маршрут подъема и отдельный PNT 10 для кратера. Разрешения проверяют на тропе.",
       linksTitle: "Официальные страницы разрешений",
       linksText: "Бронируйте через Tenerife ON. Для выбора даты может понадобиться регистрация или вход в аккаунт.",
-      pnt10Title: "PNT 10: Telesforo Bravo", pnt10Text: "На маршрут требуется разрешение. Это финальный участок подъема к кратеру Тейде от La Rambleta.",
+      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "На маршрут требуется разрешение. Это финальный участок подъема к кратеру Тейде от La Rambleta.",
       bookTitle: "Бронируйте заранее", bookText: "Места быстро заканчиваются летом, на выходных, в полнолуние и на популярные даты восхождения к рассвету.",
       summitTitle: "Финальный участок", summitText: "PNT 10 набирает около 160 м за 40-50 минут: серный запах, холодный ветер, скалы кратера и рассвет над облаками."
     },
@@ -498,7 +498,7 @@ const content = {
       miniCraterText: "PNT 10 es separado para el tramo final.",
       miniCheck: "Control en sendero",
       miniCheckText: "El personal del parque puede revisar permisos en cualquier momento.",
-      pnt10Title: "PNT 10: Telesforo Bravo", pnt10Text: "Los últimos 700 m desde La Rambleta hasta el cráter del Teide necesitan un permiso separado, incluso si ya tienes permiso PNT 07 o PNT 09. El personal del parque lo revisa en el sendero, de día o de noche.",
+      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "Los últimos 700 m desde La Rambleta hasta el cráter del Teide necesitan un permiso separado, incluso si ya tienes permiso PNT 07 o PNT 09. El personal del parque lo revisa en el sendero, de día o de noche.",
       bookTitle: "Reserva pronto", bookText: "Los permisos se agotan rápido en verano, fines de semana, luna llena y fechas populares de amanecer.",
       summitTitle: "Tramo final", summitText: "PNT 10 sube unos 160 m en 40-50 minutos, con olor a azufre, viento frío, rocas del cráter y amanecer sobre las nubes."
     },
