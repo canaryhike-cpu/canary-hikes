@@ -435,8 +435,9 @@ img {
 }
 
 .hero-content {
+  grid-area: hero-copy;
   position: relative;
-  max-width: 760px;
+  max-width: min(760px, 100%);
   padding: clamp(20px, 3vw, 34px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 14px;
@@ -1521,7 +1522,13 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
 @media (min-width: 941px) {
   .hero-content {
-    max-width: min(760px, calc(100% - 320px));
+    align-self: end;
+  }
+
+  .summit-panel {
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 0;
   }
 
   .summit-panel {
