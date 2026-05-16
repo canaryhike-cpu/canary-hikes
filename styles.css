@@ -231,13 +231,15 @@ img {
 
 .shop-hero-hiking .shop-hero-content .eyebrow {
   display: inline-flex;
-  min-height: 30px;
-  align-items: center;
-  padding: 0 10px;
-  border: 1px solid rgba(204,255,61,.45);
-  border-radius: 999px;
-  background: rgba(204,255,61,.12);
-  color: var(--acid);
+  margin-bottom: 18px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(223, 255, 106, 0.95);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .shop-hero-hiking .shop-hero-content .hero-copy {
