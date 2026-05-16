@@ -561,15 +561,15 @@ dd {
 .hero-routes .hero-content {
   max-width: 820px;
   padding: clamp(22px, 2.8vw, 34px);
-  border-color: rgba(255, 255, 255, 0.24);
-  background: linear-gradient(120deg, rgba(6, 17, 31, 0.44), rgba(9, 27, 45, 0.2));
-  backdrop-filter: blur(6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  background: linear-gradient(120deg, rgba(8, 24, 40, 0.22), rgba(13, 35, 54, 0.08));
+  backdrop-filter: blur(4px);
 }
 
 .hero-routes .hero-shade {
   background:
-    radial-gradient(88% 78% at 21% 44%, rgba(9, 30, 50, 0.34) 0%, rgba(9, 30, 50, 0.16) 52%, rgba(9, 30, 50, 0) 78%),
-    linear-gradient(180deg, rgba(11, 31, 50, 0.08) 0%, rgba(11, 31, 50, 0.02) 45%, rgba(11, 31, 50, 0.18) 100%);
+    radial-gradient(82% 70% at 20% 46%, rgba(11, 34, 56, 0.24) 0%, rgba(11, 34, 56, 0.1) 52%, rgba(11, 34, 56, 0) 80%),
+    linear-gradient(180deg, rgba(11, 31, 50, 0.04) 0%, rgba(11, 31, 50, 0.01) 46%, rgba(11, 31, 50, 0.12) 100%);
 }
 
 .hero-routes .hero-copy {
