@@ -599,11 +599,12 @@ const pageContent = {
         alt: "Volcanic hiking trail in Tenerife"
       },
       products: [
-        ["Anaga Cloud Forest Route Pack", "Misty laurel forest trails, viewpoints and parking notes for a green north Tenerife day.", "Easy-medium", "1 day", "€9"],
-        ["Masca Gorge Day Hike", "A clear plan for the iconic ravine day: timing, permits, boat logic and return options.", "Medium", "1 day", "€12"],
-        ["Chinyero Volcano Loop", "A soft volcanic loop with lava fields, pine forest and low-stress navigation.", "Easy", "3-4 h", "€7"],
-        ["Benijo Sunrise Trail", "A dramatic coastal hike plan for Anaga cliffs, wild beach views and golden morning light.", "Medium", "4-5 h", "€9"],
-        ["Teide National Park Easy Hikes", "Short scenic trails for the national park when you want big views without a summit climb.", "Easy", "Half day", "€10"]
+        ["Guajara", "A route to an old observatory and one of Tenerife’s best sunset viewpoints: wide caldera panoramas, soft light and the feeling that the island is in your hands.", "⚡ Hard", "🔁 Loop", "€14"],
+        ["Pico Viejo", "A real volcanic adventure to a huge crater: lava fields, Martian tones and one of the most impressive geological scenes on the island.", "⚡ Hard", "➡️ Point-to-point", "€15"],
+        ["Anaga", "Mountains, beach and top coastal views in one hike: dramatic ridges, ocean horizon and photogenic stops along the way.", "⚡ Hard", "🔁 Loop", "€13"],
+        ["Ifonche", "A family-friendly route through green forest with panoramas of the south: calm rhythm, pleasant shade and a perfect format for a beautiful walk without rushing.", "🟡 Medium", "🔁 Loop", "€10"],
+        ["Antequera Beach", "A hidden gem of Anaga: a route to a secluded beach through wild terrain, turquoise water and the exact views people come north for.", "⚡ Hard", "🔁 Loop", "€14"],
+        ["Teno", "More than a trail to the lighthouse: lunar landscapes, striking views, a swim stop and a secret return section that turns the track into a full adventure.", "⚡ Hard", "🔁 Loop", "€14"]
       ]
     },
     road: {
@@ -647,11 +648,12 @@ const pageContent = {
         alt: "Vulkanische Wanderroute auf Teneriffa"
       },
       products: [
-        ["Anaga Nebelwald Routenpaket", "Lorbeerwald, Aussichtspunkte und Parkhinweise für einen grünen Tag im Norden Teneriffas.", "Leicht-mittel", "1 Tag", "€9"],
-        ["Masca-Schlucht Tageswanderung", "Ein klarer Plan für die ikonische Schlucht: Timing, Genehmigungen, Boot und Rückweg.", "Mittel", "1 Tag", "€12"],
-        ["Chinyero Vulkanrunde", "Eine entspannte Vulkanrunde mit Lavafeldern, Kiefernwald und leichter Orientierung.", "Leicht", "3-4 h", "€7"],
-        ["Benijo Sunrise Trail", "Ein dramatischer Küstenplan für Anaga-Klippen, wilde Strandblicke und Morgenlicht.", "Mittel", "4-5 h", "€9"],
-        ["Leichte Teide-Nationalpark-Hikes", "Kurze Panoramarouten im Nationalpark, wenn du große Ausblicke ohne Gipfelaufstieg willst.", "Leicht", "Halber Tag", "€10"]
+        ["Guajara", "Route zur alten Sternwarte und zu einem der besten Sonnenuntergangspunkte auf Teneriffa: weite Caldera-Panoramen, weiches Licht und das Gefühl, die Insel liegt dir zu Füßen.", "⚡ Schwer", "🔁 Rundtour", "€14"],
+        ["Pico Viejo", "Ein echtes Vulkan-Abenteuer zu einem riesigen Krater: Lavafelder, marsartige Farben und eine der eindrucksvollsten geologischen Szenen der Insel.", "⚡ Schwer", "➡️ Streckentour", "€15"],
+        ["Anaga", "Berge, Strand und starke Küstenblicke in einer Tour: dramatische Grate, weiter Ozeanhorizont und fotogene Stopps auf der ganzen Strecke.", "⚡ Schwer", "🔁 Rundtour", "€13"],
+        ["Ifonche", "Familienfreundliche Route durch grünen Wald mit Panoramen im Süden der Insel: ruhiger Rhythmus, angenehmer Schatten und perfekt für einen schönen Spaziergang ohne Eile.", "🟡 Mittel", "🔁 Rundtour", "€10"],
+        ["Antequera Beach", "Verstecktes Juwel in Anaga: Weg zu einem abgelegenen Strand durch wildes Gelände, türkisfarbenes Wasser und genau die Ausblicke, für die man in den Norden fährt.", "⚡ Schwer", "🔁 Rundtour", "€14"],
+        ["Teno", "Mehr als nur ein Weg zum Leuchtturm: mondartige Landschaften, starke Aussichtspunkte, Badestopp und ein geheimer Rückweg für ein komplettes Abenteuer.", "⚡ Schwer", "🔁 Rundtour", "€14"]
       ]
     },
     road: {
@@ -744,11 +746,12 @@ const pageContent = {
         alt: "Sendero volcánico en Tenerife"
       },
       products: [
-        ["Anaga Cloud Forest Route Pack", "Bosque de laurisilva, miradores y notas de aparcamiento para un día verde en el norte.", "Fácil-media", "1 día", "€9"],
-        ["Masca Gorge Day Hike", "Plan claro para el barranco icónico: tiempos, permisos, barco y opciones de regreso.", "Media", "1 día", "€12"],
-        ["Chinyero Volcano Loop", "Ruta circular volcánica con campos de lava, pinar y navegación sencilla.", "Fácil", "3-4 h", "€7"],
-        ["Benijo Sunrise Trail", "Plan costero para acantilados de Anaga, playa salvaje y luz bonita de mañana.", "Media", "4-5 h", "€9"],
-        ["Teide National Park Easy Hikes", "Rutas cortas del parque nacional para grandes vistas sin subir a la cumbre.", "Fácil", "Medio día", "€10"]
+        ["Guajara", "Ruta hacia un antiguo observatorio y uno de los mejores atardeceres de Tenerife: panorámicas amplias de la caldera, luz suave y sensación de tener la isla en la palma de la mano.", "⚡ Difícil", "🔁 Circular", "€14"],
+        ["Pico Viejo", "Una aventura volcánica real hacia un cráter enorme: campos de lava, tonos marcianos y una de las escenas geológicas más impresionantes de la isla.", "⚡ Difícil", "➡️ Lineal", "€15"],
+        ["Anaga", "Montaña, playa y grandes vistas de costa en una sola ruta: crestas dramáticas, horizonte oceánico y paradas fotogénicas en todo el recorrido.", "⚡ Difícil", "🔁 Circular", "€13"],
+        ["Ifonche", "Ruta familiar por bosque verde con panorámicas del sur de la isla: ritmo tranquilo, sombra agradable y formato perfecto para pasear sin prisa.", "🟡 Media", "🔁 Circular", "€10"],
+        ["Antequera Beach", "Joya escondida de Anaga: camino a una playa aislada por relieve salvaje, agua turquesa y esas vistas por las que la gente viene al norte.", "⚡ Difícil", "🔁 Circular", "€14"],
+        ["Teno", "Más que una ruta al faro: paisajes lunares, miradores impactantes, parada para baño y un regreso secreto que convierte el track en una aventura completa.", "⚡ Difícil", "🔁 Circular", "€14"]
       ]
     },
     road: {
