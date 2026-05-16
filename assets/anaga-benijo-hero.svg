@@ -1,22 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Панорама Анаги и скал Бенихо на закате">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Anaga Benijo coastal mountains panorama at sunrise">
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#0d1f3c"/>
-      <stop offset="45%" stop-color="#1f3f63"/>
-      <stop offset="100%" stop-color="#8ba1b1"/>
+      <stop offset="0%" stop-color="#09162a"/>
+      <stop offset="45%" stop-color="#1a3553"/>
+      <stop offset="100%" stop-color="#334a5d"/>
     </linearGradient>
-    <radialGradient id="glow" cx="72%" cy="48%" r="28%">
-      <stop offset="0%" stop-color="#f0c18f" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#f0c18f" stop-opacity="0"/>
+    <radialGradient id="sun" cx="74%" cy="32%" r="26%">
+      <stop offset="0%" stop-color="#ffd7a3" stop-opacity="0.95"/>
+      <stop offset="48%" stop-color="#ffb776" stop-opacity="0.34"/>
+      <stop offset="100%" stop-color="#ff9d54" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#274665"/>
+      <stop offset="100%" stop-color="#0d1e33"/>
+    </linearGradient>
+    <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.07"/>
+      </feComponentTransfer>
+    </filter>
   </defs>
+
   <rect width="1920" height="1080" fill="url(#sky)"/>
-  <rect y="560" width="1920" height="30" fill="#a0b0bc" opacity="0.22"/>
-  <path d="M0 640 L180 590 L430 650 L720 580 L990 670 L1260 590 L1570 680 L1920 600 L1920 1080 L0 1080 Z" fill="#4f6377"/>
-  <path d="M0 720 L210 650 L470 740 L770 670 L1030 760 L1320 690 L1600 790 L1920 700 L1920 1080 L0 1080 Z" fill="#3b4a59"/>
-  <path d="M1240 700 L1360 390 L1450 710 Z" fill="#171b22"/>
-  <path d="M1440 740 L1570 430 L1670 760 Z" fill="#10151b"/>
-  <path d="M1640 790 L1770 500 L1880 830 Z" fill="#0d1218"/>
-  <path d="M0 840 L240 770 L530 860 L890 760 L1220 880 L1540 800 L1920 890 L1920 1080 L0 1080 Z" fill="#1a1f27"/>
-  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <ellipse cx="1420" cy="345" rx="620" ry="320" fill="url(#sun)"/>
+
+  <path d="M0 640 C180 610 300 620 430 655 C560 690 690 675 820 635 C955 593 1120 582 1260 620 C1390 657 1600 660 1920 622 L1920 1080 L0 1080 Z" fill="url(#sea)" opacity="0.9"/>
+
+  <path d="M0 690 C120 660 220 650 350 672 C515 700 680 722 820 702 C970 680 1085 640 1225 620 C1385 596 1580 635 1920 700 L1920 1080 L0 1080 Z" fill="#0b1829"/>
+  <path d="M0 720 C220 690 330 708 460 742 C590 776 740 768 870 725 C1040 670 1240 655 1395 694 C1560 736 1710 760 1920 746 L1920 1080 L0 1080 Z" fill="#10243a"/>
+  <path d="M0 785 C140 740 275 730 420 762 C560 793 706 815 840 792 C995 764 1140 725 1285 710 C1458 692 1640 722 1920 790 L1920 1080 L0 1080 Z" fill="#1a3248"/>
+
+  <path d="M1130 720 C1185 620 1260 560 1345 535 C1290 615 1230 705 1160 805 Z" fill="#2a4358" opacity="0.85"/>
+  <path d="M1340 715 C1410 605 1500 540 1605 512 C1540 615 1468 712 1378 820 Z" fill="#2f4a60" opacity="0.83"/>
+  <path d="M1525 730 C1580 640 1655 584 1740 552 C1685 640 1620 726 1548 818 Z" fill="#355166" opacity="0.8"/>
+
+  <rect width="1920" height="1080" fill="#0b111b" opacity="0.08" filter="url(#grain)"/>
 </svg>
