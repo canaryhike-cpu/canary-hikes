@@ -51,6 +51,8 @@ a {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .topbar {
@@ -1912,6 +1914,21 @@ html[lang="ru"] .acclimatize-actions .section-link {
     padding: 0 8px;
     font-size: 12px;
     flex: 1 1 0;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  dd,
+  .nav a,
+  .lang-switch a,
+  .product-buy a {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: auto;
   }
 
   .hero {
