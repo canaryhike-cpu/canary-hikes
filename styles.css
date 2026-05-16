@@ -576,31 +576,67 @@ dd {
 }
 
 .hero-routes .hero-content {
-  max-width: min(780px, 100%);
-  padding: clamp(26px, 3vw, 38px);
-  border-color: rgba(255, 255, 255, 0.24);
-  background: linear-gradient(124deg, rgba(9, 30, 50, 0.18), rgba(16, 43, 66, 0.06));
-  backdrop-filter: blur(4px);
+  max-width: min(720px, 100%);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.hero-routes {
+  min-height: max(720px, 85vh);
+  grid-template-columns: minmax(0, 720px);
+  justify-content: start;
+  align-items: center;
+  padding-top: clamp(120px, 12vh, 152px);
+  padding-bottom: clamp(64px, 9vh, 96px);
 }
 
 .hero-routes .hero-shade {
   background:
-    radial-gradient(78% 66% at 18% 44%, rgba(11, 34, 56, 0.17) 0%, rgba(11, 34, 56, 0.07) 52%, rgba(11, 34, 56, 0) 80%),
-    linear-gradient(180deg, rgba(11, 31, 50, 0.02) 0%, rgba(11, 31, 50, 0.01) 46%, rgba(11, 31, 50, 0.08) 100%);
+    linear-gradient(98deg, rgba(8, 10, 8, 0.72) 0%, rgba(8, 10, 8, 0.38) 52%, rgba(8, 10, 8, 0.1) 100%),
+    linear-gradient(180deg, rgba(10, 13, 11, 0) 58%, rgba(10, 13, 11, 0.34) 100%);
 }
 
 .hero-routes .hero-content h1 {
-  margin-bottom: 22px;
+  max-width: 780px;
+  margin-bottom: 24px;
+  font-size: clamp(52px, 7vw, 96px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  text-wrap: pretty;
 }
 
 .hero-routes .hero-copy {
-  color: rgba(246, 252, 255, 0.96);
-  max-width: 48ch;
-  line-height: 1.62;
+  color: rgba(236, 243, 238, 0.9);
+  max-width: 620px;
+  font-size: clamp(18px, 1.9vw, 21px);
+  line-height: 1.55;
 }
 
 .hero-routes .hero-actions {
-  margin-top: 34px;
+  margin-top: 28px;
+}
+
+.hero-routes .eyebrow {
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--acid);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.hero-routes > img {
+  object-fit: cover;
+  object-position: 55% center;
+  filter: brightness(1.1) saturate(1.02);
 }
 
 .hero-benefits {
@@ -644,6 +680,15 @@ dd {
   background: var(--acid);
   color: var(--ink);
   box-shadow: 0 14px 34px rgba(204,255,61,.28);
+  min-height: 54px;
+  padding: 0 28px;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 34px rgba(204,255,61,.26);
+  filter: brightness(0.98);
 }
 
 .ghost-btn {
@@ -1933,19 +1978,25 @@ html[lang="ru"] .acclimatize-actions .section-link {
   }
 
   .hero-routes {
-    padding: 112px 16px 40px;
+    padding: 120px 16px 72px;
     min-height: auto;
   }
 
   .hero-routes .hero-content {
     max-width: 100%;
-    padding: 22px 16px;
+    padding: 0;
+  }
+
+  .hero-routes .hero-content h1 {
+    font-size: clamp(40px, 11vw, 54px);
+    line-height: 1.02;
+    margin-bottom: 18px;
   }
 
   .hero-routes .hero-copy {
-    max-width: 33ch;
-    font-size: 15.5px;
-    line-height: 1.56;
+    max-width: 34ch;
+    font-size: 16px;
+    line-height: 1.58;
   }
 
   
