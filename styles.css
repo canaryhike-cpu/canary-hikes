@@ -596,8 +596,25 @@ dd {
 
 .hero-routes .hero-shade {
   background:
-    linear-gradient(98deg, rgba(8, 10, 8, 0.72) 0%, rgba(8, 10, 8, 0.38) 52%, rgba(8, 10, 8, 0.1) 100%),
-    linear-gradient(180deg, rgba(10, 13, 11, 0) 58%, rgba(10, 13, 11, 0.34) 100%);
+    radial-gradient(84% 72% at 24% 42%, rgba(6, 10, 13, 0.46) 0%, rgba(6, 10, 13, 0.18) 56%, rgba(6, 10, 13, 0) 100%),
+    linear-gradient(180deg, rgba(10, 13, 11, 0.06) 0%, rgba(10, 13, 11, 0.28) 100%);
+}
+
+.hero-routes .hero-content {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-routes .hero-content::before {
+  content: "";
+  position: absolute;
+  inset: -12% -9% -16% -10%;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(130% 100% at 22% 42%, rgba(8, 12, 15, 0.56) 0%, rgba(8, 12, 15, 0.24) 52%, rgba(8, 12, 15, 0) 100%),
+    linear-gradient(100deg, rgba(8, 12, 15, 0.34) 0%, rgba(8, 12, 15, 0.14) 54%, rgba(8, 12, 15, 0) 100%);
+  filter: blur(2px);
 }
 
 .hero-routes .hero-content h1 {
@@ -610,7 +627,7 @@ dd {
 }
 
 .hero-routes .hero-copy {
-  color: rgba(236, 243, 238, 0.9);
+  color: rgba(242, 246, 243, 0.92);
   max-width: 620px;
   font-size: clamp(18px, 1.9vw, 21px);
   line-height: 1.55;
@@ -636,7 +653,7 @@ dd {
 .hero-routes > img {
   object-fit: cover;
   object-position: 55% center;
-  filter: brightness(1.1) saturate(1.02);
+  filter: brightness(1.04) saturate(1.03);
 }
 
 .hero-benefits {
@@ -1985,6 +2002,10 @@ html[lang="ru"] .acclimatize-actions .section-link {
   .hero-routes .hero-content {
     max-width: 100%;
     padding: 0;
+  }
+
+  .hero-routes .hero-content::before {
+    inset: -14% -7% -16% -7%;
   }
 
   .hero-routes .hero-content h1 {
