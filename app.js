@@ -595,7 +595,7 @@ const pageContent = {
         title: "Choose a Tenerife hiking route and go with a clear plan.",
         copy: "Five practical Canary.Hikes route guides for independent hikers: route logic, parking, timing, difficulty, best light, what to pack and what to avoid.",
         cta: "Shop hiking routes",
-        image: "/assets/teide-montana-blanca.png",
+        image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Volcanic hiking trail in Tenerife"
       },
       products: [
@@ -643,7 +643,7 @@ const pageContent = {
         title: "Wähle eine Wanderroute auf Teneriffa und starte mit klarem Plan.",
         copy: "Fünf praktische Canary.Hikes-Guides für unabhängige Wanderer: Routenlogik, Parken, Timing, Schwierigkeit, bestes Licht, Packliste und typische Fehler.",
         cta: "Wanderrouten ansehen",
-        image: "/assets/teide-montana-blanca.png",
+        image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Vulkanische Wanderroute auf Teneriffa"
       },
       products: [
@@ -740,7 +740,7 @@ const pageContent = {
         title: "Elige una ruta de senderismo en Tenerife y sal con un plan claro.",
         copy: "Cinco guías prácticas de Canary.Hikes para caminar por libre: lógica de ruta, aparcamiento, tiempos, dificultad, mejor luz, qué llevar y qué evitar.",
         cta: "Ver rutas",
-        image: "/assets/teide-montana-blanca.png",
+        image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Sendero volcánico en Tenerife"
       },
       products: [
