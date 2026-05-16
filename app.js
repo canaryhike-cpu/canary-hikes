@@ -903,7 +903,7 @@ function renderShop(lang, page) {
   const ui = shopUi[lang];
   document.querySelector("main").className = "shop-page";
   document.querySelector("main").innerHTML = `
-    <section class="shop-hero">
+    <section class="shop-hero shop-hero-${page}">
       <img src="${pageData.hero.image}" alt="${pageData.hero.alt}" />
       <div class="hero-shade"></div>
       <div class="shop-hero-content">

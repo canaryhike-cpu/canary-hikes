@@ -219,6 +219,31 @@ img {
   color: #fff;
 }
 
+.shop-hero-hiking .shop-hero-content {
+  max-width: 620px;
+  padding: clamp(20px, 2.8vw, 32px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 14px;
+  background: linear-gradient(132deg, rgba(8, 10, 11, 0.56), rgba(8, 10, 11, 0.22));
+  backdrop-filter: blur(8px);
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.46);
+}
+
+.shop-hero-hiking .shop-hero-content .eyebrow {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid rgba(204,255,61,.45);
+  border-radius: 999px;
+  background: rgba(204,255,61,.12);
+  color: var(--acid);
+}
+
+.shop-hero-hiking .shop-hero-content .hero-copy {
+  max-width: 56ch;
+}
+
 .shop-hero h1 {
   max-width: 760px;
   margin-bottom: 18px;
@@ -227,8 +252,12 @@ img {
 }
 
 .shop-hero .hero-copy {
-  max-width: 690px;
+  max-width: 760px;
   font-size: 18px;
+}
+
+.shop-hero .hero-copy > .hero-bullet-grid {
+  margin-top: 16px;
 }
 
 .hero-bullet-grid {
