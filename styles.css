@@ -176,7 +176,6 @@ img {
   position: relative;
   height: clamp(680px, 94vh, 980px);
   display: grid;
-  grid-template-areas: "hero-copy hero-facts";
   grid-template-columns: minmax(0, 1fr) minmax(230px, 270px);
   align-items: end;
   column-gap: clamp(20px, 4vw, 46px);
@@ -551,11 +550,9 @@ dd {
 }
 
 .summit-panel {
-  grid-area: hero-facts;
   position: relative;
-  width: 100%;
-  max-width: 270px;
-  padding: 20px;
+  width: min(270px, calc(100vw - 48px));
+  padding: 18px;
   color: #fff;
   border: 1px solid rgba(255,255,255,.24);
   border-radius: 8px;
@@ -1533,6 +1530,12 @@ html[lang="ru"] .acclimatize-actions .section-link {
     align-self: end;
     margin-bottom: 0;
   }
+
+  .summit-panel {
+    justify-self: end;
+    align-self: end;
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -1577,9 +1580,6 @@ html[lang="ru"] .acclimatize-actions .section-link {
 
 @media (max-width: 940px) {
   .hero {
-    grid-template-areas:
-      "hero-copy"
-      "hero-facts";
     grid-template-columns: 1fr;
     column-gap: 0;
   }
