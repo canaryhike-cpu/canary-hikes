@@ -913,6 +913,7 @@ function renderShop(lang, page) {
         <div class="hero-actions">
           <a class="primary-btn" href="#products">${pageData.hero.cta}</a>
         </div>
+        ${Array.isArray(pageData.hero.benefits) && pageData.hero.benefits.length ? `<ul class="hero-benefits">${pageData.hero.benefits.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
       </div>
     </section>
     <section id="products" class="shop-section section-pad">
