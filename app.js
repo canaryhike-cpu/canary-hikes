@@ -689,8 +689,7 @@ const pageContent = {
       hero: {
         eyebrow: "Canary.Hikes · Self-guided",
         title: "Готовые self-guided хайкинговые маршруты по Канарским островам",
-        copy: "Треки, парковки, точки старта, логистика и честные подсказки — чтобы не собирать маршрут из блогов, карт и десятка хайкинг-приложений.",
-        benefits: ["Без хаоса из блогов и приложений", "Не нужно тратить отпуск на планирование", "Без толп и экскурсионных групп"],
+        copy: "<span class=\"hero-bullet-grid\"><span class=\"hero-bullet-card\"><strong>Самостоятельно</strong><span>Идёте в своём ритме и не зависите от группы.</span></span><span class=\"hero-bullet-card\"><strong>Безопасно</strong><span>Мы прошли каждый маршрут, проверили треки и инструкции — можно уверенно идти по шагам.</span></span><span class=\"hero-bullet-card\"><strong>Проверено</strong><span>Рекомендуем только лучшие маршруты острова, которые прошли лично.</span></span><span class=\"hero-bullet-card\"><strong>Легко подготовиться</strong><span>В каждом гайде есть полная подготовка от и до перед стартом.</span></span></span>",
         cta: "Выбрать маршрут",
         image: "/assets/anaga-benijo-premium-panorama.svg",
         alt: "Панорама Анаги и скал Бенихо"
