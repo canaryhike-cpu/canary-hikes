@@ -73,7 +73,7 @@ const content = {
       miniCraterText: "PNT 10 is separate for the final crater section.",
       miniCheck: "Trail check",
       miniCheckText: "Park staff can check permits at any time.",
-      pnt10Title: "PNT 10: тропа Телесфоро Браво",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo",
       pnt10Text: "The final 700 m from La Rambleta to the Teide crater needs a separate permit, even if you already have PNT 07 or PNT 09 permission. Park staff check permits directly on the trail, day or night.",
       bookTitle: "Book early",
       bookText: "Permits can disappear quickly in summer, on weekends, during full moon and for popular sunrise dates.",
@@ -222,7 +222,7 @@ const content = {
       miniCraterText: "PNT 10 ist separat für das letzte Kraterstück.",
       miniCheck: "Kontrolle",
       miniCheckText: "Parkmitarbeiter können jederzeit kontrollieren.",
-      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "Die letzten 700 m von La Rambleta zum Teide-Krater brauchen eine separate Genehmigung, auch wenn du PNT 07 oder PNT 09 gebucht hast. Parkmitarbeiter kontrollieren direkt auf dem Weg, tagsüber und nachts.",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo", pnt10Text: "Die letzten 700 m von La Rambleta zum Teide-Krater brauchen eine separate Genehmigung, auch wenn du PNT 07 oder PNT 09 gebucht hast. Parkmitarbeiter kontrollieren direkt auf dem Weg, tagsüber und nachts.",
       bookTitle: "Früh buchen", bookText: "Genehmigungen sind im Sommer, an Wochenenden, bei Vollmond und für beliebte Sonnenaufgangsdaten schnell weg.",
       summitTitle: "Letztes Gipfelstück", summitText: "PNT 10 gewinnt rund 160 m in 40-50 Minuten, mit Schwefelgeruch, kaltem Wind, Kraterfelsen und Sonnenaufgang über den Wolken."
     },
@@ -297,56 +297,57 @@ const content = {
   },
   ru: {
     seo: {
-      title: "Восхождение на Тейде: PNT 07, разрешение и канатка | Canary.Hikes",
-      description: "Практичный гид по восхождению на Тейде на Тенерифе: маршрут PNT 07 через Montaña Blanca, разрешения, PNT 10 к кратеру, канатка, парковки, одежда и спуск.",
-      ogTitle: "Гид по восхождению на Тейде | Canary.Hikes",
-      ogDescription: "Спланируйте ночной хайк на Тейде: маршрут, разрешения, канатка, парковки, снаряжение и спуск."
+      title: "Восхождение на Тейде самостоятельно: маршрут PNT 07, разрешения и рассвет | Canary.Hikes",
+      description: "Как самостоятельно подняться на вулкан Тейде на Тенерифе: маршрут PNT 07 через Montaña Blanca, разрешения PNT 07 и PNT 10, ночной старт к рассвету, парковки, канатная дорога, список вещей и варианты спуска.",
+      ogTitle: "Самостоятельное восхождение на Тейде: маршрут, разрешения и рассвет",
+      ogDescription: "Практический гид по подъему на Тейде: PNT 07, PNT 10, разрешения Tenerife ON, ночной старт, парковка, канатная дорога, экипировка и спуск.",
+      image: "/assets/teide-real-sunrise-portrait.jpg"
     },
     siteNav: { hiking: "Хайкинг маршруты", road: "Автомаршруты", teide: "Гид по Тейде" },
-    nav: { routes: "Маршруты", permits: "Разрешения", cable: "Канатка", gear: "Снаряжение", logistics: "Логистика" },
+    nav: { routes: "Маршруты", permits: "Разрешения", cable: "Канатная дорога", gear: "Снаряжение", logistics: "Логистика" },
     hero: {
-      eyebrow: "Canary.Hikes · путеводитель по восхождению",
-      title: "Поднимитесь на Тейде с понятным планом восхождения",
-      copy: "Практический гид по восхождению на Тейде: маршрут через Montaña Blanca, разрешения, парковки, канатная дорога, варианты спуска и особенности высоты.",
+      eyebrow: "Путеводитель по восхождению",
+      title: "Самостоятельный подъем на вулкан Тейде",
+      copy: "Практический гид по восхождению: маршрут, разрешения, парковки, канатная дорога, список вещей, варианты спуска и особенности высоты.",
       imageAlt: "Рассвет над облаками на маршруте восхождения на Тейде на Тенерифе",
       cta: "Спланировать восхождение", panelLabel: "Вершина", panelText: "Высшая точка Испании и Атлантических островов."
     },
     quick: {
       height: "Большая высота", heightText: "После 3000 м падает темп и становится тяжелее дышать.",
       weather: "Резкая погода", weatherText: "На побережье может быть +28°C, а на вершине около нуля и ветер.",
-      night: "Ночной старт", nightText: "Большинство стартует ночью, встречает рассвет и спускается на канатке.",
+      night: "Ночной старт", nightText: "Большинство стартует ночью, встречает рассвет и спускается на канатной дороге.",
       self: "Все с собой", selfText: "На маршруте нет магазинов, кафе, воды и точек питания."
     },
     intro: {
-      eyebrow: "Сначала прочитайте это", title: "Это не прогулка. Это полноценное высокогорное восхождение.",
-      copy: "Тейде — один из самых красивых пешеходных маршрутов на Тенерифе и Канарских островах. Ближе к вершине маршрут становится холоднее, ветренее и заметно тяжелее: вулканическая сыпуха, разреженный воздух и медленный темп — нормальная часть подъема. Если подготовиться заранее, рассвет над облаками станет незабываемым."
+      eyebrow: "Сначала прочитайте это", title: "Это серьезный подъем, к которому необходима подготовка.",
+      copy: "Мы прошли этот маршрут и собрали для вас все рекомендации. Желаем вам тоже сделать это и встретить уникальный рассвет на вершине действующего вулкана."
     },
     plan: {
       eyebrow: "Шаг за шагом",
       title: "Четыре решения для спокойного подъема.",
       copy: "Решите парковку и точку старта, поднимитесь по PNT 07 до La Rambleta с разрешением на маршрут, добавьте отдельное разрешение PNT 10 для кратера и заранее определитесь со спуском.",
       step1: "Определиться с парковкой и точкой старта маршрута.",
-      step1Text: "Можно оставить машину у Teleférico del Teide или поехать двумя машинами. Дальше — пройти 4,8 км до Montaña Blanca.",
+      step1Text: "Можно оставить машину у канатной дороги или поехать двумя машинами. Дальше — пройти 4,8 км до Montaña Blanca.",
       step1Link: "Смотреть логистику",
       step2: "Основной подъем PNT 07",
       step2Text: "На этот маршрут необходимо разрешение. Это основной подъём к La Rambleta и самая длинная часть восхождения с главным набором высоты.",
       step2Link: "Открыть PNT 07",
       step3: "Финальный участок PNT 10",
-      step3Text: "На этот маршрут также требуется разрешение. Это финальный участок подъема от La Rambleta к кратеру.",
-      step3Link: "Разрешения",
+      step3Text: "На этот маршрут также требуется разрешение. Это финальный участок подъема от La Rambleta к кратеру Тейде.",
+      step3Link: "Открыть PNT 10",
       step4: "Спуск",
-      step4Text: "Спускайтесь на канатке, если она работает, или держите пеший спуск как запасной вариант на случай ветра.",
+      step4Text: "Спускайтесь на канатной дороге, если она работает, или держите пеший спуск как запасной вариант на случай ветра.",
       step4Link: "Варианты спуска"
     },
     routes: {
       eyebrow: "Официальные тропы", title: "Выбирайте маршрут по нагрузке, а не только по видам.",
       recommended: "Рекомендуемый первый подъем", pnt07Title: "PNT 07: Montaña Blanca → La Rambleta",
-      pnt07Text: "Главный и самый популярный маршрут восхождения на Тейде. PNT 07 начинается у парковки Montaña Blanca и заканчивается у верхней станции канатной дороги La Rambleta. Последние километры ощущаются как настоящее высокогорье: темп падает, появляется холодный ветер, тяжело дышать, а вулканическая сыпуха забирает силы.",
+      pnt07Text: "Главный и самый популярный маршрут восхождения на Тейде. PNT 07 начинается у парковки Montaña Blanca и заканчивается у верхней станции канатной дороги, La Rambleta. Последние километры ощущаются как настоящее высокогорье: темп падает, появляется холодный ветер, тяжело дышать, а вулканическая сыпуха забирает силы.",
       pnt07Warning: "Нужно разрешение. PNT 07 рекомендуется для первого подъема, но на него все равно нужно оформить доступ.",
-      wild: "Более дикий вулканический вариант", pnt09Title: "PNT 09: Teide → Pico Viejo",
+      wild: "Более дикий вулканический вариант", pnt09Title: "PNT 09: Тейде → Pico Viejo",
       pnt09Text: "Более дикий высокогорный маршрут через кратер Pico Viejo, лавовые поля и черные вулканические плато. Его чаще проходят как спуск, но часть хайкеров выбирает обратное направление как сложный акклиматизационный подъем.",
-      pnt09Warning: "Нужно разрешение. Если идти PNT 09 на подъем, он сильно сложнее PNT 07 и не рекомендуется для первого восхождения.",
-      crater: "Финальный участок к кратеру", pnt10Title: "PNT 10: La Rambleta → кратер Тейде",
+      pnt09Warning: "Нужно разрешение. Если идти PNT 09 на подъем, он сильно сложнее PNT 07 и не рекомендуется для первого восхождения на Тейде.",
+      crater: "Финальный участок к кратеру Тейде", pnt10Title: "PNT 10: La Rambleta → кратер Тейде",
       pnt10Text: "Короткий, но знаковый финальный участок от La Rambleta до самой высокой точки Испании. Даже при небольшой длине высота и ветер могут заметно усложнить последний рывок.",
       pnt10Warning: "Нужно отдельное разрешение. PNT 10 всегда оформляется дополнительно к маршруту подъема."
     },
@@ -354,52 +355,52 @@ const content = {
     permits: {
       eyebrow: "Правила доступа", title: "Разрешения — часть маршрута, а не формальность.",
       allTitle: "Разрешения нужны на все выбранные маршруты.",
-      allText: "Оформите разрешение на маршрут подъема и отдельный PNT 10 для кратера. Разрешения проверяют на тропе.",
+      allText: "Оформите разрешение на маршрут подъема и отдельный PNT 10 для кратера Тейде. Разрешения проверяют на тропе.",
       linksTitle: "Официальные страницы разрешений",
       linksText: "Бронируйте через Tenerife ON. Для выбора даты может понадобиться регистрация или вход в аккаунт.",
-      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "На маршрут требуется разрешение. Это финальный участок подъема к кратеру Тейде от La Rambleta.",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo", pnt10Text: "На маршрут требуется разрешение. Это финальный участок подъема к кратеру Тейде от La Rambleta.",
       bookTitle: "Бронируйте заранее", bookText: "Места быстро заканчиваются летом, на выходных, в полнолуние и на популярные даты восхождения к рассвету.",
-      summitTitle: "Финальный участок", summitText: "PNT 10 набирает около 160 м за 40-50 минут: серный запах, холодный ветер, скалы кратера и рассвет над облаками."
+      summitTitle: "Финальный участок", summitText: "PNT 10 набирает около 160 м за 40–50 минут: серный запах, холодный ветер, скалы кратера и рассвет над облаками."
     },
     cable: {
-      eyebrow: "Teleférico", title: "Спуск на канатке удобен, но не гарантирован.",
+      eyebrow: "Канатная дорога", title: "Самый простой спуск возможен только если канатная дорога работает.",
       know: "Что важно знать", flow: "Популярный сценарий", why: "Почему это удобно",
-      ticketText: "Покупайте билеты на канатку заранее на официальном сайте Volcano Teide и проверяйте статус перед стартом.",
-      ticketCta: "Купить билеты на канатку",
+      ticketText: "Покупайте билеты на канатную дорогу заранее на официальном сайте Volcano Teide и проверяйте статус перед стартом.",
+      ticketCta: "Купить билеты на канатную дорогу",
       whyText: "После ночного восхождения усталость может быть очень сильной. Пеший спуск добавляет еще 4-6 часов, а после рассвета выходит солнце и на маршруте может быстро стать жарко.",
-      list: ["Первая кабина вниз обычно около 09:00.", "Билеты нужно покупать заранее.", "Канатку могут закрыть из-за ветра.", "Всегда держите запасной план пешего спуска."],
-      flowList: ["Стартовать ночью.", "Подняться к вершине к рассвету.", "Встретить рассвет на пике.", "После открытия спуститься на Teleférico."]
+      list: ["Первая кабина вниз обычно около 09:00.", "В зависимости от сезона восхождения может потребоваться ожидание от рассвета до открытия канатной дороги. Например, в августе мы ждали почти 2 часа.", "Билеты нужно покупать заранее.", "Канатную дорогу могут закрыть из-за ветра.", "Всегда держите запасной план пешего спуска."],
+      flowList: ["Стартовать ночью.", "Подняться к вершине к рассвету.", "Встретить рассвет на пике.", "После открытия спуститься на канатной дороге."]
     },
     gear: {
       eyebrow: "Система сборов", title: "Одевайтесь под ветер, темноту и ожидание на высоте.",
       groups: [
         ["Одежда", ["Треккинговые ботинки", "Теплые походные штаны", "Теплая флиска", "Ветрозащитная куртка", "Шапка", "Перчатки", "Бафф или капюшон от ветра"]],
         ["Снаряжение", ["Большой рюкзак", "Термоодеяло", "Налобный фонарь", "Походные палки", "Кошки или ледоступы зимой"]],
-        ["Еда и вода", ["Минимум 2-3 литра воды", "Перекусы", "Калорийная еда на вершину", "Орехи, батончики, шоколад", "Термос с чаем"]],
-        ["Важно", ["На высоте холодно в любой сезон", "Возьмите пауэрбанк", "Канатка может открыться через несколько часов", "На маршруте нет кафе и воды", "Ветер усиливает ощущение холода"]]
+        ["Еда и вода", ["Минимум 2–3 литра воды", "Перекусы", "Калорийная еда на вершину", "Орехи, батончики, шоколад", "Термос с чаем"]],
+        ["Важно", ["На высоте холодно в любой сезон", "Возьмите пауэрбанк", "Канатная дорога может открыться через несколько часов", "На маршруте нет кафе и воды", "Ветер усиливает ощущение холода"]]
       ]
     },
     logistics: {
       eyebrow: "Парковки и схема", title: "Продумайте парковку заранее.",
-      copy: "Если хотите вернуться на канатке, логичнее оставить машину у Teleférico del Teide. Дальше — пешком до Montaña Blanca, подъём по PNT 07 и спуск обратно к этой парковке.",
-      twoCars: "Если едете компанией, удобный вариант — две машины: одну оставить ближе к старту, вторую у финиша. Так проще подстроиться под ветер, закрытую канатку или пеший спуск.",
-      step1: "Парковка Teleférico del Teide", step1Text: "Самый простой вариант, если планируете спускаться на канатке.",
+      copy: "Если хотите вернуться на канатной дороге, логичнее оставить машину у нижней станции. Дальше — пешком до Montaña Blanca, подъём по PNT 07 и спуск обратно к этой парковке.",
+      twoCars: "Если едете компанией, удобный вариант — две машины: одну оставить ближе к старту, вторую у финиша. Так проще подстроиться под ветер, закрытую канатную дорогу или пеший спуск.",
+      step1: "Парковка у канатной дороги", step1Text: "Самый простой вариант, если планируете спускаться на канатной дороге.",
       step2: "Подход к Montaña Blanca", step2Text: "Спокойный ночной участок перед настоящим набором высоты.",
       step3: "Основной подъем PNT 07", step3Text: "Самая длинная и энергозатратная часть маршрута до La Rambleta.",
-      step4: "Кратер и спуск", step4Text: "PNT 10 — отдельное разрешение, а спуск зависит от работы канатки и погоды."
+      step4: "Кратер Тейде и спуск", step4Text: "PNT 10 — отдельное разрешение, а спуск зависит от работы канатной дороги и погоды."
     },
-    maps: { teleferico: "Парковка Teleférico", montana: "Парковка Montaña Blanca" },
+    maps: { teleferico: "Парковка у канатной дороги", montana: "Парковка Montaña Blanca" },
     schema: {
       eyebrow: "Схема маршрута",
-      title: "Как связаны парковки, PNT 07, PNT 10 и канатка.",
-      copy: "Упрощенная схема по реальному расположению точек: парковка Teleférico находится ниже и западнее, Montaña Blanca — точка подхода восточнее, PNT 07 поднимается к La Rambleta, PNT 10 ведет к кратеру, а канатка возвращает вниз к Teleférico.",
-      teleferico: "Парковка Teleférico",
+      title: "Как связаны парковки, PNT 07, PNT 10 и канатная дорога.",
+      copy: "Упрощенная схема по реальному расположению точек: парковка у канатной дороги находится ниже и западнее, Montaña Blanca — точка подхода восточнее, PNT 07 поднимается к La Rambleta, PNT 10 ведет к кратеру Тейде, а канатная дорога возвращает вниз к парковке.",
+      teleferico: "Парковка у канатной дороги",
       montana: "Парковка Montaña Blanca",
       rambleta: "La Rambleta",
-      crater: "Кратер Тейде / PNT 10",
+      crater: "Cráter del Teide / PNT 10",
       approach: "Подход 4,8 км",
       pnt07: "Подъем PNT 07",
-      cable: "Линия канатки"
+      cable: "Линия канатной дороги"
     },
     descent: {
       eyebrow: "Варианты спуска", title: "Всегда имей под рукой запасной план.",
@@ -411,7 +412,7 @@ const content = {
       items: [
         ["Не недооценивайте высоту", "После 3000 м даже спортивным людям бывает тяжело: одышка, падение темпа и усталость ног. Это нормально."],
         ["Проверяйте погоду наверху", "Внизу может быть жарко, а на вершине около нуля, ледяной ветер, облака и плохая видимость."],
-        ["Проверяйте статус Teleférico", "Из-за ветра канатку могут закрыть даже в солнечный день. Перед стартом смотрите официальный статус."],
+        ["Проверяйте статус канатной дороги", "Из-за ветра канатную дорогу могут закрыть даже в солнечный день. Перед стартом смотрите официальный статус."],
         ["Приезжайте заранее", "Ночью Montaña Blanca быстро заполняется, особенно летом, на выходных и в полнолуние."],
         ["Не спешите", "Тейде — это не гонка. Спокойный темп дает больше воздуха, контроля и удовольствия."],
         ["Помните главный момент", "Рассвет над облаками с высшей точки Испании — один из тех моментов, которые помнят годами."]
@@ -419,7 +420,7 @@ const content = {
     },
     acclimatize: {
       eyebrow: "Сначала высота",
-      title: "Перед Тейде стоит пройти акклиматизационный маршрут.",
+      title: "Акклиматизационный маршрут перед Тейде.",
       copy: "Восхождение на Тейде начинается уже выше 2500 метров, где многие начинают чувствовать высоту и нехватку воздуха.\n\nОдин акклиматизационный маршрут перед восхождением поможет проверить темп, дыхание и самочувствие перед ночным стартом.",
       routeOne: "Маршрут на Guajara",
       routeOneText: "Маршрут на вершину Guajara с остатками старой обсерватории и панорамными видами на Тейде. Хороший вариант для спокойной акклиматизации, ощущения высоты и заката в национальном парке.",
@@ -498,7 +499,7 @@ const content = {
       miniCraterText: "PNT 10 es separado para el tramo final.",
       miniCheck: "Control en sendero",
       miniCheckText: "El personal del parque puede revisar permisos en cualquier momento.",
-      pnt10Title: "PNT 10: тропа Телесфоро Браво", pnt10Text: "Los últimos 700 m desde La Rambleta hasta el cráter del Teide necesitan un permiso separado, incluso si ya tienes permiso PNT 07 o PNT 09. El personal del parque lo revisa en el sendero, de día o de noche.",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo", pnt10Text: "Los últimos 700 m desde La Rambleta hasta el cráter del Teide necesitan un permiso separado, incluso si ya tienes permiso PNT 07 o PNT 09. El personal del parque lo revisa en el sendero, de día o de noche.",
       bookTitle: "Reserva pronto", bookText: "Los permisos se agotan rápido en verano, fines de semana, luna llena y fechas populares de amanecer.",
       summitTitle: "Tramo final", summitText: "PNT 10 sube unos 160 m en 40-50 minutos, con olor a azufre, viento frío, rocas del cráter y amanecer sobre las nubes."
     },
@@ -829,6 +830,7 @@ function seoFor(lang, page) {
 function setMeta(lang, page) {
   const seo = seoFor(lang, page);
   const pageUrl = `${window.location.origin}${pagePath(lang, page)}`;
+  const imageUrl = `${window.location.origin}${seo.image || "/assets/teide-sunrise.png"}`;
   document.title = seo.title;
   ensureMeta('meta[name="description"]', () => {
     const node = document.createElement("meta");
@@ -845,6 +847,36 @@ function setMeta(lang, page) {
     node.setAttribute("property", "og:description");
     return node;
   }).content = seo.ogDescription;
+  ensureMeta('meta[property="og:type"]', () => {
+    const node = document.createElement("meta");
+    node.setAttribute("property", "og:type");
+    return node;
+  }).content = page === "teide" ? "article" : "website";
+  ensureMeta('meta[property="og:image"]', () => {
+    const node = document.createElement("meta");
+    node.setAttribute("property", "og:image");
+    return node;
+  }).content = imageUrl;
+  ensureMeta('meta[name="twitter:card"]', () => {
+    const node = document.createElement("meta");
+    node.name = "twitter:card";
+    return node;
+  }).content = "summary_large_image";
+  ensureMeta('meta[name="twitter:title"]', () => {
+    const node = document.createElement("meta");
+    node.name = "twitter:title";
+    return node;
+  }).content = seo.title;
+  ensureMeta('meta[name="twitter:description"]', () => {
+    const node = document.createElement("meta");
+    node.name = "twitter:description";
+    return node;
+  }).content = seo.description;
+  ensureMeta('meta[name="twitter:image"]', () => {
+    const node = document.createElement("meta");
+    node.name = "twitter:image";
+    return node;
+  }).content = imageUrl;
   ensureMeta('meta[property="og:url"]', () => {
     const node = document.createElement("meta");
     node.setAttribute("property", "og:url");
