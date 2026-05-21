@@ -596,7 +596,7 @@ const pageContent = {
         title: "Choose a Tenerife hiking route and go with a clear plan.",
         copy: "Five practical Canary.Hikes route guides for independent hikers: route logic, parking, timing, difficulty, best light, what to pack and what to avoid.",
         cta: "Shop hiking routes",
-        image: "/assets/anaga-benijo-premium-panorama.svg",
+        image: "/assets/teide-montana-blanca.png",
         alt: "Volcanic hiking trail in Tenerife"
       },
       products: [
@@ -645,7 +645,7 @@ const pageContent = {
         title: "Wähle eine Wanderroute auf Teneriffa und starte mit klarem Plan.",
         copy: "Fünf praktische Canary.Hikes-Guides für unabhängige Wanderer: Routenlogik, Parken, Timing, Schwierigkeit, bestes Licht, Packliste und typische Fehler.",
         cta: "Wanderrouten ansehen",
-        image: "/assets/anaga-benijo-premium-panorama.svg",
+        image: "/assets/teide-montana-blanca.png",
         alt: "Vulkanische Wanderroute auf Teneriffa"
       },
       products: [
@@ -694,7 +694,7 @@ const pageContent = {
         title: "Готовые хайкинговые маршруты по Канарским островам",
         copy: "Треки, парковки, точки старта, логистика и честные подсказки — чтобы не собирать маршрут из блогов, карт и десятка хайкинг-приложений.",
         cta: "Выбрать маршрут",
-        image: "/assets/anaga-benijo-premium-panorama.svg",
+        image: "/assets/teide-montana-blanca.png",
         alt: "Панорама Анаги и скал Бенихо"
       },
       products: [
@@ -743,7 +743,7 @@ const pageContent = {
         title: "Elige una ruta de senderismo en Tenerife y sal con un plan claro.",
         copy: "Cinco guías prácticas de Canary.Hikes para caminar por libre: lógica de ruta, aparcamiento, tiempos, dificultad, mejor luz, qué llevar y qué evitar.",
         cta: "Ver rutas",
-        image: "/assets/anaga-benijo-premium-panorama.svg",
+        image: "/assets/teide-montana-blanca.png",
         alt: "Sendero volcánico en Tenerife"
       },
       products: [
@@ -1216,11 +1216,14 @@ const shopUi = {
   es: { products: "Guías digitales", metaDifficulty: "Dificultad", metaTime: "Duración", order: "Pedir por Instagram", footer: "Guías digitales de Tenerife por Canary.Hikes. Escríbenos en Instagram para pedir una guía o elegir la ruta que mejor encaja con tu viaje." }
 };
 
-const teideMarkup = document.querySelector("main").innerHTML;
+const teideMarkup = document.querySelector("main")?.innerHTML || "";
 const route = getRoute();
 
 function getRoute() {
   const parts = window.location.pathname.split("/").filter(Boolean);
+  if (parts[0] === "privacy-policy" || parts[0] === "cookie-policy") {
+    return { lang: "en", page: "legal" };
+  }
   const queryLang = new URLSearchParams(window.location.search).get("lang");
   const lang = languages.includes(parts[0]) ? parts[0] : (languages.includes(queryLang) ? queryLang : "en");
   const slug = parts[1] || pageSlugs.teide;
@@ -1230,6 +1233,29 @@ function getRoute() {
 
 function pagePath(lang, page) {
   return `/${lang}/${pageSlugs[page]}/`;
+}
+
+const legalUi = {
+  en: { privacy: "Privacy Policy", cookies: "Cookie Policy", settings: "Cookie settings", bannerTitle: "Cookies", bannerText: "Essential cookies keep the site working. Analytics is optional.", accept: "Accept", reject: "Reject", manage: "Settings", save: "Save", necessary: "Essential storage", necessaryText: "Always active. Used for language and cookie preferences.", analytics: "Analytics cookies", analyticsText: "Helps us understand visits and improve the guides.", legalLabel: "Legal links" },
+  de: { privacy: "Datenschutz", cookies: "Cookie-Richtlinie", settings: "Cookie-Einstellungen", bannerTitle: "Cookies", bannerText: "Notwendige Cookies halten die Website am Laufen. Analytics ist optional.", accept: "Akzeptieren", reject: "Ablehnen", manage: "Optionen", save: "Speichern", necessary: "Notwendige Speicherung", necessaryText: "Immer aktiv. Für Sprache und Cookie-Auswahl.", analytics: "Analytics-Cookies", analyticsText: "Hilft uns, Besuche zu verstehen und die Guides zu verbessern.", legalLabel: "Rechtliche Links" },
+  ru: { privacy: "Политика конфиденциальности", cookies: "Политика cookies", settings: "Настройки cookies", bannerTitle: "Cookies", bannerText: "Необходимые cookies помогают сайту работать. Аналитика — по желанию.", accept: "Принять", reject: "Отклонить", manage: "Настроить", save: "Сохранить", necessary: "Необходимое хранение", necessaryText: "Всегда активно: язык сайта и выбор cookies.", analytics: "Аналитические cookies", analyticsText: "Помогают улучшать сайт и гайды.", legalLabel: "Юридические ссылки" },
+  es: { privacy: "Política de privacidad", cookies: "Política de cookies", settings: "Configurar cookies", bannerTitle: "Cookies", bannerText: "Las cookies necesarias mantienen el sitio funcionando. La analítica es opcional.", accept: "Aceptar", reject: "Rechazar", manage: "Ajustes", save: "Guardar", necessary: "Almacenamiento esencial", necessaryText: "Siempre activo. Guarda idioma y preferencias de cookies.", analytics: "Cookies analíticas", analyticsText: "Nos ayuda a entender visitas y mejorar las guías.", legalLabel: "Enlaces legales" }
+};
+
+function localizeLegalLinks(lang) {
+  const ui = legalUi[lang] || legalUi.en;
+  document.querySelectorAll(".legal-links").forEach((nav) => {
+    nav.setAttribute("aria-label", ui.legalLabel);
+  });
+  document.querySelectorAll('[data-legal="privacy"]').forEach((node) => {
+    node.textContent = ui.privacy;
+  });
+  document.querySelectorAll('[data-legal="cookies"]').forEach((node) => {
+    node.textContent = ui.cookies;
+  });
+  document.querySelectorAll("[data-cookie-settings]").forEach((node) => {
+    node.textContent = ui.settings;
+  });
 }
 
 function seoFor(lang, page) {
@@ -1430,6 +1456,7 @@ function setLanguage(lang, page = route.page) {
   route.lang = lang;
   route.page = page;
   document.documentElement.lang = lang;
+  localizeLegalLinks(lang);
   setMeta(lang, page);
   updateAlternateLinks(page);
   updateChrome(lang, page);
@@ -1442,6 +1469,95 @@ function setLanguage(lang, page = route.page) {
     renderShop(lang, page);
   }
   localStorage.setItem("teide-lang", lang);
+}
+
+const cookieStorageKey = "canary-cookie-consent";
+
+function readCookieConsent() {
+  try {
+    return JSON.parse(localStorage.getItem(cookieStorageKey) || "null");
+  } catch {
+    return null;
+  }
+}
+
+function updateAnalyticsConsent(analytics) {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("consent", "update", {
+    analytics_storage: analytics ? "granted" : "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+}
+
+function saveCookieConsent(analytics) {
+  const consent = {
+    necessary: true,
+    analytics: Boolean(analytics),
+    updatedAt: new Date().toISOString()
+  };
+  localStorage.setItem(cookieStorageKey, JSON.stringify(consent));
+  updateAnalyticsConsent(consent.analytics);
+  document.querySelector(".cookie-banner")?.remove();
+}
+
+function renderCookieBanner(force = false) {
+  if (!force && readCookieConsent()) return;
+  document.querySelector(".cookie-banner")?.remove();
+  const lang = content[route.lang] ? route.lang : document.documentElement.lang || "en";
+  const ui = legalUi[lang] || legalUi.en;
+  const current = readCookieConsent();
+  const banner = document.createElement("section");
+  banner.className = "cookie-banner";
+  banner.setAttribute("aria-label", ui.bannerTitle);
+  banner.innerHTML = `
+    <div class="cookie-copy">
+      <h2>${ui.bannerTitle}</h2>
+      <p>${ui.bannerText}</p>
+      <div class="cookie-panel" hidden>
+        <label class="cookie-option">
+          <input type="checkbox" checked disabled />
+          <span><strong>${ui.necessary}</strong>${ui.necessaryText}</span>
+        </label>
+        <label class="cookie-option">
+          <input type="checkbox" data-analytics-choice ${current?.analytics ? "checked" : ""} />
+          <span><strong>${ui.analytics}</strong>${ui.analyticsText}</span>
+        </label>
+      </div>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" data-cookie-reject>${ui.reject}</button>
+      <button type="button" data-cookie-manage>${ui.manage}</button>
+      <button type="button" data-cookie-accept>${ui.accept}</button>
+      <button type="button" data-cookie-save hidden>${ui.save}</button>
+    </div>
+  `;
+  document.body.appendChild(banner);
+  banner.querySelector("[data-cookie-reject]").addEventListener("click", () => saveCookieConsent(false));
+  banner.querySelector("[data-cookie-accept]").addEventListener("click", () => saveCookieConsent(true));
+  banner.querySelector("[data-cookie-manage]").addEventListener("click", () => {
+    banner.querySelector(".cookie-panel").hidden = false;
+    banner.querySelector("[data-cookie-manage]").hidden = true;
+    banner.querySelector("[data-cookie-accept]").hidden = true;
+    banner.querySelector("[data-cookie-save]").hidden = false;
+  });
+  banner.querySelector("[data-cookie-save]").addEventListener("click", () => {
+    saveCookieConsent(banner.querySelector("[data-analytics-choice]").checked);
+  });
+}
+
+function initCookieConsent() {
+  const consent = readCookieConsent();
+  if (consent) {
+    updateAnalyticsConsent(Boolean(consent.analytics));
+  } else {
+    renderCookieBanner();
+  }
+  document.querySelectorAll("[data-cookie-settings]").forEach((button) => {
+    button.addEventListener("click", () => renderCookieBanner(true));
+  });
+  window.canaryOpenCookieSettings = () => renderCookieBanner(true);
 }
 
 document.querySelectorAll("[data-lang]").forEach((button) => {
@@ -1472,16 +1588,15 @@ if (topbar && menuToggle) {
   });
 }
 
-let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (!topbar) return;
   const y = window.scrollY;
-  if (y < 24 || y < lastScrollY) {
-    topbar.classList.remove("topbar-hidden");
-  } else if (y > lastScrollY + 8) {
-    topbar.classList.add("topbar-hidden");
-  }
-  lastScrollY = y;
+  topbar.classList.toggle("topbar-scrolled", y > 24);
 }, { passive: true });
 
-setLanguage(route.lang || localStorage.getItem("teide-lang") || "en", route.page);
+if (route.page === "legal") {
+  localizeLegalLinks("en");
+} else {
+  setLanguage(route.lang || localStorage.getItem("teide-lang") || "en", route.page);
+}
+initCookieConsent();

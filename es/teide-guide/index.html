@@ -6,6 +6,12 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
   gtag('js', new Date());
 
   gtag('config', 'G-Z81YE5CEX2');
@@ -38,8 +44,7 @@
     <link rel="alternate" hreflang="ru" href="https://www.canaryhikes.eu/ru/teide-guide/" />
     <link rel="alternate" hreflang="es" href="https://www.canaryhikes.eu/es/teide-guide/" />
     <link rel="alternate" hreflang="x-default" href="https://www.canaryhikes.eu/en/teide-guide/" />
-    <link rel="stylesheet" href="/styles.css?v=46" />
-    <link rel="icon" type="image/png" href="/assets/canary-hikes-logo.png" />
+    <link rel="stylesheet" href="/styles.css?v=53" />
     <script type="application/ld+json">
 {
       "@context": "https://schema.org",
@@ -91,11 +96,7 @@
                   },
                   "publisher": {
                         "@type": "Organization",
-                        "name": "Canary.Hikes",
-                        "logo": {
-                              "@type": "ImageObject",
-                              "url": "https://www.canaryhikes.eu/assets/canary-hikes-logo.png"
-                        }
+                        "name": "Canary.Hikes"
                   },
                   "mainEntityOfPage": "https://www.canaryhikes.eu/es/teide-guide/",
                   "inLanguage": "es",
@@ -186,7 +187,6 @@
   <body>
     <header class="topbar">
       <a class="brand" href="/es/teide-guide/" aria-label="Canary.Hikes inicio">
-        <span class="brand-mark" aria-hidden="true"><img src="/assets/canary-hikes-logo.png" alt="" /></span>
         <span>Canary.Hikes</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
@@ -494,8 +494,13 @@
       <p data-i18n="footer.copy">Esta página se basa en una guía completa de subida al Teide. Las rutas pueden cerrarse por condiciones meteorológicas adversas. Antes de salir, comprueba el estado de los senderos, permisos, previsión y funcionamiento del teleférico en Tenerife ON.</p>
       <a class="footer-link" href="https://www.tenerifeon.es/" target="_blank" rel="noreferrer">Tenerife ON</a>
       <a class="instagram-link" href="https://www.instagram.com/Canary.Hikes" target="_blank" rel="noreferrer">Instagram · Canary.Hikes</a>
+      <nav class="legal-links" aria-label="Legal links">
+        <a href="/privacy-policy/" data-legal="privacy">Privacy Policy</a>
+        <a href="/cookie-policy/" data-legal="cookies">Cookie Policy</a>
+        <button type="button" data-cookie-settings>Cookie settings</button>
+      </nav>
     </footer>
 
-    <script src="/app.js?v=46"></script>
+    <script src="/app.js?v=53"></script>
   </body>
 </html>

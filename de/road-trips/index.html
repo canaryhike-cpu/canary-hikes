@@ -6,6 +6,12 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
   gtag('js', new Date());
 
   gtag('config', 'G-Z81YE5CEX2');
@@ -20,13 +26,11 @@
     <meta property="og:type" content="website" />
     <meta name="keywords" content="teneriffa wanderrouten, trekking teneriffa, wandern auf teneriffa, teide wanderung, teide besteigung, teide vulkan route, teide genehmigung, wandern kanaren, kanarische inseln hiking, wandern spanien" />
     <meta property="og:image" content="/assets/teide-sunrise.png" />
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" type="image/png" href="/assets/canary-hikes-logo.png" />
+    <link rel="stylesheet" href="/styles.css?v=53" />
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="/en/teide-guide/" aria-label="Canary.Hikes home">
-        <span class="brand-mark" aria-hidden="true"><img src="/assets/canary-hikes-logo.png" alt="" /></span>
         <span>Canary.Hikes</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle menu">☰</button>
@@ -237,8 +241,13 @@
       <p data-i18n="footer.copy">Built from the full Teide ascent guide. Routes can be closed because of adverse weather conditions. Check current trail status, permits, weather and cable-car updates on the official Tenerife ON website before you go.</p>
       <a class="footer-link" href="https://www.tenerifeon.es/" target="_blank" rel="noreferrer">Tenerife ON</a>
       <a class="instagram-link" href="https://www.instagram.com/Canary.Hikes" target="_blank" rel="noreferrer">Instagram · Canary.Hikes</a>
+      <nav class="legal-links" aria-label="Legal links">
+        <a href="/privacy-policy/" data-legal="privacy">Privacy Policy</a>
+        <a href="/cookie-policy/" data-legal="cookies">Cookie Policy</a>
+        <button type="button" data-cookie-settings>Cookie settings</button>
+      </nav>
     </footer>
 
-    <script src="/app.js?v=39"></script>
+    <script src="/app.js?v=53"></script>
   </body>
 </html>

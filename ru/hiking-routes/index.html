@@ -6,6 +6,12 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    analytics_storage: 'denied',
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied'
+  });
   gtag('js', new Date());
 
   gtag('config', 'G-Z81YE5CEX2');
@@ -20,13 +26,11 @@
     <meta property="og:type" content="website" />
     <meta name="keywords" content="маршруты по тенерифе, треккинг на тенерифе, хайкинг на тенерифе, восхождение на тейде, маршрут на тейде, вулкан тейде маршрут, разрешение на тейде, хайкинг канарские острова, походы канары, хайкинг испания" />
     <meta property="og:image" content="/assets/teide-sunrise.png" />
-    <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" type="image/png" href="/assets/canary-hikes-logo.png" />
+    <link rel="stylesheet" href="/styles.css?v=53" />
   </head>
   <body>
     <header class="topbar">
       <a class="brand" href="/ru/teide-guide/" aria-label="Canary.Hikes главная">
-        <span class="brand-mark" aria-hidden="true"><img src="/assets/canary-hikes-logo.png" alt="" /></span>
         <span>Canary.Hikes</span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Открыть меню">☰</button>
@@ -45,7 +49,7 @@
 
     <main id="top">
       <section class="hero hero-routes hero-routes-ru">
-        <img src="/assets/anaga-benijo-premium-panorama.svg" alt="Панорама Канарских островов с горными тропами и океаном" />
+        <img src="/assets/teide-montana-blanca.png" alt="Панорама Канарских островов с горными тропами и океаном" />
                 <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Canary.Hikes · маршруты для самостоятельного хайкинга</p>
@@ -250,8 +254,13 @@
       <p data-i18n="footer.copy">Материал основан на полном гиде по восхождению на Тейде. Маршруты могут закрывать из‑за погоды. Перед выходом проверьте статус троп, разрешения, прогноз и работу канатной дороги на сайте Tenerife ON.</p>
       <a class="footer-link" href="https://www.tenerifeon.es/" target="_blank" rel="noreferrer">Tenerife ON</a>
       <a class="instagram-link" href="https://www.instagram.com/Canary.Hikes" target="_blank" rel="noreferrer">Instagram · Canary.Hikes</a>
+      <nav class="legal-links" aria-label="Legal links">
+        <a href="/privacy-policy/" data-legal="privacy">Privacy Policy</a>
+        <a href="/cookie-policy/" data-legal="cookies">Cookie Policy</a>
+        <button type="button" data-cookie-settings>Cookie settings</button>
+      </nav>
     </footer>
 
-    <script src="/app.js?v=39"></script>
+    <script src="/app.js?v=53"></script>
   </body>
 </html>
