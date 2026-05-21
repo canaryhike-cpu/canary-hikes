@@ -868,9 +868,27 @@ const teideContentOverrides = {
       eyebrow: "Parking and route logistics",
       title: "Start at Montaña Blanca. Finish at your car.",
       copy: "The most convenient setup is to leave the car at the lower cable car station, walk 4.8 km to Montaña Blanca, climb to the summit area and then descend by cable car back to the car.",
-      twoCars: "A second convenient option is two cars: leave one at the start and one at the finish. This is especially useful for long routes or a walking descent."
+      twoCars: "A second convenient option is two cars: leave one at the start and one at the finish. This is especially useful for long routes or a walking descent.",
+      step1: "Cable car parking",
+      step1Text: "Useful if you plan to return by cable car after sunrise.",
+      step2: "Approach to Montaña Blanca",
+      step2Text: "About 4.8 km from the lower cable car station; include this approach in your timing.",
+      step3: "PNT 07 ascent",
+      step3Text: "The main climb to La Rambleta, with the biggest elevation gain.",
+      step4: "Crater and descent",
+      step4Text: "PNT 10 needs a separate permit; the descent depends on cable car status and weather."
     },
     maps: { teleferico: "Cable car parking", montana: "Montaña Blanca parking" },
+    descent: {
+      eyebrow: "Descent options",
+      title: "Keep the walking descent as a backup, not as an afterthought.",
+      walk: "Walking descent",
+      walkPro: "Independent and useful as a backup plan.",
+      walkCon: "But it adds hours after a sleepless night and is hard on the knees.",
+      cable: "Cable car descent",
+      cablePro: "Fast and energy-saving after the night ascent.",
+      cableCon: "But it depends on tickets, opening time and wind."
+    },
     tips: {
       eyebrow: "Field notes",
       title: "Small decisions can completely change how the ascent feels.",
@@ -980,9 +998,27 @@ const teideContentOverrides = {
       eyebrow: "Parken und Routenlogistik",
       title: "Start bei Montaña Blanca. Ziel am Auto.",
       copy: "Am bequemsten ist es, das Auto an der unteren Seilbahnstation zu lassen, 4,8 km bis Montaña Blanca zu gehen, in Richtung Gipfelbereich aufzusteigen und mit der Seilbahn zurück zum Auto zu fahren.",
-      twoCars: "Eine zweite praktische Option sind zwei Autos: eins am Start und eins am Ziel. Das ist besonders nützlich bei langen Routen oder Fußabstieg."
+      twoCars: "Eine zweite praktische Option sind zwei Autos: eins am Start und eins am Ziel. Das ist besonders nützlich bei langen Routen oder Fußabstieg.",
+      step1: "Parkplatz an der Seilbahn",
+      step1Text: "Praktisch, wenn du nach Sonnenaufgang mit der Seilbahn zurückfahren willst.",
+      step2: "Zustieg nach Montaña Blanca",
+      step2Text: "Etwa 4,8 km ab der unteren Seilbahnstation; plane diesen Zustieg zeitlich mit ein.",
+      step3: "Aufstieg über PNT 07",
+      step3Text: "Der Hauptaufstieg nach La Rambleta mit dem größten Höhengewinn.",
+      step4: "Krater und Abstieg",
+      step4Text: "PNT 10 braucht eine separate Genehmigung; der Abstieg hängt von Seilbahnstatus und Wetter ab."
     },
     maps: { teleferico: "Parkplatz an der Seilbahn", montana: "Parkplatz Montaña Blanca" },
+    descent: {
+      eyebrow: "Abstiegsoptionen",
+      title: "Plane den Fußabstieg als Reserve, nicht als spontane Idee.",
+      walk: "Abstieg zu Fuß",
+      walkPro: "Unabhängig und als Plan B immer wichtig.",
+      walkCon: "Aber nach einer schlaflosen Nacht kommen Stunden dazu, und die Knie leiden.",
+      cable: "Abstieg mit der Seilbahn",
+      cablePro: "Schnell und kraftsparend nach dem Nachtaufstieg.",
+      cableCon: "Aber abhängig von Tickets, Öffnungszeit und Wind."
+    },
     tips: {
       eyebrow: "Praxistipps",
       title: "Kleine Entscheidungen verändern das Gefühl des Aufstiegs stark.",
@@ -1092,9 +1128,27 @@ const teideContentOverrides = {
       eyebrow: "Aparcamiento y logística de ruta",
       title: "Salida en Montaña Blanca. Final en tu coche.",
       copy: "La opción más cómoda es dejar el coche en la estación inferior del teleférico, caminar 4,8 km hasta Montaña Blanca, subir hacia la zona de cumbre y después bajar en teleférico de vuelta al coche.",
-      twoCars: "Otra opción cómoda son dos coches: uno al inicio y otro al final. Es especialmente útil para rutas largas o bajada a pie."
+      twoCars: "Otra opción cómoda son dos coches: uno al inicio y otro al final. Es especialmente útil para rutas largas o bajada a pie.",
+      step1: "Aparcamiento del teleférico",
+      step1Text: "Útil si quieres volver en teleférico después del amanecer.",
+      step2: "Aproximación a Montaña Blanca",
+      step2Text: "Unos 4,8 km desde la estación inferior del teleférico; incluye esta aproximación en el cálculo de tiempo.",
+      step3: "Subida por PNT 07",
+      step3Text: "La subida principal a La Rambleta, con el mayor desnivel.",
+      step4: "Cráter y descenso",
+      step4Text: "PNT 10 necesita permiso separado; el descenso depende del estado del teleférico y del tiempo."
     },
     maps: { teleferico: "Aparcamiento del teleférico", montana: "Aparcamiento Montaña Blanca" },
+    descent: {
+      eyebrow: "Opciones de descenso",
+      title: "Ten la bajada a pie como plan B, no como improvisación.",
+      walk: "Bajada a pie",
+      walkPro: "Independiente y siempre útil como plan de respaldo.",
+      walkCon: "Pero suma horas después de una noche sin dormir y carga mucho las rodillas.",
+      cable: "Bajada en teleférico",
+      cablePro: "Rápida y ahorra energía tras la subida nocturna.",
+      cableCon: "Pero depende de billetes, horario de apertura y viento."
+    },
     tips: {
       eyebrow: "Notas de campo",
       title: "Pequeñas decisiones cambian mucho la experiencia de la subida.",
