@@ -2411,6 +2411,13 @@ html[lang="ru"] .acclimatize-actions .section-link {
     line-height: 1.02;
   }
 
+  html[lang="ru"] .hero h1 {
+    font-size: clamp(28px, 8vw, 36px);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+
   .hero-content {
     max-width: 100%;
     padding: 18px 16px;
@@ -2786,4 +2793,118 @@ html[lang="ru"] .acclimatize-actions .section-link {
 .mini-products,
 .permit-grid {
   align-items: stretch;
+}
+
+@media (max-width: 640px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .sunrise-plan.section-pad,
+  .cable.section-pad {
+    width: min(calc(100% - 28px), var(--max));
+    max-width: calc(100% - 28px);
+    margin-inline: auto;
+    padding-inline: 0;
+  }
+
+  .sunrise-panel,
+  .cable {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .sunrise-panel {
+    padding: 30px 18px 34px;
+  }
+
+  .sunrise-layout,
+  .sunrise-layout > *,
+  .sunrise-highlights,
+  .sunrise-highlights article,
+  .sunrise-table-wrap,
+  .cable-columns,
+  .cable .columns article {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .sunrise-highlights article {
+    padding: 18px 16px;
+  }
+
+  .sunrise-highlights p,
+  .cable .columns p,
+  .cable .columns li {
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: auto;
+  }
+
+  .sunrise-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sunrise-table {
+    min-width: 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 14px;
+  }
+
+  .sunrise-table th,
+  .sunrise-table td {
+    padding: 13px 10px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .sunrise-table th:nth-child(1),
+  .sunrise-table td:nth-child(1) {
+    width: 34%;
+  }
+
+  .sunrise-table th:nth-child(2),
+  .sunrise-table td:nth-child(2),
+  .sunrise-table th:nth-child(3),
+  .sunrise-table td:nth-child(3) {
+    width: 33%;
+  }
+
+  .cable {
+    padding-inline: 0;
+  }
+
+  .cable .section-head,
+  .cable .columns article {
+    padding-inline: 20px;
+  }
+
+  .cable .columns article {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media (min-width: 941px) {
+  .hero .summit-panel {
+    position: absolute;
+    right: max(24px, calc((100vw - var(--max)) / 2));
+    bottom: clamp(56px, 9vh, 96px);
+    width: min(320px, calc(100vw - 48px));
+    z-index: 3;
+  }
+}
+
+@media (max-width: 940px) {
+  .hero .summit-panel {
+    position: relative;
+    right: auto;
+    bottom: auto;
+  }
 }

@@ -781,6 +781,361 @@ const pageContent = {
   }
 };
 
+const teideContentOverrides = {
+  en: {
+    seo: {
+      title: "Mount Teide Hike Guide: PNT 07, Permits, Sunrise and Cable Car | Canary.Hikes",
+      description: "How to climb Mount Teide in Tenerife independently: PNT 07 via Montaña Blanca, PNT 07 and PNT 10 permits, night start for sunrise, parking, cable car descent, gear list and backup descent options.",
+      ogTitle: "Mount Teide Hike Guide: route, permits and sunrise",
+      ogDescription: "A practical guide to climbing Mount Teide: PNT 07, PNT 10, Tenerife ON permits, night start, parking, cable car, gear and descent options.",
+      image: "/assets/teide-real-sunrise-portrait.jpg"
+    },
+    hero: {
+      eyebrow: "Summit ascent guide",
+      title: "Independent Mount Teide Hike",
+      copy: "A practical guide to the ascent: route, permits, parking, cable car, gear list, descent options and altitude considerations.",
+      imageAlt: "Sunrise above the clouds on the Mount Teide hiking route in Tenerife",
+      cta: "Plan the ascent",
+      panelLabel: "Summit",
+      panelText: "Highest point of Spain and the Atlantic islands."
+    },
+    intro: {
+      eyebrow: "Read this first",
+      title: "This is a serious ascent that requires preparation.",
+      copy: "We completed this route ourselves and gathered the practical recommendations you need. We hope you get to do it too and experience a unique sunrise on the summit of an active volcano."
+    },
+    plan: {
+      eyebrow: "Step-by-step plan",
+      title: "Four steps, then all route details below.",
+      step1: "Parking and approach",
+      step1Text: "You can leave the car at the cable car station or use two cars. Then walk 4.8 km to Montaña Blanca.",
+      step1Link: "Open logistics",
+      step2: "Main ascent PNT 07",
+      step2Text: "This route requires a permit. It is the main climb to La Rambleta and the longest part of the ascent, with the main elevation gain.",
+      step2Link: "Open PNT 07",
+      step3: "Final section PNT 10",
+      step3Text: "If you want to continue from La Rambleta to the Teide crater, book a separate PNT 10 permit in advance.",
+      step3Link: "Open PNT 10",
+      step4: "Descent plan",
+      step4Text: "Descend by cable car if it is running, or keep a walking descent as your backup plan in case of wind.",
+      step4Link: "Descent options"
+    },
+    routes: {
+      eyebrow: "Official trails",
+      title: "Choose the route by effort, not only by views.",
+      recommended: "Recommended first ascent",
+      pnt07Title: "PNT 07: Montaña Blanca -> La Rambleta",
+      pnt07Text: "The main and most popular route for climbing Mount Teide. PNT 07 starts at the Montaña Blanca parking area and ends at the upper cable car station, La Rambleta. The final kilometres feel like a true high-altitude climb: slow pace, cold wind, heavy breathing and loose volcanic ground.",
+      pnt07Warning: "Permit required. PNT 07 is the recommended first ascent, but the permit is mandatory.",
+      wild: "Wilder volcanic option",
+      pnt09Title: "PNT 09: Teide -> Pico Viejo",
+      pnt09Text: "A dramatic volcanic route through the huge Pico Viejo crater, lava fields and black landscapes. Officially it is described as a descent, but some hikers reverse it as a harder ascent.",
+      pnt09Warning: "As an ascent, PNT 09 is much harder than PNT 07 and is not recommended for a first Teide climb.",
+      crater: "Final section to the crater",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo",
+      pnt10Text: "The final section from La Rambleta to the Teide crater. The route is short, but at altitude it still feels demanding because of the thin air.",
+      pnt10Warning: "Permit required. This is the final section to the crater."
+    },
+    permits: {
+      eyebrow: "Access rules",
+      title: "Permits are part of the route, not a formality.",
+      allTitle: "You need permits for every chosen trail",
+      allText: "First choose your ascent route, then book the permit for that trail. If you want to climb to the Teide crater, book PNT 10 separately. National park staff may check permits on the trail.",
+      linksTitle: "Official permit pages",
+      linksText: "Book through Tenerife ON. You may need to register or log in before selecting a date."
+    },
+    cable: {
+      eyebrow: "Cable car",
+      title: "The easiest descent is only easy if the cable car is running.",
+      know: "What to know",
+      why: "Why hikers choose it",
+      ticketText: "Buy cable car tickets in advance on the official Volcano Teide website and check the status before you start.",
+      ticketCta: "Buy cable car tickets",
+      whyText: "It is cooler at night, climbing feels easier, and sunrise near the summit is spectacular. You also avoid a punishing walking descent after a sleepless ascent.",
+      list: ["The first cabin down is usually around 09:00.", "Depending on the season, you may need to wait from sunrise until the cable car opens. In August, for example, we waited almost 2 hours.", "Buy tickets in advance.", "Wind can close the cable car.", "Always keep a walking descent backup plan."]
+    },
+    gear: {
+      eyebrow: "Gear list",
+      title: "Dress for wind, darkness and waiting at altitude.",
+      groups: [
+        ["Clothing", ["Trekking boots", "Warm hiking pants", "Warm fleece", "Windproof jacket", "Hat", "Gloves", "Buff or hood against wind"]],
+        ["Gear", ["Large backpack", "Emergency thermal blanket", "Headlamp", "Trekking poles", "Microspikes or crampons in winter"]],
+        ["Food and water", ["2-3 litres of water minimum", "Snacks", "High-calorie summit food", "Nuts, bars and chocolate", "Thermos with tea"]],
+        ["Important", ["It is cold at altitude in every season", "Take a power bank", "Cable car may open hours after you arrive", "No cafes or water on the route", "Wind makes cold feel stronger"]]
+      ]
+    },
+    logistics: {
+      eyebrow: "Parking and route logistics",
+      title: "Start at Montaña Blanca. Finish at your car.",
+      copy: "The most convenient setup is to leave the car at the lower cable car station, walk 4.8 km to Montaña Blanca, climb to the summit area and then descend by cable car back to the car.",
+      twoCars: "A second convenient option is two cars: leave one at the start and one at the finish. This is especially useful for long routes or a walking descent."
+    },
+    maps: { teleferico: "Cable car parking", montana: "Montaña Blanca parking" },
+    tips: {
+      eyebrow: "Field notes",
+      title: "Small decisions can completely change how the ascent feels.",
+      items: [
+        ["Do not underestimate altitude", "Above 3000 m, even fit hikers can feel shortness of breath, slower pace and tired legs. This is normal."],
+        ["Check summit weather", "The coast can be warm while the summit is near freezing, windy, cloudy or low visibility."],
+        ["Check cable car status", "Wind can close the cable car even on a sunny day. Check the official status before you start."],
+        ["Arrive early", "Montaña Blanca parking fills quickly at night, especially in summer, on weekends and around full moon."],
+        ["Do not rush", "Teide is not a race. A calm pace gives you more oxygen, more control and more joy."],
+        ["Remember why you came", "Sunrise above the clouds from Spain's highest point is a memory that can stay with you for life."]
+      ]
+    },
+    acclimatize: {
+      eyebrow: "Altitude first",
+      title: "Do an acclimatization hike before Teide.",
+      copy: "The Teide ascent starts above 2,500 metres, where many hikers begin to feel the altitude and thinner air. One acclimatization hike before the climb helps you test pace, breathing and how your body feels before the night start.",
+      routeOne: "Guajara route",
+      routeOneText: "A route to the summit of Guajara, with remains of the old observatory and panoramic views of Teide. A good option for gentle acclimatization, feeling the altitude and catching sunset in the national park.",
+      routeTwo: "Pico Viejo crater route",
+      routeTwoText: "A volcanic route to the huge Pico Viejo crater, with solid elevation gain and a real high-mountain feel. Excellent preparation before the main Teide ascent.",
+      cta: "Choose an acclimatization route"
+    },
+    footer: { copy: "This page is based on a full Mount Teide ascent guide. Routes may close because of adverse weather. Before you go, check trail status, permits, forecast and cable car operation on Tenerife ON." }
+  },
+  de: {
+    seo: {
+      title: "Teide Wanderung: PNT 07, Genehmigung, Sonnenaufgang und Seilbahn | Canary.Hikes",
+      description: "So planst du die Teide-Wanderung auf Teneriffa selbstständig: PNT 07 über Montaña Blanca, Genehmigungen für PNT 07 und PNT 10, Nachtstart zum Sonnenaufgang, Parken, Seilbahn, Packliste und Abstieg.",
+      ogTitle: "Teide Wanderung: Route, Genehmigungen und Sonnenaufgang",
+      ogDescription: "Praktischer Guide für den Teide-Aufstieg: PNT 07, PNT 10, Tenerife-ON-Genehmigungen, Nachtstart, Parken, Seilbahn, Ausrüstung und Abstieg.",
+      image: "/assets/teide-real-sunrise-portrait.jpg"
+    },
+    hero: {
+      eyebrow: "Guide zum Aufstieg",
+      title: "Selbstständige Teide-Wanderung",
+      copy: "Praktischer Guide zum Aufstieg: Route, Genehmigungen, Parken, Seilbahn, Packliste, Abstiegsoptionen und Besonderheiten der Höhe.",
+      cta: "Aufstieg planen",
+      panelLabel: "Gipfel",
+      panelText: "Höchster Punkt Spaniens und der Atlantikinseln."
+    },
+    intro: {
+      eyebrow: "Zuerst lesen",
+      title: "Das ist ein ernsthafter Aufstieg, der Vorbereitung braucht.",
+      copy: "Wir sind diese Route selbst gegangen und haben die wichtigsten Empfehlungen gesammelt. Wir wünschen dir, dass du es auch schaffst und den einzigartigen Sonnenaufgang auf dem Gipfel eines aktiven Vulkans erlebst."
+    },
+    plan: {
+      eyebrow: "Schritt-für-Schritt-Plan",
+      title: "Vier Schritte und darunter alle Routendetails.",
+      step1: "Parken und Zustieg",
+      step1Text: "Du kannst das Auto an der Seilbahnstation lassen oder zwei Autos nutzen. Danach gehst du 4,8 km bis Montaña Blanca.",
+      step1Link: "Logistik öffnen",
+      step2: "Hauptaufstieg PNT 07",
+      step2Text: "Diese Route braucht eine Genehmigung. Sie ist der Hauptaufstieg nach La Rambleta und der längste Teil mit dem wichtigsten Höhengewinn.",
+      step2Link: "PNT 07 öffnen",
+      step3: "Finaler Abschnitt PNT 10",
+      step3Text: "Wenn du von La Rambleta weiter zum Teide-Krater willst, buche rechtzeitig die separate PNT-10-Genehmigung.",
+      step3Link: "PNT 10 öffnen",
+      step4: "Abstiegsplan",
+      step4Text: "Fahre mit der Seilbahn ab, wenn sie fährt, oder halte den Fußabstieg als Plan B bei Wind bereit.",
+      step4Link: "Abstiegsoptionen"
+    },
+    cable: {
+      eyebrow: "Seilbahn",
+      title: "Der einfachste Abstieg ist nur einfach, wenn die Seilbahn fährt.",
+      know: "Wichtige Hinweise",
+      why: "Warum viele diese Option wählen",
+      ticketText: "Kaufe Seilbahntickets vorab auf der offiziellen Volcano-Teide-Website und prüfe vor dem Start den Status.",
+      ticketCta: "Seilbahntickets kaufen",
+      whyText: "Nachts ist es kühler, der Aufstieg fühlt sich leichter an, und der Sonnenaufgang nahe dem Gipfel ist spektakulär. Außerdem vermeidest du einen harten Fußabstieg nach einer schlaflosen Nacht.",
+      list: ["Die erste Kabine abwärts fährt meist gegen 09:00.", "Je nach Saison kann es nötig sein, vom Sonnenaufgang bis zur Öffnung der Seilbahn zu warten. Im August haben wir zum Beispiel fast 2 Stunden gewartet.", "Tickets vorher kaufen.", "Wind kann die Seilbahn schließen.", "Immer einen Fußabstieg als Plan B haben."]
+    },
+    routes: {
+      eyebrow: "Offizielle Wege",
+      title: "Wähle die Route nach Anstrengung, nicht nur nach Aussicht.",
+      recommended: "Empfohlener erster Aufstieg",
+      pnt07Title: "PNT 07: Montaña Blanca -> La Rambleta",
+      pnt07Text: "Die wichtigste und beliebteste Route für den Teide-Aufstieg. PNT 07 startet am Parkplatz Montaña Blanca und endet an der oberen Seilbahnstation La Rambleta. Die letzten Kilometer fühlen sich wie echtes Hochgebirge an: langsames Tempo, kalter Wind, schwere Atmung und lockerer Vulkangrund.",
+      pnt07Warning: "Genehmigung erforderlich. PNT 07 ist der empfohlene erste Aufstieg, aber die Genehmigung ist Pflicht.",
+      wild: "Wildere Vulkanoption",
+      pnt09Title: "PNT 09: Teide -> Pico Viejo",
+      pnt09Text: "Eine ausdrucksstarke Vulkanroute durch den riesigen Pico-Viejo-Krater, Lavafelder und schwarze Landschaften. Offiziell ist sie als Abstieg beschrieben, manche gehen sie umgekehrt als schwierigeren Aufstieg.",
+      pnt09Warning: "Als Aufstieg ist PNT 09 deutlich schwieriger als PNT 07 und nicht für den ersten Teide-Aufstieg empfohlen.",
+      crater: "Finaler Abschnitt zum Krater",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo",
+      pnt10Text: "Der finale Abschnitt von La Rambleta zum Teide-Krater. Die Route ist kurz, fühlt sich in der Höhe wegen der dünnen Luft aber trotzdem anstrengend an.",
+      pnt10Warning: "Genehmigung erforderlich. Das ist der finale Abschnitt zum Krater."
+    },
+    permits: {
+      eyebrow: "Zugangsregeln",
+      title: "Genehmigungen sind Teil der Route, keine Formalität.",
+      allTitle: "Du brauchst Genehmigungen für jeden gewählten Weg",
+      allText: "Wähle zuerst deine Aufstiegsroute und buche dann die passende Genehmigung. Wenn du zum Teide-Krater willst, buche PNT 10 separat. Mitarbeitende des Nationalparks können Genehmigungen auf dem Weg kontrollieren.",
+      linksTitle: "Offizielle Genehmigungsseiten",
+      linksText: "Buche über Tenerife ON. Vor der Datumsauswahl musst du dich eventuell registrieren oder einloggen."
+    },
+    gear: {
+      eyebrow: "Packliste",
+      title: "Kleide dich für Wind, Dunkelheit und Warten in der Höhe.",
+      groups: [
+        ["Kleidung", ["Trekkingstiefel", "Warme Wanderhose", "Warmer Fleece", "Windjacke", "Mütze", "Handschuhe", "Buff oder Kapuze gegen Wind"]],
+        ["Ausrüstung", ["Großer Rucksack", "Rettungsdecke", "Stirnlampe", "Wanderstöcke", "Grödel oder Steigeisen im Winter"]],
+        ["Essen und Wasser", ["Mindestens 2-3 Liter Wasser", "Snacks", "Kalorienreiches Gipfelessen", "Nüsse, Riegel und Schokolade", "Thermoskanne mit Tee"]],
+        ["Wichtig", ["In der Höhe ist es zu jeder Jahreszeit kalt", "Powerbank mitnehmen", "Die Seilbahn kann erst Stunden nach Ankunft öffnen", "Keine Cafes oder Wasser auf der Route", "Wind macht Kälte stärker"]]
+      ]
+    },
+    logistics: {
+      eyebrow: "Parken und Routenlogistik",
+      title: "Start bei Montaña Blanca. Ziel am Auto.",
+      copy: "Am bequemsten ist es, das Auto an der unteren Seilbahnstation zu lassen, 4,8 km bis Montaña Blanca zu gehen, in Richtung Gipfelbereich aufzusteigen und mit der Seilbahn zurück zum Auto zu fahren.",
+      twoCars: "Eine zweite praktische Option sind zwei Autos: eins am Start und eins am Ziel. Das ist besonders nützlich bei langen Routen oder Fußabstieg."
+    },
+    maps: { teleferico: "Parkplatz an der Seilbahn", montana: "Parkplatz Montaña Blanca" },
+    tips: {
+      eyebrow: "Praxistipps",
+      title: "Kleine Entscheidungen verändern das Gefühl des Aufstiegs stark.",
+      items: [
+        ["Höhe ernst nehmen", "Nach 3000 m bekommen auch fitte Menschen Atemnot, langsameres Tempo und müde Beine. Das ist normal."],
+        ["Gipfelwetter prüfen", "Unten kann es warm sein, während oben Nullgradnähe, Wind, Wolken oder schlechte Sicht warten."],
+        ["Seilbahnstatus prüfen", "Wind kann die Seilbahn auch an sonnigen Tagen schließen. Vor dem Start offiziellen Status prüfen."],
+        ["Früh ankommen", "Montaña Blanca füllt sich nachts schnell, besonders im Sommer, am Wochenende und bei Vollmond."],
+        ["Nicht hetzen", "Teide ist kein Rennen. Ruhiges Tempo bringt mehr Luft, Kontrolle und Freude."],
+        ["Den Moment merken", "Sonnenaufgang über den Wolken am höchsten Punkt Spaniens kann als Erinnerung fürs Leben bleiben."]
+      ]
+    },
+    acclimatize: {
+      eyebrow: "Zuerst Höhe",
+      title: "Akklimatisierung vor dem Teide.",
+      copy: "Der Teide-Aufstieg beginnt bereits über 2500 Metern, wo viele die Höhe und dünnere Luft spüren. Eine Akklimatisierungstour vor dem Aufstieg hilft, Tempo, Atmung und Körpergefühl vor dem Nachtstart zu testen.",
+      routeOne: "Route auf den Guajara",
+      routeOneText: "Route zum Gipfel des Guajara mit Resten der alten Sternwarte und Panoramablick auf den Teide. Eine gute Option für ruhige Akklimatisierung, Höhengefühl und Sonnenuntergang im Nationalpark.",
+      routeTwo: "Route zum Pico-Viejo-Krater",
+      routeTwoText: "Vulkanroute zum riesigen Pico-Viejo-Krater mit gutem Höhengewinn und echtem Hochgebirgsgefühl. Eine sehr gute Vorbereitung vor dem Hauptaufstieg auf den Teide.",
+      cta: "Akklimatisierungsroute wählen"
+    },
+    footer: { copy: "Diese Seite basiert auf einem vollständigen Guide zum Teide-Aufstieg. Routen können wegen ungünstigen Wetters geschlossen werden. Prüfe vor dem Start Wegstatus, Genehmigungen, Wettervorhersage und Seilbahnbetrieb auf Tenerife ON." }
+  },
+  es: {
+    seo: {
+      title: "Subida al Teide: PNT 07, permisos, amanecer y teleférico | Canary.Hikes",
+      description: "Cómo subir al Teide por libre en Tenerife: ruta PNT 07 por Montaña Blanca, permisos PNT 07 y PNT 10, salida nocturna para el amanecer, aparcamiento, teleférico, equipo y descenso.",
+      ogTitle: "Subida al Teide: ruta, permisos y amanecer",
+      ogDescription: "Guía práctica para subir al Teide: PNT 07, PNT 10, permisos de Tenerife ON, salida nocturna, aparcamiento, teleférico, equipo y descenso.",
+      image: "/assets/teide-real-sunrise-portrait.jpg"
+    },
+    hero: {
+      eyebrow: "Guía de ascenso",
+      title: "Subida al Teide por libre",
+      copy: "Guía práctica de la subida: ruta, permisos, aparcamiento, teleférico, lista de equipo, opciones de descenso y aspectos de la altitud.",
+      cta: "Planificar la subida",
+      panelLabel: "Cumbre",
+      panelText: "Punto más alto de España y de las islas del Atlántico."
+    },
+    intro: {
+      eyebrow: "Lee esto primero",
+      title: "Es una subida seria que requiere preparación.",
+      copy: "Hicimos esta ruta y reunimos las recomendaciones prácticas que necesitas. Ojalá tú también puedas vivir ese amanecer único en la cumbre de un volcán activo."
+    },
+    plan: {
+      eyebrow: "Plan paso a paso",
+      title: "Cuatro pasos y debajo todos los detalles de la ruta.",
+      step1: "Aparcamiento y aproximación",
+      step1Text: "Puedes dejar el coche en la estación del teleférico o usar dos coches. Después camina 4,8 km hasta Montaña Blanca.",
+      step1Link: "Abrir logística",
+      step2: "Subida principal PNT 07",
+      step2Text: "Esta ruta requiere permiso. Es la subida principal a La Rambleta y la parte más larga del ascenso, con el mayor desnivel.",
+      step2Link: "Abrir PNT 07",
+      step3: "Tramo final PNT 10",
+      step3Text: "Si quieres continuar desde La Rambleta hasta el cráter del Teide, reserva con antelación el permiso PNT 10 separado.",
+      step3Link: "Abrir PNT 10",
+      step4: "Plan de descenso",
+      step4Text: "Baja en teleférico si funciona, o conserva el descenso a pie como plan B en caso de viento.",
+      step4Link: "Opciones de descenso"
+    },
+    cable: {
+      eyebrow: "Teleférico",
+      title: "El descenso más fácil solo es fácil si el teleférico está operativo.",
+      know: "Qué debes saber",
+      why: "Por qué lo eligen muchos senderistas",
+      ticketText: "Compra los billetes del teleférico con antelación en la web oficial de Volcano Teide y comprueba el estado antes de salir.",
+      ticketCta: "Comprar billetes del teleférico",
+      whyText: "De noche hace más fresco, la subida se lleva mejor y el amanecer cerca de la cumbre es espectacular. Además evitas una bajada a pie muy dura después de una noche sin dormir.",
+      list: ["La primera cabina de bajada suele salir sobre las 09:00.", "Según la temporada, puede tocar esperar desde el amanecer hasta la apertura del teleférico. En agosto, por ejemplo, esperamos casi 2 horas.", "Compra los billetes con antelación.", "El viento puede cerrar el teleférico.", "Ten siempre un plan B de bajada a pie."]
+    },
+    routes: {
+      eyebrow: "Senderos oficiales",
+      title: "Elige la ruta por esfuerzo, no solo por vistas.",
+      recommended: "Primer ascenso recomendado",
+      pnt07Title: "PNT 07: Montaña Blanca -> La Rambleta",
+      pnt07Text: "La ruta principal y más popular para subir al Teide. PNT 07 empieza en el aparcamiento de Montaña Blanca y termina en la estación superior del teleférico, La Rambleta. Los últimos kilómetros se sienten como una auténtica subida de alta montaña: ritmo lento, viento frío, respiración pesada y terreno volcánico suelto.",
+      pnt07Warning: "Permiso obligatorio. PNT 07 es la subida recomendada para una primera vez, pero el permiso es imprescindible.",
+      wild: "Opción volcánica más salvaje",
+      pnt09Title: "PNT 09: Teide -> Pico Viejo",
+      pnt09Text: "Ruta volcánica muy expresiva por el enorme cráter de Pico Viejo, campos de lava y paisajes negros. Oficialmente se describe como descenso, pero algunas personas la hacen al revés como una subida más dura.",
+      pnt09Warning: "Como subida, PNT 09 es bastante más dura que PNT 07 y no se recomienda para una primera subida al Teide.",
+      crater: "Tramo final al cráter",
+      pnt10Title: "PNT 10: Sendero Telesforo Bravo",
+      pnt10Text: "Tramo final desde La Rambleta hasta el cráter del Teide. La ruta es corta, pero en altura sigue siendo exigente por el aire fino.",
+      pnt10Warning: "Permiso obligatorio. Este es el tramo final hasta el cráter."
+    },
+    permits: {
+      eyebrow: "Normas de acceso",
+      title: "Los permisos forman parte de la ruta, no son una formalidad.",
+      allTitle: "Necesitas permisos para cada sendero elegido",
+      allText: "Primero elige la ruta de subida y reserva el permiso correspondiente. Si quieres subir al cráter del Teide, reserva PNT 10 por separado. El personal del parque nacional puede comprobar los permisos en el sendero.",
+      linksTitle: "Páginas oficiales de permisos",
+      linksText: "Reserva a través de Tenerife ON. Puede que tengas que registrarte o iniciar sesión antes de elegir fecha."
+    },
+    gear: {
+      eyebrow: "Lista de equipo",
+      title: "Vístete pensando en viento, oscuridad y espera en altura.",
+      groups: [
+        ["Ropa", ["Botas de trekking", "Pantalón cálido de montaña", "Forro polar cálido", "Chaqueta cortaviento", "Gorro", "Guantes", "Buff o capucha contra el viento"]],
+        ["Equipo", ["Mochila grande", "Manta térmica de emergencia", "Frontal", "Bastones de trekking", "Microcrampones o crampones en invierno"]],
+        ["Comida y agua", ["Mínimo 2-3 litros de agua", "Snacks", "Comida calórica para la cumbre", "Frutos secos, barritas y chocolate", "Termo con té"]],
+        ["Importante", ["En altura hace frío en cualquier temporada", "Lleva power bank", "El teleférico puede abrir horas después de tu llegada", "No hay cafeterías ni agua en la ruta", "El viento aumenta la sensación de frío"]]
+      ]
+    },
+    logistics: {
+      eyebrow: "Aparcamiento y logística de ruta",
+      title: "Salida en Montaña Blanca. Final en tu coche.",
+      copy: "La opción más cómoda es dejar el coche en la estación inferior del teleférico, caminar 4,8 km hasta Montaña Blanca, subir hacia la zona de cumbre y después bajar en teleférico de vuelta al coche.",
+      twoCars: "Otra opción cómoda son dos coches: uno al inicio y otro al final. Es especialmente útil para rutas largas o bajada a pie."
+    },
+    maps: { teleferico: "Aparcamiento del teleférico", montana: "Aparcamiento Montaña Blanca" },
+    tips: {
+      eyebrow: "Notas de campo",
+      title: "Pequeñas decisiones cambian mucho la experiencia de la subida.",
+      items: [
+        ["No subestimes la altitud", "Después de 3000 m incluso personas en forma pueden notar falta de aire, ritmo más lento y piernas cansadas. Es normal."],
+        ["Revisa el tiempo en la cumbre", "En la costa puede hacer calor mientras arriba hay frío cercano a cero, viento, nubes o poca visibilidad."],
+        ["Revisa el estado del teleférico", "El viento puede cerrar el teleférico incluso en un día soleado. Mira el estado oficial antes de salir."],
+        ["Llega con tiempo", "El aparcamiento de Montaña Blanca se llena rápido por la noche, sobre todo en verano, fines de semana y luna llena."],
+        ["No corras", "El Teide no es una carrera. Un ritmo tranquilo da más aire, más control y más disfrute."],
+        ["Recuerda por qué viniste", "El amanecer sobre las nubes desde el punto más alto de España puede convertirse en un recuerdo para toda la vida."]
+      ]
+    },
+    acclimatize: {
+      eyebrow: "Primero la altitud",
+      title: "Haz una ruta de aclimatación antes del Teide.",
+      copy: "La subida al Teide empieza por encima de 2500 metros, donde mucha gente empieza a notar la altitud y el aire más fino. Una ruta de aclimatación antes de la subida ayuda a probar ritmo, respiración y sensaciones antes de la salida nocturna.",
+      routeOne: "Ruta a Guajara",
+      routeOneText: "Ruta a la cumbre de Guajara, con restos del antiguo observatorio y vistas panorámicas al Teide. Buena opción para aclimatación tranquila, sentir la altitud y ver el atardecer en el parque nacional.",
+      routeTwo: "Ruta al cráter de Pico Viejo",
+      routeTwoText: "Ruta volcánica hacia el enorme cráter de Pico Viejo, con buen desnivel y sensación real de alta montaña. Excelente preparación antes de la subida principal al Teide.",
+      cta: "Elegir ruta de aclimatación"
+    },
+    footer: { copy: "Esta página se basa en una guía completa de subida al Teide. Las rutas pueden cerrarse por condiciones meteorológicas adversas. Antes de salir, comprueba el estado de los senderos, permisos, previsión y funcionamiento del teleférico en Tenerife ON." }
+  }
+};
+
+function mergeContentOverrides(target, source) {
+  Object.entries(source).forEach(([key, value]) => {
+    if (value && typeof value === "object" && !Array.isArray(value)) {
+      target[key] = target[key] || {};
+      mergeContentOverrides(target[key], value);
+      return;
+    }
+    target[key] = value;
+  });
+}
+
+Object.entries(teideContentOverrides).forEach(([lang, overrides]) => {
+  mergeContentOverrides(content[lang], overrides);
+});
+
 const lists = {
   cable: document.querySelector("#cable-list"),
   gear: document.querySelector("#gear-grid"),
