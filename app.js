@@ -26,7 +26,7 @@ const content = {
     intro: {
       eyebrow: "Read this first",
       title: "This is not a casual walk — it is a real high-altitude ascent.",
-      copy: "Teide is one of the most impressive hiking routes on Tenerife and across the Canary Islands. Higher up the mountain the air gets thinner, the terrain rougher and the pace slower. But sunrise above the clouds makes the climb unforgettable."
+      copy: "Teide is a demanding high-altitude route, not a casual walk. Higher up the mountain the air gets thinner, the terrain rougher and the pace slower. With the right preparation, sunrise above the clouds becomes the reward for a hard night ascent."
     },
     plan: {
       eyebrow: "Step by step",
@@ -127,7 +127,7 @@ const content = {
     },
     descent: {
       eyebrow: "Descent choice", title: "Always keep a backup plan close.",
-      walk: "Walking down", walkPro: "Free, independent, beautiful daylight views.", walkCon: "But it is hard on knees and can add another 4-5 hours.",
+      walk: "Walking down", walkPro: "Free, independent, with daylight views on the descent.", walkCon: "But it is hard on knees and can add another 4-5 hours.",
       cable: "Cable car down", cablePro: "Fast, comfortable and energy-saving after the night ascent.", cableCon: "But tickets are needed and wind can cancel service."
     },
     tips: {
@@ -146,7 +146,7 @@ const content = {
       title: "Do an acclimatization hike before Teide.",
       copy: "The Teide ascent already starts high above sea level, where many hikers first notice thinner air and slower pace. A shorter acclimatization hike helps test breathing, rhythm and overall comfort before summit night.",
       routeOne: "Guajara acclimatization loop",
-      routeOneText: "Route to the summit of Guajara with remains of the old observatory and wide panoramic views towards Teide. A calmer acclimatization hike with steady elevation gain and beautiful evening light in the national park.",
+      routeOneText: "Route to the summit of Guajara with remains of the old observatory and wide panoramic views towards Teide. A calmer acclimatization hike with steady elevation gain and evening light in the national park.",
       routeTwo: "Pico Viejo crater route",
       routeTwoText: "Volcanic route towards the massive Pico Viejo crater with stronger elevation gain and a more alpine atmosphere. A very good preparation before the main Teide ascent.",
       cta: "Choose a prep route",
@@ -320,7 +320,7 @@ const content = {
     },
     intro: {
       eyebrow: "Сначала прочитайте это", title: "Это серьезный подъем, к которому необходима подготовка.",
-      copy: "Мы прошли этот маршрут и собрали для вас все рекомендации. Желаем вам тоже сделать это и встретить уникальный рассвет на вершине действующего вулкана."
+      copy: "Мы прошли этот маршрут сами и собрали практичные рекомендации: разрешения, парковки, канатная дорога, вещи, темп и варианты спуска. Пусть ваш рассвет на вершине Тейде будет красивым, а подготовка — спокойной."
     },
     plan: {
       eyebrow: "Шаг за шагом",
@@ -589,22 +589,23 @@ const pageContent = {
         title: "Tenerife Hiking Routes Shop | Canary.Hikes",
         description: "Buy ready-made Tenerife hiking route guides: Anaga, Masca, Chinyero, Benijo and Teide National Park plans with maps, timing, parking and difficulty.",
         ogTitle: "Tenerife Hiking Routes Shop | Canary.Hikes",
-        ogDescription: "Ready-made Tenerife hiking route guides with maps, timing, parking and local planning notes."
+        ogDescription: "Ready-made Tenerife hiking route guides with maps, timing, parking and local planning notes.",
+        image: "/assets/anaga-benijo-premium-panorama.png"
       },
       hero: {
         eyebrow: "Digital route shop",
         title: "Choose a Tenerife hiking route and go with a clear plan.",
         copy: "Five practical Canary.Hikes route guides for independent hikers: route logic, parking, timing, difficulty, best light, what to pack and what to avoid.",
         cta: "Shop hiking routes",
-        image: "/assets/teide-montana-blanca.png",
-        alt: "Volcanic hiking trail in Tenerife"
+        image: "/assets/anaga-benijo-premium-panorama.png",
+        alt: "Panoramic view of Anaga and the Benijo coast in Tenerife"
       },
       products: [
-        ["Guajara", "A route to an old observatory and one of Tenerife’s best sunset viewpoints: wide caldera panoramas, soft light and the feeling that the island is in your hands.", "⚡ Hard", "🔁 Loop", "€14"],
-        ["Pico Viejo", "A real volcanic adventure to a huge crater: lava fields, Martian tones and one of the most impressive geological scenes on the island.", "⚡ Hard", "➡️ Point-to-point", "€15"],
+        ["Guajara", "A route to an old observatory and a high viewpoint over the caldera: wide Teide panoramas, soft evening light and a steady mountain rhythm.", "⚡ Hard", "🔁 Loop", "€14"],
+        ["Pico Viejo", "A volcanic route to a huge crater: lava fields, dark plateaus and one of the clearest geological contrasts on the island.", "⚡ Hard", "➡️ Point-to-point", "€15"],
         ["Anaga", "Mountains, beach and top coastal views in one hike: dramatic ridges, ocean horizon and photogenic stops along the way.", "⚡ Hard", "🔁 Loop", "€13"],
-        ["Ifonche", "A family-friendly route through green forest with panoramas of the south: calm rhythm, pleasant shade and a perfect format for a beautiful walk without rushing.", "🟡 Medium", "🔁 Loop", "€10"],
-        ["Antequera Beach", "A hidden gem of Anaga: a route to a secluded beach through wild terrain, turquoise water and the exact views people come north for.", "⚡ Hard", "🔁 Loop", "€14"],
+        ["Ifonche", "A family-friendly route through green forest with southern panoramas, calm rhythm and enough shade for an unhurried walk.", "🟡 Medium", "🔁 Loop", "€10"],
+        ["Antequera Beach", "A quieter Anaga route to a secluded beach through rough terrain, ocean views and a finish that feels far from the busy island.", "⚡ Hard", "🔁 Loop", "€14"],
         ["Teno", "More than a trail to the lighthouse: lunar landscapes, striking views, a swim stop and a secret return section that turns the track into a full adventure.", "⚡ Hard", "🔁 Loop", "€14"]
       ]
     },
@@ -638,15 +639,16 @@ const pageContent = {
         title: "Teneriffa Wanderrouten Shop | Canary.Hikes",
         description: "Kaufe fertige Teneriffa-Wanderrouten: Anaga, Masca, Chinyero, Benijo und Teide-Nationalpark mit Karte, Timing, Parken und Schwierigkeit.",
         ogTitle: "Teneriffa Wanderrouten Shop | Canary.Hikes",
-        ogDescription: "Fertige Teneriffa-Wanderguides mit Karte, Timing, Parken und lokalen Planungstipps."
+        ogDescription: "Fertige Teneriffa-Wanderguides mit Karte, Timing, Parken und lokalen Planungstipps.",
+        image: "/assets/anaga-benijo-premium-panorama.png"
       },
       hero: {
         eyebrow: "Digitaler Routenshop",
         title: "Wähle eine Wanderroute auf Teneriffa und starte mit klarem Plan.",
         copy: "Fünf praktische Canary.Hikes-Guides für unabhängige Wanderer: Routenlogik, Parken, Timing, Schwierigkeit, bestes Licht, Packliste und typische Fehler.",
         cta: "Wanderrouten ansehen",
-        image: "/assets/teide-montana-blanca.png",
-        alt: "Vulkanische Wanderroute auf Teneriffa"
+        image: "/assets/anaga-benijo-premium-panorama.png",
+        alt: "Panorama von Anaga und der Benijo-Küste auf Teneriffa"
       },
       products: [
         ["Guajara", "Route zur alten Sternwarte und zu einem der besten Sonnenuntergangspunkte auf Teneriffa: weite Caldera-Panoramen, weiches Licht und das Gefühl, die Insel liegt dir zu Füßen.", "⚡ Schwer", "🔁 Rundtour", "€14"],
@@ -684,40 +686,88 @@ const pageContent = {
   ru: {
     hiking: {
       seo: {
-        title: "Хайкинг маршруты Тенерифе: магазин гайдов | Canary.Hikes",
-        description: "Готовые хайкинг-маршруты по Тенерифе: Anaga, Masca, Chinyero, Benijo и парк Тейде с картой, временем, парковками и сложностью.",
-        ogTitle: "Хайкинг маршруты Тенерифе | Canary.Hikes",
-        ogDescription: "Готовые маршруты по Тенерифе с картой, таймингом, парковками и локальными подсказками."
+        title: "Хайкинг на Тенерифе: маршруты без экскурсии | Canary.Hikes",
+        description: "Готовые хайкинг маршруты по Тенерифе: Anaga, Тейде, лавовые поля, океанские тропы, карта, GPX-трек, сложность, время, старт и логистика.",
+        ogTitle: "Маршруты, ради которых едут на Тенерифе",
+        ogDescription: "Маршруты по Тенерифе без экскурсии: Anaga, Тейде, лавовые поля и океанские тропы с картой, временем, сложностью, стартом и советами перед выходом.",
+        image: "/assets/anaga-benijo-premium-panorama.png",
+        keywords: "хайкинг Тенерифе, маршруты Тенерифе, треккинг Тенерифе, пешеходные маршруты Тенерифе, самостоятельные маршруты Тенерифе, маршруты Анаги, маршруты без экскурсии Тенерифе, легкие маршруты Тенерифе, сложные маршруты Тенерифе, Anaga hiking, Teide hiking, Tenerife hiking routes, Canary.Hikes"
       },
       hero: {
-        eyebrow: "Canary.Hikes",
-        title: "Готовые хайкинговые маршруты по Канарским островам",
-        copy: "Треки, парковки, точки старта, логистика и честные подсказки — чтобы не собирать маршрут из блогов, карт и десятка хайкинг-приложений.",
+        eyebrow: "Canary.Hikes · цифровые маршруты",
+        title: "Маршруты, ради которых едут на Тенерифе",
+        copy: "Маршруты по Тенерифе, которые мы проходим сами: от туманных лесов Anaga до высокогорья Тейде и океанских троп северного побережья.",
         cta: "Выбрать маршрут",
-        image: "/assets/teide-montana-blanca.png",
-        alt: "Панорама Анаги и скал Бенихо"
+        image: "/assets/anaga-benijo-premium-panorama.png",
+        alt: "Панорама Анаги и побережья Бенихо на Тенерифе"
+      },
+      about: {
+        eyebrow: "Мы сначала проходим их сами",
+        title: "Мы не публикуем маршруты, которые сами бы не повторили.",
+        copy: "Иногда тропа выглядит красиво на карте, но оказывается однообразной, перегруженной туристами или неудобной по логистике. Поэтому каждый маршрут мы сначала проходим сами — и не один раз. В коллекцию попадают только те хайки, которые действительно того стоят.",
+        image: "/assets/film/anaga-sign-friends.jpg",
+        alt: "Canary.Hikes у указателя маршрутов Afur и Taganana в Anaga"
+      },
+      value: {
+        eyebrow: "Как отбираем маршруты",
+        title: "Мы не собираем просто треки из приложений.",
+        copy: "Мы отбираем самые сильные маршруты: рельеф, смена ландшафта, виды, логистика, покрытие тропы и нагрузка. В коллекцию попадают только те хайки, которые хочется рекомендовать друзьям, а не просто сохранить на карте.",
+        cards: [
+          ["Маршрут с характером", "Не просто галочка «я был в хайке на Тенерифе»: у тропы есть ритм, сильная картинка и смысл пройти её именно в отпуске."],
+          ["Понятная логистика дня", "Парковки, старт, тайминг, транспорт и важные нюансы — мы все для вас подготовили."],
+          ["Нагрузка и безопасность", "Мы смотрим не только на вид, но и на набор высоты, покрытие, длительность и усталость после маршрута."]
+        ]
       },
       products: [
-        ["Guajara", "Маршрут к старинной обсерватории и на лучшую закатную точку Тенерифе: масштабные панорамы кальдеры, мягкий свет и ощущение, что остров лежит у вас на ладони.", "⚡ Сложный", "🔁 Круговой", "€14"],
-        ["Pico Viejo", "Настоящее вулканическое приключение к огромному кратеру: лавовые поля, марсианские оттенки и одна из самых впечатляющих геологических сцен на острове.", "⚡ Сложный", "➡️ Линейный", "€15"],
-        ["Anaga", "Горы, пляж и лучшие виды на побережье в одном треке: драматичные гребни, океанский горизонт и фотогеничные остановки на каждом участке.", "⚡ Сложный", "🔁 Круговой", "€13"],
-        ["Ifonche", "Семейный маршрут по зеленому лесу с панорамами южной части острова: спокойный ритм, приятная тень и идеальный формат для красивой прогулки без спешки.", "🟡 Средний", "🔁 Круговой", "€10"],
-        ["Antequera Beach", "Скрытая жемчужина Анаги: путь к уединенному пляжу через дикий рельеф, бирюзовую воду и те самые виды, ради которых едут на север острова.", "⚡ Сложный", "🔁 Круговой", "€14"],
-        ["Teno", "Больше чем маршрут к маяку: лунные пейзажи, захватывающие виды, остановка для купания и секретный обратный путь, который превращает трек в полноценное приключение.", "⚡ Сложный", "🔁 Круговой", "€14"]
-      ]
+        ["Ifonche", "Скрытая жемчужина юга: сосны, лес, глубокие ущелья и захватывающий вид на побережье.", "Лёгкий", "2-3 ч", "€10", "/assets/film/ifonche-route-card.jpg", ["Лёгкий", "Круговой", "Для семей с детьми"]],
+        ["Anaga", "Видовой маршрут в Анаге: местные деревни, леса и лучшие панорамы северного побережья.", "Сложный", "5 ч", "€13", "/assets/film/anaga-route-card.jpg", ["Сложный", "Круговой", "Anaga"]],
+        ["Guajara", "Высокогорный маршрут к одной из лучших закатных точек Тенерифе с невероятным видом на вулкан Тейде.", "Сложный", "5 ч", "€14", "/assets/film/guajara-route-card.jpg", ["Сложный", "Круговой", "Закат", "Тейде"]]
+      ],
+      preview: {
+        eyebrow: "Что вы получаете перед выходом",
+        title: "Не просто GPX-трек.",
+        copy: "В каждом маршруте есть карта, логика хайка и практические детали, которые помогают спокойно пройти маршрут самостоятельно.",
+        items: [
+          ["Обзор маршрута", "Сложность, дистанция, набор высоты, длительность и кому подойдёт маршрут.", "overview", "/assets/guide-preview/route-preview-2.jpg"],
+          ["Карта и навигация", "Понятная схема маршрута и ссылка на навигацию, которую можно открыть прямо с телефона.", "map", "/assets/guide-preview/route-preview-3.jpg"],
+          ["Разбивка по маршруту", "Ключевые отрезки, смотровые точки, сложные участки и места, где легко ошибиться.", "timeline", "/assets/guide-preview/route-preview-4.jpg"],
+          ["Перед выходом", "Погода, вода, одежда, сезон, парковки и другие вещи, которые лучше знать заранее.", "checklist", "/assets/guide-preview/route-preview-1.jpg"]
+        ]
+      },
+      finale: {
+        eyebrow: "Хайкинг на Тенерифе",
+        title: "Маршруты для разного ритма отпуска",
+        copy: "Один день на Тенерифе может быть про туманный лес Anaga, а следующий — про вулканическое высокогорье и пустые тропы над облаками. Поэтому маршрут важно выбирать не по популярности, а по тому, какой день вы хотите прожить.",
+        points: [
+          ["Контрастные ландшафты", "Лавовые поля, зелёная Anaga, океанские тропы, сосновые склоны и высокогорье Тейде."],
+          ["Под настроение", "Короткий хайк на закат, спокойная прогулка у океана или полноценный горный день."],
+          ["По уровню сложности", "Есть easy, moderate и hard маршруты с понятной длительностью и нагрузкой."],
+          ["Можно с детьми", "В коллекции есть спокойные маршруты с хорошими видами без тяжёлых подъёмов."]
+        ]
+      },
+      searchAnswers: {
+        eyebrow: "Коротко для планирования",
+        title: "Что важно знать перед хайкингом на Тенерифе",
+        items: [
+          ["Что входит в маршрут Canary.Hikes?", "Это цифровой гид для самостоятельного хайкинга на Тенерифе: карта, GPX-трек, тайминг, набор высоты, навигация, парковки, рекомендации по погоде и важные детали перед выходом."],
+          ["Кому подойдут эти маршруты?", "Тем, кто хочет ходить самостоятельно без экскурсионной группы и заранее понимать сложность, длительность, логистику и нагрузку маршрута."],
+          ["Какие маршруты есть в коллекции?", "В коллекции есть хайкинг-маршруты по Anaga, Тейде, северному побережью Тенерифе, лавовым полям, сосновым лесам и океанским тропам."],
+          ["Есть ли лёгкие маршруты?", "Да. Часть маршрутов подойдёт для спокойного хайкинга, прогулок с детьми и коротких походов без большой физической нагрузки."]
+        ]
+      }
     },
     road: {
       seo: {
-        title: "Road trips по Тенерифе: магазин маршрутов | Canary.Hikes",
+        title: "Автомаршруты по Тенерифе: готовые планы поездок | Canary.Hikes",
         description: "Готовые автомаршруты по Тенерифе: северное кольцо, Anaga, вулкан и вино, скрытые пляжи и план острова на 3 дня.",
-        ogTitle: "Road trips по Тенерифе | Canary.Hikes",
-        ogDescription: "Готовые автомаршруты по Тенерифе с остановками, таймингом, парковками и красивой логикой пути."
+        ogTitle: "Автомаршруты по Тенерифе | Canary.Hikes",
+        ogDescription: "Готовые автомаршруты по Тенерифе с остановками, таймингом, парковками и понятной логикой дня."
       },
       hero: {
-        eyebrow: "Магазин road trips",
-        title: "Автомаршруты по Тенерифе без хаоса и лишней суеты.",
-        copy: "Пять маршрутов для самостоятельной поездки: красивые остановки, парковки, паузы на еду, тайминг и запасные варианты при ветре, облаках или позднем старте.",
-        cta: "Смотреть road trips",
+        eyebrow: "Магазин автомаршрутов",
+        title: "Автомаршруты по Тенерифе с понятным планом на день.",
+        copy: "Пять маршрутов для самостоятельной поездки: смотровые, короткие прогулки, места для обеда, тайминг и запасные варианты при ветре, облаках или позднем старте.",
+        cta: "Смотреть автомаршруты",
         image: "/assets/teide-pico-viejo.png",
         alt: "Вулканический пейзаж для road trip по Тенерифе"
       },
@@ -725,7 +775,7 @@ const pageContent = {
         ["North Tenerife Scenic Loop", "La Orotava, смотровые, зеленые долины, океанские дороги и спокойный маршрут на день.", "Легкий", "1 день", "€11"],
         ["Volcano & Wine Day", "Нацпарк Тейде, лавовые виды, локальные винные остановки и возвращение до темноты.", "Легкий", "1 день", "€12"],
         ["Anaga Viewpoints Road Trip", "Горный маршрут по Anaga со смотровыми, короткими прогулками и идеями для обеда.", "Серпантин", "1 день", "€11"],
-        ["South Coast Hidden Beaches", "Маршрут для теплого дня: тихие бухты, sunset-точки и понятные парковки.", "Легкий", "Полдня", "€8"],
+        ["South Coast Hidden Beaches", "Маршрут для теплого дня: тихие бухты, точки для заката и понятные парковки.", "Легкий", "Полдня", "€8"],
         ["3-Day Tenerife Island Plan", "Компактный план острова: побережье, вулкан, Anaga и локальные городки без гонки.", "Полный план", "3 дня", "€19"]
       ]
     }
@@ -736,15 +786,16 @@ const pageContent = {
         title: "Rutas de senderismo en Tenerife: tienda de guías | Canary.Hikes",
         description: "Compra rutas de senderismo en Tenerife: Anaga, Masca, Chinyero, Benijo y Parque Nacional del Teide con mapa, tiempos, aparcamiento y dificultad.",
         ogTitle: "Rutas de senderismo en Tenerife | Canary.Hikes",
-        ogDescription: "Guías de senderismo en Tenerife con mapa, tiempos, aparcamiento y consejos locales."
+        ogDescription: "Guías de senderismo en Tenerife con mapa, tiempos, aparcamiento y consejos locales.",
+        image: "/assets/anaga-benijo-premium-panorama.png"
       },
       hero: {
         eyebrow: "Tienda de rutas digitales",
         title: "Elige una ruta de senderismo en Tenerife y sal con un plan claro.",
         copy: "Cinco guías prácticas de Canary.Hikes para caminar por libre: lógica de ruta, aparcamiento, tiempos, dificultad, mejor luz, qué llevar y qué evitar.",
         cta: "Ver rutas",
-        image: "/assets/teide-montana-blanca.png",
-        alt: "Sendero volcánico en Tenerife"
+        image: "/assets/anaga-benijo-premium-panorama.png",
+        alt: "Panorámica de Anaga y la costa de Benijo en Tenerife"
       },
       products: [
         ["Guajara", "Ruta hacia un antiguo observatorio y uno de los mejores atardeceres de Tenerife: panorámicas amplias de la caldera, luz suave y sensación de tener la isla en la palma de la mano.", "⚡ Difícil", "🔁 Circular", "€14"],
@@ -802,7 +853,7 @@ const teideContentOverrides = {
     intro: {
       eyebrow: "Read this first",
       title: "This is a serious ascent that requires preparation.",
-      copy: "We completed this route ourselves and gathered the practical recommendations you need. We hope you get to do it too and experience a unique sunrise on the summit of an active volcano."
+      copy: "We completed this route ourselves and gathered the practical details that matter on the mountain: permits, parking, cable car, gear, pace and descent options. The goal is a calm, well-prepared sunrise on Teide."
     },
     plan: {
       eyebrow: "Step-by-step plan",
@@ -851,7 +902,7 @@ const teideContentOverrides = {
       why: "Why hikers choose it",
       ticketText: "Buy cable car tickets in advance on the official Volcano Teide website and check the status before you start.",
       ticketCta: "Buy cable car tickets",
-      whyText: "It is cooler at night, climbing feels easier, and sunrise near the summit is spectacular. You also avoid a punishing walking descent after a sleepless ascent.",
+      whyText: "It is cooler at night, climbing feels easier, and the first light near the summit is the main reason many hikers choose this timing. You also avoid a punishing walking descent after a sleepless ascent.",
       list: ["The first cabin down is usually around 09:00.", "Depending on the season, you may need to wait from sunrise until the cable car opens. In August, for example, we waited almost 2 hours.", "Buy tickets in advance.", "Wind can close the cable car.", "Always keep a walking descent backup plan."]
     },
     gear: {
@@ -1212,7 +1263,7 @@ function ensureMeta(selector, create) {
 const shopUi = {
   en: { products: "Digital guides", metaDifficulty: "Difficulty", metaTime: "Time", order: "Order on Instagram", footer: "Digital Tenerife route guides by Canary.Hikes. Message us on Instagram to order or ask what fits your trip." },
   de: { products: "Digitale Guides", metaDifficulty: "Schwierigkeit", metaTime: "Dauer", order: "Auf Instagram bestellen", footer: "Digitale Teneriffa-Routenguides von Canary.Hikes. Schreib uns auf Instagram, wenn du bestellen willst oder Hilfe bei der Auswahl brauchst." },
-  ru: { products: "Цифровые гайды", metaDifficulty: "Сложность", metaTime: "Тип маршрута", order: "Заказать в Instagram", footer: "Цифровые маршруты по Тенерифе от Canary.Hikes. Напишите нам в Instagram, чтобы заказать гайд или выбрать подходящий маршрут." },
+  ru: { products: "Хайкинг маршруты", metaDifficulty: "Сложность", metaTime: "Время", order: "Открыть маршрут", footer: "Цифровые маршруты по Тенерифе от Canary.Hikes. Сейчас маршрут можно запросить в Instagram, дальше здесь появятся отдельные страницы маршрутов." },
   es: { products: "Guías digitales", metaDifficulty: "Dificultad", metaTime: "Duración", order: "Pedir por Instagram", footer: "Guías digitales de Tenerife por Canary.Hikes. Escríbenos en Instagram para pedir una guía o elegir la ruta que mejor encaja con tu viaje." }
 };
 
@@ -1262,10 +1313,104 @@ function seoFor(lang, page) {
   return page === "teide" ? content[lang].seo : pageContent[lang][page].seo;
 }
 
+function absoluteUrl(path) {
+  return path?.startsWith("http") ? path : `${window.location.origin}${path || "/"}`;
+}
+
+function buildShopStructuredData(lang, page, pageUrl) {
+  const pageData = pageContent[lang]?.[page];
+  if (!pageData) return null;
+  const products = (pageData.products || []).map((product, index) => {
+    const [name, description, difficulty, time, price, image, tags] = product;
+    return {
+      "@type": "Product",
+      name,
+      description,
+      image: image ? absoluteUrl(image) : absoluteUrl(pageData.hero.image),
+      brand: { "@type": "Brand", name: "Canary.Hikes" },
+      category: "Digital hiking route guide",
+      additionalProperty: [
+        { "@type": "PropertyValue", name: "Difficulty", value: difficulty },
+        { "@type": "PropertyValue", name: "Estimated hiking time", value: time },
+        ...(Array.isArray(tags) ? tags.map((tag) => ({ "@type": "PropertyValue", name: "Route tag", value: tag })) : [])
+      ],
+      offers: {
+        "@type": "Offer",
+        price: String(price).replace(/[^\d.,]/g, "").replace(",", "."),
+        priceCurrency: "EUR",
+        availability: "https://schema.org/InStock",
+        url: `${pageUrl}#products`
+      },
+      position: index + 1
+    };
+  });
+  const faqItems = (pageData.searchAnswers?.items || []).map(([question, answer]) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: answer
+    }
+  }));
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: pageData.seo.title,
+        description: pageData.seo.description,
+        inLanguage: lang,
+        isPartOf: {
+          "@type": "WebSite",
+          name: "Canary.Hikes",
+          url: window.location.origin
+        },
+        about: [
+          "Tenerife hiking routes",
+          "self-guided hiking",
+          "digital hiking guides",
+          "Anaga hiking",
+          "Teide hiking"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${pageUrl}#route-guides`,
+        name: pageData.hero.title,
+        description: pageData.hero.copy,
+        itemListElement: products.map((product, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: product
+        }))
+      },
+      ...(faqItems.length ? [{
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        mainEntity: faqItems
+      }] : [])
+    ]
+  };
+}
+
+function updateStructuredData(lang, page, pageUrl) {
+  document.head.querySelectorAll('script[data-structured-data]').forEach((node) => node.remove());
+  if (page === "teide") return;
+  const data = buildShopStructuredData(lang, page, pageUrl);
+  if (!data) return;
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.dataset.structuredData = page;
+  script.textContent = JSON.stringify(data);
+  document.head.appendChild(script);
+}
+
 function setMeta(lang, page) {
   const seo = seoFor(lang, page);
   const pageUrl = `${window.location.origin}${pagePath(lang, page)}`;
-  const imageUrl = `${window.location.origin}${seo.image || "/assets/teide-sunrise.png"}`;
+  const imageUrl = absoluteUrl(seo.image || "/assets/teide-sunrise.png");
   document.title = seo.title;
   ensureMeta('meta[name="description"]', () => {
     const node = document.createElement("meta");
@@ -1287,6 +1432,21 @@ function setMeta(lang, page) {
     node.setAttribute("property", "og:type");
     return node;
   }).content = page === "teide" ? "article" : "website";
+  const existingKeywords = document.querySelector('meta[name="keywords"]');
+  if (seo.keywords) {
+    ensureMeta('meta[name="keywords"]', () => {
+      const node = document.createElement("meta");
+      node.name = "keywords";
+      return node;
+    }).content = seo.keywords;
+  } else if (existingKeywords) {
+    existingKeywords.remove();
+  }
+  ensureMeta('meta[name="robots"]', () => {
+    const node = document.createElement("meta");
+    node.name = "robots";
+    return node;
+  }).content = "index, follow, max-image-preview:large";
   ensureMeta('meta[property="og:image"]', () => {
     const node = document.createElement("meta");
     node.setAttribute("property", "og:image");
@@ -1322,6 +1482,7 @@ function setMeta(lang, page) {
     node.rel = "canonical";
     return node;
   }).href = pageUrl;
+  updateStructuredData(lang, page, pageUrl);
 }
 
 function updateAlternateLinks(page) {
@@ -1386,29 +1547,133 @@ function renderShop(lang, page) {
         ${Array.isArray(pageData.hero.benefits) && pageData.hero.benefits.length ? `<ul class="hero-benefits">${pageData.hero.benefits.map((item) => `<li>${item}</li>`).join("")}</ul>` : ""}
       </div>
     </section>
+    ${pageData.about ? `
+    <section class="shop-about">
+      <div class="shop-about-copy">
+        <p class="eyebrow">${pageData.about.eyebrow}</p>
+        <h2>${pageData.about.title}</h2>
+        <p>${pageData.about.copy}</p>
+        ${Array.isArray(pageData.about.notes) && pageData.about.notes.length ? `
+        <div class="shop-about-notes">
+          ${pageData.about.notes.map((note) => `<span>${note}</span>`).join("")}
+        </div>
+        ` : ""}
+      </div>
+      <figure class="shop-about-photo">
+        <img src="${pageData.about.image}" alt="${pageData.about.alt}" loading="lazy" />
+      </figure>
+    </section>
+    ` : ""}
     <section id="products" class="shop-section section-pad">
       <div class="section-head">
         <p class="eyebrow">${ui.products}</p>
         <h2>${pageData.hero.cta}</h2>
       </div>
       <div class="product-grid">
-        ${pageData.products.map(([title, text, difficulty, time, price], index) => `
+        ${pageData.products.map((product, index) => {
+          const [title, text, difficulty, time, price, image, tags] = product;
+          const displayTags = Array.isArray(tags) && tags.length ? tags : [difficulty, time].filter(Boolean);
+          return `
           <article class="product-card">
+            ${image ? `<img class="product-image" src="${image}" alt="${title}" loading="lazy" />` : ""}
             <span class="product-index">${String(index + 1).padStart(2, "0")}</span>
             <h3>${title}</h3>
             <p>${text}</p>
-            <div class="product-meta">
-              <span>${ui.metaDifficulty}: <strong>${difficulty}</strong></span>
-              <span>${ui.metaTime}: <strong>${time}</strong></span>
-            </div>
+            ${displayTags.length ? `<div class="product-tags">${displayTags.map((tag) => `<span>${tag}</span>`).join("")}</div>` : `
+              <div class="product-meta">
+                <span>${ui.metaDifficulty}: <strong>${difficulty}</strong></span>
+                <span>${ui.metaTime}: <strong>${time}</strong></span>
+              </div>
+            `}
             <div class="product-buy">
               <strong>${price}</strong>
               <a href="https://www.instagram.com/Canary.Hikes" target="_blank" rel="noreferrer">${ui.order}</a>
             </div>
           </article>
+        `;
+        }).join("")}
+      </div>
+    </section>
+    ${pageData.value ? `
+    <section id="why-these-hikes" class="shop-trust section-pad">
+      <div class="section-head">
+        <p class="eyebrow">${pageData.value.eyebrow}</p>
+        <h2>${pageData.value.title}</h2>
+        <p>${pageData.value.copy}</p>
+      </div>
+      <div class="shop-trust-grid">
+        ${pageData.value.cards.map(([title, text], index) => `
+          <article class="shop-trust-card">
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <h3>${title}</h3>
+            <p>${text}</p>
+          </article>
         `).join("")}
       </div>
     </section>
+    ` : ""}
+    ${pageData.preview ? `
+    <section id="guide-preview" class="guide-preview">
+      <div class="section-head">
+        <p class="eyebrow">${pageData.preview.eyebrow}</p>
+        <h2>${pageData.preview.title}</h2>
+        <p>${pageData.preview.copy}</p>
+      </div>
+      <div class="guide-preview-grid">
+        ${pageData.preview.items.map(([title, text, variant, image]) => `
+          <article class="guide-preview-card">
+            <div class="guide-preview-visual guide-preview-visual-${variant}${image ? " has-image" : ""}" aria-hidden="true">
+              ${image ? `<img src="${image}" alt="" loading="lazy" />` : ""}
+              <span class="preview-title"></span>
+              <span class="preview-line preview-line-wide"></span>
+              <span class="preview-line"></span>
+              <span class="preview-line preview-line-short"></span>
+              <span class="preview-map"></span>
+              <span class="preview-route"></span>
+              <span class="preview-dot preview-dot-one"></span>
+              <span class="preview-dot preview-dot-two"></span>
+              <span class="preview-dot preview-dot-three"></span>
+            </div>
+            <h3>${title}</h3>
+            <p>${text}</p>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+    ` : ""}
+    ${pageData.finale ? `
+    <section id="hiking-tenerife" class="shop-finale section-pad">
+      <p class="eyebrow">${pageData.finale.eyebrow}</p>
+      <h2>${pageData.finale.title}</h2>
+      <p>${pageData.finale.copy}</p>
+      ${Array.isArray(pageData.finale.points) && pageData.finale.points.length ? `
+      <div class="shop-finale-grid">
+        ${pageData.finale.points.map(([title, text], index) => `
+          <article>
+            <span>${String(index + 1).padStart(2, "0")}</span>
+            <h3>${title}</h3>
+            <p>${text}</p>
+          </article>
+        `).join("")}
+      </div>` : ""}
+    </section>
+    ` : ""}
+    ${pageData.searchAnswers ? `
+    <section id="faq" class="shop-search-answers section-pad" aria-labelledby="shop-faq-title">
+      <div class="section-head">
+        <p class="eyebrow">${pageData.searchAnswers.eyebrow}</p>
+        <h2 id="shop-faq-title">${pageData.searchAnswers.title}</h2>
+      </div>
+      <div class="shop-answer-grid">
+        ${pageData.searchAnswers.items.map(([question, answer]) => `
+          <article>
+            <h3>${question}</h3>
+            <p>${answer}</p>
+          </article>
+        `).join("")}
+      </div>
+    </section>
+    ` : ""}
   `;
   document.querySelector("footer p").textContent = ui.footer;
 }
