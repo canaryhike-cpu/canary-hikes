@@ -585,29 +585,166 @@ const pageSlugs = { hiking: "hiking-routes", road: "road-trips", teide: "teide-g
 const pageContent = {
   en: {
     hiking: {
-      seo: {
-        title: "Tenerife Hiking Routes Shop | Canary.Hikes",
-        description: "Buy ready-made Tenerife hiking route guides: Anaga, Masca, Chinyero, Benijo and Teide National Park plans with maps, timing, parking and difficulty.",
-        ogTitle: "Tenerife Hiking Routes Shop | Canary.Hikes",
-        ogDescription: "Ready-made Tenerife hiking route guides with maps, timing, parking and local planning notes.",
-        image: "/assets/anaga-benijo-premium-panorama.png"
-      },
-      hero: {
-        eyebrow: "Digital route shop",
-        title: "Choose a Tenerife hiking route and go with a clear plan.",
-        copy: "Five practical Canary.Hikes route guides for independent hikers: route logic, parking, timing, difficulty, best light, what to pack and what to avoid.",
-        cta: "Shop hiking routes",
-        image: "/assets/anaga-benijo-premium-panorama.png",
-        alt: "Panoramic view of Anaga and the Benijo coast in Tenerife"
-      },
-      products: [
-        ["Guajara", "A route to an old observatory and a high viewpoint over the caldera: wide Teide panoramas, soft evening light and a steady mountain rhythm.", "⚡ Hard", "🔁 Loop", "€14"],
-        ["Pico Viejo", "A volcanic route to a huge crater: lava fields, dark plateaus and one of the clearest geological contrasts on the island.", "⚡ Hard", "➡️ Point-to-point", "€15"],
-        ["Anaga", "Mountains, beach and top coastal views in one hike: dramatic ridges, ocean horizon and photogenic stops along the way.", "⚡ Hard", "🔁 Loop", "€13"],
-        ["Ifonche", "A family-friendly route through green forest with southern panoramas, calm rhythm and enough shade for an unhurried walk.", "🟡 Medium", "🔁 Loop", "€10"],
-        ["Antequera Beach", "A quieter Anaga route to a secluded beach through rough terrain, ocean views and a finish that feels far from the busy island.", "⚡ Hard", "🔁 Loop", "€14"],
-        ["Teno", "More than a trail to the lighthouse: lunar landscapes, striking views, a swim stop and a secret return section that turns the track into a full adventure.", "⚡ Hard", "🔁 Loop", "€14"]
-      ]
+          "seo": {
+                "title": "Tenerife Hiking Routes Without a Tour Group | Canary.Hikes",
+                "description": "Self-guided Tenerife hiking routes with maps, GPX links, timing, elevation gain, difficulty, start points, parking and practical route notes for Anaga, Teide and the north coast.",
+                "ogTitle": "Tenerife hikes worth planning a day around",
+                "ogDescription": "Self-guided Tenerife hiking routes for Anaga, Teide high country and the north coast, with maps, GPX links, timing, difficulty, start points and practical notes before you go.",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "keywords": "Tenerife hiking routes, self guided Tenerife hikes, Tenerife GPX routes, Anaga hiking, Teide hiking, Ifonche hike, Guajara hike, Tenerife walking routes, best hikes Tenerife, hiking Tenerife without a guide, Canary.Hikes"
+          },
+          "hero": {
+                "eyebrow": "Canary.Hikes · digital route guides",
+                "title": "Tenerife hikes worth planning a day around",
+                "copy": "Self-guided routes we walk ourselves: from the misty forests of Anaga to Teide high country and the ocean trails of the north coast.",
+                "cta": "Choose a route",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "alt": "Panoramic view of Anaga and the Benijo coast in Tenerife"
+          },
+          "about": {
+                "eyebrow": "We walk them first",
+                "title": "We do not publish routes we would not repeat ourselves.",
+                "copy": "Some trails look great on a map, then turn out repetitive, crowded or awkward to plan. We walk every route ourselves, often more than once, and keep only the hikes that genuinely deserve a day of your trip.",
+                "image": "/assets/film/anaga-sign-friends.jpg",
+                "alt": "Canary.Hikes hikers next to the Afur and Taganana trail signs in Anaga"
+          },
+          "value": {
+                "eyebrow": "How we choose routes",
+                "title": "We are not just repackaging tracks from hiking apps.",
+                "copy": "We look for routes with shape: terrain, changing landscapes, views, logistics, trail surface and the real effort required. A hike only makes the collection if we would recommend it to friends, not just save it on a map.",
+                "cards": [
+                      [
+                            "A route with character",
+                            "Not just a tick-box Tenerife hike: the trail needs rhythm, strong scenery and a real reason to spend a holiday day on it."
+                      ],
+                      [
+                            "A day that makes sense",
+                            "Start point, finish, parking, timing, transport and important route details are already thought through."
+                      ],
+                      [
+                            "Effort and safety",
+                            "We look beyond the view: elevation gain, trail surface, duration and how tired you are likely to feel afterwards."
+                      ]
+                ]
+          },
+          "products": [
+                [
+                      "Ifonche",
+                      "A quiet southern gem with pine forest, deep ravines and wide views toward the coast.",
+                      "Easy",
+                      "2-3 h",
+                      "€10",
+                      "/assets/film/ifonche-route-card.jpg",
+                      [
+                            "Easy",
+                            "Loop",
+                            "Family-friendly"
+                      ]
+                ],
+                [
+                      "Anaga",
+                      "A big-view Anaga route through local villages, forest sections and some of the best panoramas on the north coast.",
+                      "Hard",
+                      "5 h",
+                      "€13",
+                      "/assets/film/anaga-route-card.jpg",
+                      [
+                            "Hard",
+                            "Loop",
+                            "Anaga"
+                      ]
+                ],
+                [
+                      "Guajara",
+                      "A high-altitude route to one of Tenerife’s strongest sunset viewpoints, with a clear view back to Mount Teide.",
+                      "Hard",
+                      "5 h",
+                      "€14",
+                      "/assets/film/guajara-route-card.jpg",
+                      [
+                            "Hard",
+                            "Loop",
+                            "Sunset",
+                            "Teide"
+                      ]
+                ]
+          ],
+          "preview": {
+                "eyebrow": "What you get before you set out",
+                "title": "More than a GPX track.",
+                "copy": "Each route includes the map, the hiking logic and practical details that make it easier to walk independently and calmly.",
+                "items": [
+                      [
+                            "Route overview",
+                            "Difficulty, distance, elevation gain, duration and who the route suits.",
+                            "overview",
+                            "/assets/guide-preview/route-preview-2.jpg"
+                      ],
+                      [
+                            "Map and navigation",
+                            "A clear route outline plus a navigation link you can open on your phone.",
+                            "map",
+                            "/assets/guide-preview/route-preview-3.jpg"
+                      ],
+                      [
+                            "Route breakdown",
+                            "Key sections, viewpoints, tricky parts and places where hikers can easily take a wrong turn.",
+                            "timeline",
+                            "/assets/guide-preview/route-preview-4.jpg"
+                      ],
+                      [
+                            "Before you go",
+                            "Weather, water, clothing, season, parking and the details worth knowing before you start.",
+                            "checklist",
+                            "/assets/guide-preview/route-preview-1.jpg"
+                      ]
+                ]
+          },
+          "finale": {
+                "eyebrow": "Hiking in Tenerife",
+                "title": "Routes for different travel days",
+                "copy": "One Tenerife day can mean misty Anaga forest; the next can be volcanic high country and empty trails above the clouds. The right route is not always the most popular one, but the one that matches the day you want to have.",
+                "points": [
+                      [
+                            "Contrasting landscapes",
+                            "Lava fields, green Anaga, ocean trails, pine slopes and Teide high country."
+                      ],
+                      [
+                            "Choose by mood",
+                            "A short sunset hike, an easy ocean walk or a full mountain day."
+                      ],
+                      [
+                            "By difficulty level",
+                            "Easy, moderate and hard routes with clear timing and realistic effort."
+                      ],
+                      [
+                            "Some routes suit children",
+                            "The collection includes calmer hikes with good views and no brutal climbs."
+                      ]
+                ]
+          },
+          "searchAnswers": {
+                "eyebrow": "Quick planning notes",
+                "title": "What to know before hiking in Tenerife",
+                "items": [
+                      [
+                            "What is included in a Canary.Hikes route?",
+                            "A digital self-guided hiking guide for Tenerife: map, GPX link, timing, elevation gain, navigation, parking, weather notes and practical details before you start."
+                      ],
+                      [
+                            "Who are these routes for?",
+                            "Travellers who want to hike independently without a tour group and understand the difficulty, duration, logistics and effort before setting out."
+                      ],
+                      [
+                            "What kind of routes are in the collection?",
+                            "The collection includes hiking routes in Anaga, Teide high country, Tenerife’s north coast, lava fields, pine forests and ocean trails."
+                      ],
+                      [
+                            "Are there easy routes?",
+                            "Yes. Some routes are suitable for relaxed hiking, families with children and shorter walks without heavy physical effort."
+                      ]
+                ]
+          }
     },
     road: {
       seo: {
@@ -635,29 +772,166 @@ const pageContent = {
   },
   de: {
     hiking: {
-      seo: {
-        title: "Teneriffa Wanderrouten Shop | Canary.Hikes",
-        description: "Kaufe fertige Teneriffa-Wanderrouten: Anaga, Masca, Chinyero, Benijo und Teide-Nationalpark mit Karte, Timing, Parken und Schwierigkeit.",
-        ogTitle: "Teneriffa Wanderrouten Shop | Canary.Hikes",
-        ogDescription: "Fertige Teneriffa-Wanderguides mit Karte, Timing, Parken und lokalen Planungstipps.",
-        image: "/assets/anaga-benijo-premium-panorama.png"
-      },
-      hero: {
-        eyebrow: "Digitaler Routenshop",
-        title: "Wähle eine Wanderroute auf Teneriffa und starte mit klarem Plan.",
-        copy: "Fünf praktische Canary.Hikes-Guides für unabhängige Wanderer: Routenlogik, Parken, Timing, Schwierigkeit, bestes Licht, Packliste und typische Fehler.",
-        cta: "Wanderrouten ansehen",
-        image: "/assets/anaga-benijo-premium-panorama.png",
-        alt: "Panorama von Anaga und der Benijo-Küste auf Teneriffa"
-      },
-      products: [
-        ["Guajara", "Route zur alten Sternwarte und zu einem der besten Sonnenuntergangspunkte auf Teneriffa: weite Caldera-Panoramen, weiches Licht und das Gefühl, die Insel liegt dir zu Füßen.", "⚡ Schwer", "🔁 Rundtour", "€14"],
-        ["Pico Viejo", "Ein echtes Vulkan-Abenteuer zu einem riesigen Krater: Lavafelder, marsartige Farben und eine der eindrucksvollsten geologischen Szenen der Insel.", "⚡ Schwer", "➡️ Streckentour", "€15"],
-        ["Anaga", "Berge, Strand und starke Küstenblicke in einer Tour: dramatische Grate, weiter Ozeanhorizont und fotogene Stopps auf der ganzen Strecke.", "⚡ Schwer", "🔁 Rundtour", "€13"],
-        ["Ifonche", "Familienfreundliche Route durch grünen Wald mit Panoramen im Süden der Insel: ruhiger Rhythmus, angenehmer Schatten und perfekt für einen schönen Spaziergang ohne Eile.", "🟡 Mittel", "🔁 Rundtour", "€10"],
-        ["Antequera Beach", "Verstecktes Juwel in Anaga: Weg zu einem abgelegenen Strand durch wildes Gelände, türkisfarbenes Wasser und genau die Ausblicke, für die man in den Norden fährt.", "⚡ Schwer", "🔁 Rundtour", "€14"],
-        ["Teno", "Mehr als nur ein Weg zum Leuchtturm: mondartige Landschaften, starke Aussichtspunkte, Badestopp und ein geheimer Rückweg für ein komplettes Abenteuer.", "⚡ Schwer", "🔁 Rundtour", "€14"]
-      ]
+          "seo": {
+                "title": "Wanderrouten auf Teneriffa ohne geführte Gruppe | Canary.Hikes",
+                "description": "Selbst geführte Wanderrouten auf Teneriffa mit Karte, GPX-Link, Timing, Höhenmetern, Schwierigkeit, Startpunkt, Parken und praktischen Hinweisen für Anaga, Teide und die Nordküste.",
+                "ogTitle": "Teneriffa-Wanderungen, für die sich ein Urlaubstag lohnt",
+                "ogDescription": "Selbst geführte Wanderrouten auf Teneriffa: Anaga, Teide-Hochland und Nordküste mit Karte, GPX-Link, Timing, Schwierigkeit, Startpunkt und praktischen Hinweisen.",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "keywords": "Teneriffa Wanderrouten, Wandern Teneriffa ohne Guide, Tenerife hiking routes, Anaga Wanderung, Teide Wanderung, Ifonche Wanderung, Guajara Wanderung, GPX Teneriffa, beste Wanderungen Teneriffa, Canary.Hikes"
+          },
+          "hero": {
+                "eyebrow": "Canary.Hikes · digitale Routenguides",
+                "title": "Wanderungen, für die man nach Teneriffa reist",
+                "copy": "Selbst geführte Routen, die wir selbst gehen: von den Nebelwäldern in Anaga bis zum Teide-Hochland und den Küstenwegen im Norden.",
+                "cta": "Route wählen",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "alt": "Panorama von Anaga und der Benijo-Küste auf Teneriffa"
+          },
+          "about": {
+                "eyebrow": "Wir gehen die Routen zuerst selbst",
+                "title": "Wir veröffentlichen keine Route, die wir nicht selbst wiederholen würden.",
+                "copy": "Manche Wege sehen auf der Karte stark aus und sind vor Ort dann eintönig, überlaufen oder logistisch umständlich. Deshalb gehen wir jede Route selbst, oft mehr als einmal. In die Sammlung kommen nur Wanderungen, die einen Urlaubstag wirklich verdienen.",
+                "image": "/assets/film/anaga-sign-friends.jpg",
+                "alt": "Canary.Hikes an den Wegweisern nach Afur und Taganana in Anaga"
+          },
+          "value": {
+                "eyebrow": "Wie wir Routen auswählen",
+                "title": "Wir sammeln nicht einfach Tracks aus Wander-Apps.",
+                "copy": "Wir achten auf Charakter: Gelände, Landschaftswechsel, Aussicht, Logistik, Wegbeschaffenheit und die tatsächliche Belastung. Eine Route kommt nur in die Sammlung, wenn wir sie auch Freunden empfehlen würden.",
+                "cards": [
+                      [
+                            "Eine Route mit Charakter",
+                            "Nicht nur ein Haken bei ‘Wandern auf Teneriffa’: Der Weg braucht Rhythmus, starke Bilder und einen guten Grund, dafür einen Urlaubstag zu nehmen."
+                      ],
+                      [
+                            "Logistik, die funktioniert",
+                            "Start, Ziel, Parken, Timing, Transport und wichtige Details sind schon durchdacht."
+                      ],
+                      [
+                            "Belastung und Sicherheit",
+                            "Wir achten nicht nur auf die Aussicht, sondern auch auf Höhenmeter, Wegbeschaffenheit, Dauer und die Müdigkeit danach."
+                      ]
+                ]
+          },
+          "products": [
+                [
+                      "Ifonche",
+                      "Ein ruhiger Geheimtipp im Süden: Kiefernwald, tiefe Schluchten und weite Blicke Richtung Küste.",
+                      "Leicht",
+                      "2-3 Std.",
+                      "€10",
+                      "/assets/film/ifonche-route-card.jpg",
+                      [
+                            "Leicht",
+                            "Rundtour",
+                            "Familienfreundlich"
+                      ]
+                ],
+                [
+                      "Anaga",
+                      "Eine aussichtsreiche Anaga-Route durch kleine Orte, Waldstücke und einige der besten Panoramen an der Nordküste.",
+                      "Schwer",
+                      "5 Std.",
+                      "€13",
+                      "/assets/film/anaga-route-card.jpg",
+                      [
+                            "Schwer",
+                            "Rundtour",
+                            "Anaga"
+                      ]
+                ],
+                [
+                      "Guajara",
+                      "Eine Höhenroute zu einem der stärksten Sonnenuntergangspunkte Teneriffas, mit klarem Blick zurück zum Teide.",
+                      "Schwer",
+                      "5 Std.",
+                      "€14",
+                      "/assets/film/guajara-route-card.jpg",
+                      [
+                            "Schwer",
+                            "Rundtour",
+                            "Sonnenuntergang",
+                            "Teide"
+                      ]
+                ]
+          ],
+          "preview": {
+                "eyebrow": "Was du vor dem Start bekommst",
+                "title": "Mehr als ein GPX-Track.",
+                "copy": "Jede Route enthält Karte, Routenlogik und praktische Details, damit du sie selbstständig und entspannt gehen kannst.",
+                "items": [
+                      [
+                            "Routenüberblick",
+                            "Schwierigkeit, Distanz, Höhenmeter, Dauer und für wen die Route passt.",
+                            "overview",
+                            "/assets/guide-preview/route-preview-2.jpg"
+                      ],
+                      [
+                            "Karte und Navigation",
+                            "Eine klare Routenskizze plus Navigationslink, den du direkt am Handy öffnen kannst.",
+                            "map",
+                            "/assets/guide-preview/route-preview-3.jpg"
+                      ],
+                      [
+                            "Abschnitte der Route",
+                            "Wichtige Etappen, Aussichtspunkte, anspruchsvolle Stellen und Punkte, an denen man sich leicht vertut.",
+                            "timeline",
+                            "/assets/guide-preview/route-preview-4.jpg"
+                      ],
+                      [
+                            "Vor dem Start",
+                            "Wetter, Wasser, Kleidung, Saison, Parken und andere Details, die du vorher wissen solltest.",
+                            "checklist",
+                            "/assets/guide-preview/route-preview-1.jpg"
+                      ]
+                ]
+          },
+          "finale": {
+                "eyebrow": "Wandern auf Teneriffa",
+                "title": "Routen für unterschiedliche Urlaubstage",
+                "copy": "Ein Tag auf Teneriffa kann Nebelwald in Anaga bedeuten, der nächste vulkanisches Hochland und leere Wege über den Wolken. Die richtige Route ist nicht immer die beliebteste, sondern die, die zu dem Tag passt, den du erleben willst.",
+                "points": [
+                      [
+                            "Kontrastreiche Landschaften",
+                            "Lavafelder, grünes Anaga, Küstenwege, Kiefernhänge und Teide-Hochland."
+                      ],
+                      [
+                            "Nach Stimmung wählen",
+                            "Kurze Sonnenuntergangsrunde, ruhiger Weg am Meer oder ein ganzer Bergtag."
+                      ],
+                      [
+                            "Nach Schwierigkeit",
+                            "Leichte, mittlere und schwere Routen mit klarer Dauer und realistischer Belastung."
+                      ],
+                      [
+                            "Auch mit Kindern möglich",
+                            "Die Sammlung enthält ruhigere Wege mit guten Aussichten und ohne harte Anstiege."
+                      ]
+                ]
+          },
+          "searchAnswers": {
+                "eyebrow": "Kurz für die Planung",
+                "title": "Was du vor dem Wandern auf Teneriffa wissen solltest",
+                "items": [
+                      [
+                            "Was enthält eine Canary.Hikes-Route?",
+                            "Ein digitaler Guide für selbstständiges Wandern auf Teneriffa: Karte, GPX-Link, Timing, Höhenmeter, Navigation, Parken, Wetterhinweise und praktische Details vor dem Start."
+                      ],
+                      [
+                            "Für wen sind die Routen gedacht?",
+                            "Für Reisende, die ohne geführte Gruppe wandern und Schwierigkeit, Dauer, Logistik und Belastung vorher einschätzen möchten."
+                      ],
+                      [
+                            "Welche Routen gibt es in der Sammlung?",
+                            "Die Sammlung enthält Wanderrouten in Anaga, im Teide-Hochland, an der Nordküste Teneriffas, durch Lavafelder, Kiefernwälder und Küstenwege."
+                      ],
+                      [
+                            "Gibt es leichte Routen?",
+                            "Ja. Einige Routen passen für entspannteres Wandern, Familien mit Kindern und kürzere Touren ohne starke körperliche Belastung."
+                      ]
+                ]
+          }
     },
     road: {
       seo: {
@@ -782,29 +1056,166 @@ const pageContent = {
   },
   es: {
     hiking: {
-      seo: {
-        title: "Rutas de senderismo en Tenerife: tienda de guías | Canary.Hikes",
-        description: "Compra rutas de senderismo en Tenerife: Anaga, Masca, Chinyero, Benijo y Parque Nacional del Teide con mapa, tiempos, aparcamiento y dificultad.",
-        ogTitle: "Rutas de senderismo en Tenerife | Canary.Hikes",
-        ogDescription: "Guías de senderismo en Tenerife con mapa, tiempos, aparcamiento y consejos locales.",
-        image: "/assets/anaga-benijo-premium-panorama.png"
-      },
-      hero: {
-        eyebrow: "Tienda de rutas digitales",
-        title: "Elige una ruta de senderismo en Tenerife y sal con un plan claro.",
-        copy: "Cinco guías prácticas de Canary.Hikes para caminar por libre: lógica de ruta, aparcamiento, tiempos, dificultad, mejor luz, qué llevar y qué evitar.",
-        cta: "Ver rutas",
-        image: "/assets/anaga-benijo-premium-panorama.png",
-        alt: "Panorámica de Anaga y la costa de Benijo en Tenerife"
-      },
-      products: [
-        ["Guajara", "Ruta hacia un antiguo observatorio y uno de los mejores atardeceres de Tenerife: panorámicas amplias de la caldera, luz suave y sensación de tener la isla en la palma de la mano.", "⚡ Difícil", "🔁 Circular", "€14"],
-        ["Pico Viejo", "Una aventura volcánica real hacia un cráter enorme: campos de lava, tonos marcianos y una de las escenas geológicas más impresionantes de la isla.", "⚡ Difícil", "➡️ Lineal", "€15"],
-        ["Anaga", "Montaña, playa y grandes vistas de costa en una sola ruta: crestas dramáticas, horizonte oceánico y paradas fotogénicas en todo el recorrido.", "⚡ Difícil", "🔁 Circular", "€13"],
-        ["Ifonche", "Ruta familiar por bosque verde con panorámicas del sur de la isla: ritmo tranquilo, sombra agradable y formato perfecto para pasear sin prisa.", "🟡 Media", "🔁 Circular", "€10"],
-        ["Antequera Beach", "Joya escondida de Anaga: camino a una playa aislada por relieve salvaje, agua turquesa y esas vistas por las que la gente viene al norte.", "⚡ Difícil", "🔁 Circular", "€14"],
-        ["Teno", "Más que una ruta al faro: paisajes lunares, miradores impactantes, parada para baño y un regreso secreto que convierte el track en una aventura completa.", "⚡ Difícil", "🔁 Circular", "€14"]
-      ]
+          "seo": {
+                "title": "Rutas de senderismo en Tenerife sin grupo guiado | Canary.Hikes",
+                "description": "Rutas de senderismo por Tenerife para hacer por libre: mapa, enlace GPX, tiempos, desnivel, dificultad, inicio, aparcamiento y notas prácticas para Anaga, Teide y la costa norte.",
+                "ogTitle": "Rutas de Tenerife que merecen un día de viaje",
+                "ogDescription": "Rutas de senderismo por Tenerife para hacer por libre: Anaga, Teide y costa norte con mapa, enlace GPX, tiempos, dificultad, inicio y consejos prácticos.",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "keywords": "rutas de senderismo Tenerife, senderismo Tenerife por libre, rutas GPX Tenerife, senderismo Anaga, senderismo Teide, ruta Ifonche, ruta Guajara, mejores rutas Tenerife, caminar Tenerife sin guía, Canary.Hikes"
+          },
+          "hero": {
+                "eyebrow": "Canary.Hikes · rutas digitales",
+                "title": "Rutas por las que merece la pena venir a Tenerife",
+                "copy": "Rutas para hacer por libre que caminamos nosotras: desde los bosques con niebla de Anaga hasta el alto del Teide y los senderos del norte junto al océano.",
+                "cta": "Elegir ruta",
+                "image": "/assets/anaga-benijo-premium-panorama.png",
+                "alt": "Panorámica de Anaga y la costa de Benijo en Tenerife"
+          },
+          "about": {
+                "eyebrow": "Primero las caminamos nosotras",
+                "title": "No publicamos rutas que no repetiríamos.",
+                "copy": "Algunos senderos se ven muy bien en el mapa, pero luego resultan monótonos, llenos de gente o incómodos de organizar. Por eso caminamos cada ruta nosotras, a veces más de una vez. En la colección entran solo las rutas que de verdad merecen un día de viaje.",
+                "image": "/assets/film/anaga-sign-friends.jpg",
+                "alt": "Canary.Hikes junto a las señales de Afur y Taganana en Anaga"
+          },
+          "value": {
+                "eyebrow": "Cómo elegimos rutas",
+                "title": "No juntamos tracks al azar de aplicaciones.",
+                "copy": "Buscamos rutas con carácter: relieve, cambios de paisaje, vistas, logística, tipo de sendero y esfuerzo real. Una ruta entra en la colección solo si la recomendaríamos a amigas, no solo si queda bien guardada en el mapa.",
+                "cards": [
+                      [
+                            "Una ruta con carácter",
+                            "No es solo marcar ‘hice senderismo en Tenerife’: el sendero necesita ritmo, una imagen fuerte y un motivo real para dedicarle un día de viaje."
+                      ],
+                      [
+                            "Logística clara para el día",
+                            "Inicio, final, aparcamiento, tiempos, transporte y detalles importantes ya están pensados."
+                      ],
+                      [
+                            "Esfuerzo y seguridad",
+                            "Miramos más allá de la vista: desnivel, tipo de terreno, duración y el cansancio que puede dejar la ruta."
+                      ]
+                ]
+          },
+          "products": [
+                [
+                      "Ifonche",
+                      "Una joya tranquila del sur: pinar, bosque, barrancos profundos y vistas amplias hacia la costa.",
+                      "Fácil",
+                      "2-3 h",
+                      "€10",
+                      "/assets/film/ifonche-route-card.jpg",
+                      [
+                            "Fácil",
+                            "Circular",
+                            "Apta para familias"
+                      ]
+                ],
+                [
+                      "Anaga",
+                      "Una ruta panorámica por Anaga con pueblos locales, tramos de bosque y algunas de las mejores vistas de la costa norte.",
+                      "Difícil",
+                      "5 h",
+                      "€13",
+                      "/assets/film/anaga-route-card.jpg",
+                      [
+                            "Difícil",
+                            "Circular",
+                            "Anaga"
+                      ]
+                ],
+                [
+                      "Guajara",
+                      "Ruta de altura hacia uno de los mejores puntos de atardecer de Tenerife, con una vista limpia hacia el volcán Teide.",
+                      "Difícil",
+                      "5 h",
+                      "€14",
+                      "/assets/film/guajara-route-card.jpg",
+                      [
+                            "Difícil",
+                            "Circular",
+                            "Atardecer",
+                            "Teide"
+                      ]
+                ]
+          ],
+          "preview": {
+                "eyebrow": "Lo que tienes antes de salir",
+                "title": "Más que un track GPX.",
+                "copy": "Cada ruta incluye mapa, lógica del recorrido y detalles prácticos para caminar por libre con más calma.",
+                "items": [
+                      [
+                            "Resumen de la ruta",
+                            "Dificultad, distancia, desnivel, duración y para quién encaja la ruta.",
+                            "overview",
+                            "/assets/guide-preview/route-preview-2.jpg"
+                      ],
+                      [
+                            "Mapa y navegación",
+                            "Un esquema claro de la ruta y un enlace de navegación que puedes abrir desde el móvil.",
+                            "map",
+                            "/assets/guide-preview/route-preview-3.jpg"
+                      ],
+                      [
+                            "Tramos del recorrido",
+                            "Secciones clave, miradores, partes exigentes y puntos donde es fácil equivocarse.",
+                            "timeline",
+                            "/assets/guide-preview/route-preview-4.jpg"
+                      ],
+                      [
+                            "Antes de salir",
+                            "Tiempo, agua, ropa, temporada, aparcamiento y otros detalles que conviene saber antes de empezar.",
+                            "checklist",
+                            "/assets/guide-preview/route-preview-1.jpg"
+                      ]
+                ]
+          },
+          "finale": {
+                "eyebrow": "Senderismo en Tenerife",
+                "title": "Rutas para distintos ritmos de viaje",
+                "copy": "Un día en Tenerife puede ser bosque con niebla en Anaga y al siguiente, alta montaña volcánica y senderos vacíos sobre las nubes. La mejor ruta no siempre es la más popular, sino la que encaja con el día que quieres vivir.",
+                "points": [
+                      [
+                            "Paisajes muy distintos",
+                            "Campos de lava, Anaga verde, senderos junto al océano, pinares y alta montaña del Teide."
+                      ],
+                      [
+                            "Según el plan del día",
+                            "Una caminata corta al atardecer, un paseo tranquilo junto al mar o un día completo de montaña."
+                      ],
+                      [
+                            "Por nivel de dificultad",
+                            "Rutas fáciles, moderadas y difíciles con tiempos claros y esfuerzo realista."
+                      ],
+                      [
+                            "Algunas son aptas con niños",
+                            "La colección incluye rutas tranquilas con buenas vistas y sin subidas duras."
+                      ]
+                ]
+          },
+          "searchAnswers": {
+                "eyebrow": "Resumen para planificar",
+                "title": "Qué conviene saber antes de hacer senderismo en Tenerife",
+                "items": [
+                      [
+                            "¿Qué incluye una ruta de Canary.Hikes?",
+                            "Una guía digital para hacer senderismo por libre en Tenerife: mapa, enlace GPX, tiempos, desnivel, navegación, aparcamiento, notas de clima y detalles prácticos antes de salir."
+                      ],
+                      [
+                            "¿Para quién son estas rutas?",
+                            "Para viajeros que quieren caminar por libre, sin grupo guiado, y entender antes la dificultad, la duración, la logística y el esfuerzo de la ruta."
+                      ],
+                      [
+                            "¿Qué tipo de rutas hay en la colección?",
+                            "La colección incluye rutas de senderismo por Anaga, el alto del Teide, la costa norte de Tenerife, campos de lava, pinares y senderos junto al océano."
+                      ],
+                      [
+                            "¿Hay rutas fáciles?",
+                            "Sí. Algunas rutas son adecuadas para senderismo tranquilo, familias con niños y caminatas cortas sin gran exigencia física."
+                      ]
+                ]
+          }
     },
     road: {
       seo: {
@@ -1261,10 +1672,10 @@ function ensureMeta(selector, create) {
 }
 
 const shopUi = {
-  en: { products: "Digital guides", metaDifficulty: "Difficulty", metaTime: "Time", order: "Order on Instagram", footer: "Digital Tenerife route guides by Canary.Hikes. Message us on Instagram to order or ask what fits your trip." },
-  de: { products: "Digitale Guides", metaDifficulty: "Schwierigkeit", metaTime: "Dauer", order: "Auf Instagram bestellen", footer: "Digitale Teneriffa-Routenguides von Canary.Hikes. Schreib uns auf Instagram, wenn du bestellen willst oder Hilfe bei der Auswahl brauchst." },
+  en: { products: "Hiking routes", metaDifficulty: "Difficulty", metaTime: "Time", order: "Open route", footer: "Digital Tenerife hiking routes by Canary.Hikes. Route pages and direct checkout are coming next; for now, message us on Instagram to choose a guide." },
+  de: { products: "Wanderrouten", metaDifficulty: "Schwierigkeit", metaTime: "Dauer", order: "Route öffnen", footer: "Digitale Wanderrouten auf Teneriffa von Canary.Hikes. Routenseiten und direkter Checkout folgen; bis dahin kannst du uns auf Instagram schreiben." },
   ru: { products: "Хайкинг маршруты", metaDifficulty: "Сложность", metaTime: "Время", order: "Открыть маршрут", footer: "Цифровые маршруты по Тенерифе от Canary.Hikes. Сейчас маршрут можно запросить в Instagram, дальше здесь появятся отдельные страницы маршрутов." },
-  es: { products: "Guías digitales", metaDifficulty: "Dificultad", metaTime: "Duración", order: "Pedir por Instagram", footer: "Guías digitales de Tenerife por Canary.Hikes. Escríbenos en Instagram para pedir una guía o elegir la ruta que mejor encaja con tu viaje." }
+  es: { products: "Rutas de senderismo", metaDifficulty: "Dificultad", metaTime: "Duración", order: "Abrir ruta", footer: "Rutas digitales de senderismo por Tenerife de Canary.Hikes. Las páginas de ruta y el pago directo vienen después; por ahora puedes escribirnos en Instagram." }
 };
 
 const teideMarkup = document.querySelector("main")?.innerHTML || "";
