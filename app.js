@@ -748,26 +748,53 @@ const pageContent = {
     },
     road: {
       seo: {
-        title: "Tenerife Road Trips Shop | Canary.Hikes",
-        description: "Buy ready-made Tenerife road trip itineraries: north coast, Anaga viewpoints, volcano and wine, hidden beaches and a 3-day island plan.",
-        ogTitle: "Tenerife Road Trips Shop | Canary.Hikes",
-        ogDescription: "Ready-made Tenerife road trip plans with stops, timing, parking and scenic route logic."
+        title: "Tenerife Road Trips Coming Soon | Canary.Hikes",
+        description: "Self-drive Tenerife road trip guides are coming soon: Teide, Anaga, ocean roads, viewpoints, food stops, parking notes and a clear day plan.",
+        ogTitle: "Tenerife Road Trips Coming Soon | Canary.Hikes",
+        ogDescription: "We are preparing digital Tenerife road trip guides with scenic roads, stops, timing, parking notes and backup plans.",
+        image: "/assets/teide-sunrise.png",
+        keywords: "Tenerife road trips, Tenerife by car, self drive Tenerife itinerary, Teide road trip, Anaga road trip, Tenerife viewpoints, Tenerife scenic drives, Canary.Hikes"
       },
       hero: {
-        eyebrow: "Digital road trip shop",
-        title: "Tenerife road trips that feel planned, not overplanned.",
-        copy: "Five self-drive itineraries with scenic stops, parking notes, food pauses, timing and backup ideas for weather or late starts.",
-        cta: "Shop road trips",
-        image: "/assets/teide-pico-viejo.png",
-        alt: "Volcanic landscape for a Tenerife road trip"
+        eyebrow: "Canary.Hikes · road trips",
+        title: "Tenerife road trips are coming here soon.",
+        copy: "We are building self-drive island days: the sea of clouds around Teide, Anaga mountain roads, viewpoints, short walks, food stops, parking notes and realistic timing.",
+        cta: "What will be inside",
+        image: "/assets/teide-sunrise.png",
+        alt: "Sunrise over the sea of clouds and the volcanic ridge of Mount Teide in Tenerife"
       },
-      products: [
-        ["North Tenerife Scenic Loop", "La Orotava, viewpoints, green valleys, ocean roads and a calm full-day route.", "Easy", "1 day", "€11"],
-        ["Volcano and Wine Day", "Teide National Park, lava views, local wine stops and a smooth route back before dark.", "Easy", "1 day", "€12"],
-        ["Anaga Viewpoints Road Trip", "A mountain-road itinerary through Anaga with viewpoints, short walks and lunch ideas.", "Medium roads", "1 day", "€11"],
-        ["South Coast Hidden Beaches", "A warm-weather route for quieter coves, sunset stops and easy parking decisions.", "Easy", "Half day", "€8"],
-        ["3-Day Tenerife Island Plan", "A compact island plan connecting coast, volcano, Anaga and local towns without rushing.", "Full plan", "3 days", "€19"]
-      ]
+      products: [],
+      comingSoon: {
+        eyebrow: "In progress",
+        title: "No road trips for sale yet.",
+        copy: "We do not want to publish raw lists of pins. First we drive the routes ourselves and check the rhythm, parking, road conditions, views, food stops and backup options for changing weather.",
+        cards: [
+          ["01", "A strong day route", "Not just a list of stops, but a day with a natural rhythm: drive, view, short walk, pause and final highlight."],
+          ["02", "Clear logistics", "Where to start, where to park, how much time to allow and which places should not be forced into the same day."],
+          ["03", "A backup plan", "If Teide is under clouds, Anaga is rainy or you start later than planned, the guide will include a realistic alternative."]
+        ]
+      },
+      value: {
+        eyebrow: "What will be inside",
+        title: "Not just Google Maps pins.",
+        copy: "Each road trip will be built as a ready-to-use Tenerife day: stops in the right order, timing, parking, scenic roads, food ideas and small details that are easy to miss when planning alone.",
+        cards: [
+          ["Step-by-step route", "A clear order of stops, so the day does not turn into random driving."],
+          ["Viewpoints and short walks", "Places where it is worth getting out of the car, walking 10-40 minutes and seeing another side of the island."],
+          ["Food and pauses", "Restaurants, cafes and calm stops, so the route feels like a day out rather than a race."],
+          ["Weather and season", "Where to go in the morning, where to save sunset for, and what to switch if the highlands are cloudy or windy."]
+        ]
+      },
+      searchAnswers: {
+        eyebrow: "Quick planning notes",
+        title: "What to know about the upcoming road trips",
+        items: [
+          ["What are Canary.Hikes road trips?", "They will be digital guides for self-drive days in Tenerife: route order, stops, viewpoints, parking, timing, food ideas and backup options."],
+          ["When will the road trips be available?", "This section is in progress. We will add routes after checking them on the ground, so we do not sell incomplete or random itineraries."],
+          ["Which areas will be included?", "We are planning routes around Teide, Anaga, the north coast, scenic roads, small villages and places that work well as a full day by car."],
+          ["Is this a tour or a self-guided trip?", "It is a self-guided digital guide: you drive your own or rental car, and the route helps you plan the day without switching between maps, notes and random lists."]
+        ]
+      }
     }
   },
   de: {
@@ -935,26 +962,53 @@ const pageContent = {
     },
     road: {
       seo: {
-        title: "Teneriffa Roadtrips Shop | Canary.Hikes",
-        description: "Kaufe fertige Teneriffa-Roadtrips: Nordküste, Anaga-Aussichten, Vulkan und Wein, versteckte Strände und ein 3-Tage-Inselplan.",
-        ogTitle: "Teneriffa Roadtrips Shop | Canary.Hikes",
-        ogDescription: "Fertige Teneriffa-Roadtrip-Pläne mit Stopps, Timing, Parken und schöner Routenlogik."
+        title: "Teneriffa-Roadtrips bald verfügbar | Canary.Hikes",
+        description: "Selbstfahrer-Routen für Teneriffa kommen bald: Teide, Anaga, Küstenstraßen, Aussichtspunkte, Essensstopps, Parken und ein klarer Tagesplan.",
+        ogTitle: "Teneriffa-Roadtrips bald verfügbar | Canary.Hikes",
+        ogDescription: "Wir bereiten digitale Teneriffa-Roadtrip-Guides mit schönen Straßen, Stopps, Timing, Parkhinweisen und Alternativen vor.",
+        image: "/assets/teide-sunrise.png",
+        keywords: "Teneriffa Roadtrip, Teneriffa mit dem Auto, Selbstfahrer Route Teneriffa, Teide Roadtrip, Anaga Roadtrip, Aussichtspunkte Teneriffa, schoene Strassen Teneriffa, Canary.Hikes"
       },
       hero: {
-        eyebrow: "Digitaler Roadtrip-Shop",
-        title: "Teneriffa-Roadtrips, die geplant wirken, aber frei bleiben.",
-        copy: "Fünf Selbstfahrer-Routen mit schönen Stopps, Parkhinweisen, Essenspausen, Timing und Alternativen bei Wetter oder spätem Start.",
-        cta: "Roadtrips ansehen",
-        image: "/assets/teide-pico-viejo.png",
-        alt: "Vulkanlandschaft für einen Teneriffa-Roadtrip"
+        eyebrow: "Canary.Hikes · Roadtrips",
+        title: "Teneriffa-Roadtrips erscheinen bald hier.",
+        copy: "Wir erstellen Selbstfahrer-Tage über die Insel: Wolkenmeer am Teide, Anaga-Bergstraßen, Aussichtspunkte, kurze Spaziergänge, Essensstopps, Parkhinweise und realistisches Timing.",
+        cta: "Was enthalten sein wird",
+        image: "/assets/teide-sunrise.png",
+        alt: "Sonnenaufgang über dem Wolkenmeer und dem vulkanischen Teide-Gebirge auf Teneriffa"
       },
-      products: [
-        ["Nord-Teneriffa Scenic Loop", "La Orotava, Aussichtspunkte, grüne Täler, Küstenstraßen und eine ruhige Tagesroute.", "Leicht", "1 Tag", "€11"],
-        ["Vulkan und Wein Tagesroute", "Teide-Nationalpark, Lava-Aussichten, lokale Weinstopps und Rückfahrt vor Dunkelheit.", "Leicht", "1 Tag", "€12"],
-        ["Anaga Viewpoints Road Trip", "Eine Bergstraßenroute durch Anaga mit Aussichtspunkten, kurzen Walks und Lunchideen.", "Kurvige Straßen", "1 Tag", "€11"],
-        ["Versteckte Strände im Süden", "Eine Route für warme Tage mit ruhigeren Buchten, Sunset-Stopps und einfachem Parken.", "Leicht", "Halber Tag", "€8"],
-        ["3-Tage Teneriffa Inselplan", "Ein kompakter Plan für Küste, Vulkan, Anaga und lokale Orte ohne Hektik.", "Komplettplan", "3 Tage", "€19"]
-      ]
+      products: [],
+      comingSoon: {
+        eyebrow: "In Arbeit",
+        title: "Noch keine Roadtrips im Verkauf.",
+        copy: "Wir möchten keine rohen Listen mit Karten-Pins veröffentlichen. Zuerst fahren wir die Routen selbst und prüfen Rhythmus, Parken, Straßen, Ausblicke, Essensstopps und Alternativen bei Wetterwechsel.",
+        cards: [
+          ["01", "Ein starker Tagesplan", "Nicht nur eine Liste von Stopps, sondern ein Tag mit natürlichem Rhythmus: fahren, Aussicht, kurzer Spaziergang, Pause und ein schöner Abschluss."],
+          ["02", "Klare Logistik", "Wo man startet, wo man parkt, wie viel Zeit realistisch ist und welche Orte man besser nicht in denselben Tag presst."],
+          ["03", "Eine Alternative", "Wenn der Teide in Wolken liegt, es in Anaga regnet oder ihr später losfahrt, enthält der Guide eine sinnvolle Ausweichroute."]
+        ]
+      },
+      value: {
+        eyebrow: "Was enthalten sein wird",
+        title: "Nicht nur Google-Maps-Pins.",
+        copy: "Jeder Roadtrip wird als fertiger Teneriffa-Tag aufgebaut: Stopps in sinnvoller Reihenfolge, Timing, Parken, schöne Straßen, Essensideen und Details, die man bei eigener Planung leicht übersieht.",
+        cards: [
+          ["Route Schritt für Schritt", "Eine klare Reihenfolge der Stopps, damit der Tag nicht zu zufälligem Herumfahren wird."],
+          ["Aussichten und kurze Spaziergänge", "Orte, an denen es sich lohnt auszusteigen, 10-40 Minuten zu laufen und eine andere Seite der Insel zu sehen."],
+          ["Essen und Pausen", "Restaurants, Cafes und ruhige Stopps, damit die Route nach Urlaubstag klingt und nicht nach Rennen."],
+          ["Wetter und Saison", "Wo man besser morgens hinfährt, wo sich der Sonnenuntergang lohnt und was man ersetzt, wenn es oben wolkig oder windig ist."]
+        ]
+      },
+      searchAnswers: {
+        eyebrow: "Kurz zur Planung",
+        title: "Was man über die kommenden Roadtrips wissen sollte",
+        items: [
+          ["Was sind Canary.Hikes Roadtrips?", "Das werden digitale Guides für selbst geführte Tage mit dem Auto auf Teneriffa: Reihenfolge der Stopps, Aussichtspunkte, Parken, Timing, Essensideen und Alternativen."],
+          ["Wann sind die Roadtrips verfügbar?", "Der Bereich ist in Arbeit. Wir fügen Routen hinzu, nachdem wir sie vor Ort geprüft haben, damit keine unfertigen oder zufälligen Pläne verkauft werden."],
+          ["Welche Gegenden werden enthalten sein?", "Geplant sind Routen rund um den Teide, Anaga, die Nordküste, schöne Berg- und Küstenstraßen, kleine Orte und Tagespläne, die mit dem Auto gut funktionieren."],
+          ["Ist das eine Tour oder eine selbst geführte Fahrt?", "Es ist ein digitaler Guide für Selbstfahrer: Ihr fahrt mit eigenem Auto oder Mietwagen, und die Route hilft, den Tag ohne ständiges Wechseln zwischen Karten, Notizen und Listen zu planen."]
+        ]
+      }
     }
   },
   ru: {
@@ -1032,26 +1086,53 @@ const pageContent = {
     },
     road: {
       seo: {
-        title: "Автомаршруты по Тенерифе: готовые планы поездок | Canary.Hikes",
-        description: "Готовые автомаршруты по Тенерифе: северное кольцо, Anaga, вулкан и вино, скрытые пляжи и план острова на 3 дня.",
-        ogTitle: "Автомаршруты по Тенерифе | Canary.Hikes",
-        ogDescription: "Готовые автомаршруты по Тенерифе с остановками, таймингом, парковками и понятной логикой дня."
+        title: "Автомаршруты по Тенерифе скоро | Canary.Hikes",
+        description: "Скоро здесь появятся готовые автомаршруты по Тенерифе: смотровые, океанские дороги, Тейде, Anaga, рестораны, парковки и понятный план дня.",
+        ogTitle: "Автомаршруты по Тенерифе скоро | Canary.Hikes",
+        ogDescription: "Мы готовим цифровые road trip гиды по Тенерифе с красивыми дорогами, остановками, таймингом, парковками и запасными сценариями.",
+        image: "/assets/teide-sunrise.png",
+        keywords: "автомаршруты Тенерифе, road trip Tenerife, маршрут по Тенерифе на машине, Тейде на машине, Anaga road trip, смотровые Тенерифе, поездка по Тенерифе, Canary.Hikes"
       },
       hero: {
-        eyebrow: "Магазин автомаршрутов",
-        title: "Автомаршруты по Тенерифе с понятным планом на день.",
-        copy: "Пять маршрутов для самостоятельной поездки: смотровые, короткие прогулки, места для обеда, тайминг и запасные варианты при ветре, облаках или позднем старте.",
-        cta: "Смотреть автомаршруты",
-        image: "/assets/teide-pico-viejo.png",
-        alt: "Вулканический пейзаж для road trip по Тенерифе"
+        eyebrow: "Canary.Hikes · автомаршруты",
+        title: "Автомаршруты по Тенерифе скоро появятся здесь.",
+        copy: "Готовим красивые самостоятельные поездки по острову: море облаков у Тейде, дороги Anaga, смотровые, короткие прогулки, рестораны, парковки и понятный тайминг дня.",
+        cta: "Что будет внутри",
+        image: "/assets/teide-sunrise.png",
+        alt: "Рассвет над морем облаков и вулканическим хребтом Тейде на Тенерифе"
       },
-      products: [
-        ["North Tenerife Scenic Loop", "La Orotava, смотровые, зеленые долины, океанские дороги и спокойный маршрут на день.", "Легкий", "1 день", "€11"],
-        ["Volcano & Wine Day", "Нацпарк Тейде, лавовые виды, локальные винные остановки и возвращение до темноты.", "Легкий", "1 день", "€12"],
-        ["Anaga Viewpoints Road Trip", "Горный маршрут по Anaga со смотровыми, короткими прогулками и идеями для обеда.", "Серпантин", "1 день", "€11"],
-        ["South Coast Hidden Beaches", "Маршрут для теплого дня: тихие бухты, точки для заката и понятные парковки.", "Легкий", "Полдня", "€8"],
-        ["3-Day Tenerife Island Plan", "Компактный план острова: побережье, вулкан, Anaga и локальные городки без гонки.", "Полный план", "3 дня", "€19"]
-      ]
+      products: [],
+      comingSoon: {
+        eyebrow: "В разработке",
+        title: "Пока без продажи маршрутов.",
+        copy: "Мы не хотим выкладывать сырые подборки точек. Сначала проезжаем маршруты сами, проверяем темп, парковки, покрытие дорог, виды, рестораны и запасные варианты на случай погоды.",
+        cards: [
+          ["01", "Сильный маршрут дня", "Не просто список точек, а логичная поездка с красивым ритмом: дорога, вид, короткая прогулка, пауза и финальная точка."],
+          ["02", "Понятная логистика", "Где стартовать, где парковаться, сколько закладывать времени и какие места лучше не ставить в один день."],
+          ["03", "Запасной сценарий", "Если Тейде закрыт облаками, в Anaga дождь или вы выехали позже, в гиде будет альтернативный план."]
+        ]
+      },
+      value: {
+        eyebrow: "Что будет внутри",
+        title: "Не просто Google Maps с метками.",
+        copy: "Каждый автомаршрут будет собран как готовый день на Тенерифе: точки, порядок остановок, тайминг, парковки, красивые дороги, места для еды и нюансы, которые легко пропустить при самостоятельном планировании.",
+        cards: [
+          ["Маршрут по шагам", "Понятный порядок остановок, чтобы день не разваливался на случайные переезды."],
+          ["Смотровые и короткие прогулки", "Места, где стоит выйти из машины, пройтись 10-40 минут и увидеть остров с другой стороны."],
+          ["Еда и паузы", "Рестораны, кофейни и точки для спокойной остановки, чтобы поездка не была гонкой."],
+          ["Погода и сезон", "Где лучше ехать утром, где ждать закат и что заменить, если на высоте облака или ветер."]
+        ]
+      },
+      searchAnswers: {
+        eyebrow: "Коротко для планирования",
+        title: "Что важно знать про будущие автомаршруты",
+        items: [
+          ["Что такое Canary.Hikes road trips?", "Это будущие цифровые гиды для самостоятельных поездок по Тенерифе на машине: маршрут дня, остановки, смотровые, парковки, тайминг, места для еды и запасные варианты."],
+          ["Когда появятся автомаршруты?", "Раздел уже готовится. Мы добавим маршруты после проверки на месте, чтобы не продавать неполные или случайные планы поездок."],
+          ["Какие направления будут в коллекции?", "В планах маршруты по Тейде, Anaga, северному побережью, смотровым дорогам, небольшим деревням и местам, куда удобно ехать на один день."],
+          ["Это будет экскурсия или самостоятельная поездка?", "Это будет самостоятельный цифровой гид: вы едете на своей машине или арендованном авто, а маршрут помогает собрать день без лишних переключений между картами, заметками и подборками."]
+        ]
+      }
     }
   },
   es: {
@@ -1219,26 +1300,53 @@ const pageContent = {
     },
     road: {
       seo: {
-        title: "Road trips por Tenerife: tienda de itinerarios | Canary.Hikes",
-        description: "Compra itinerarios de road trip por Tenerife: norte, miradores de Anaga, volcán y vino, playas escondidas y plan de 3 días por la isla.",
-        ogTitle: "Road trips por Tenerife | Canary.Hikes",
-        ogDescription: "Itinerarios de Tenerife en coche con paradas, tiempos, aparcamiento y lógica de ruta."
+        title: "Road trips por Tenerife próximamente | Canary.Hikes",
+        description: "Pronto habrá guías para recorrer Tenerife en coche: Teide, Anaga, carreteras junto al océano, miradores, restaurantes, aparcamiento y un plan claro para el día.",
+        ogTitle: "Road trips por Tenerife próximamente | Canary.Hikes",
+        ogDescription: "Estamos preparando guías digitales de road trip por Tenerife con carreteras bonitas, paradas, tiempos, aparcamiento y planes alternativos.",
+        image: "/assets/teide-sunrise.png",
+        keywords: "road trip Tenerife, Tenerife en coche, ruta en coche Tenerife, Teide en coche, Anaga road trip, miradores Tenerife, carreteras bonitas Tenerife, Canary.Hikes"
       },
       hero: {
-        eyebrow: "Tienda de road trips",
-        title: "Road trips por Tenerife con plan, pero sin rigidez.",
-        copy: "Cinco itinerarios en coche con paradas escénicas, notas de aparcamiento, pausas para comer, tiempos y alternativas si cambia el tiempo.",
-        cta: "Ver road trips",
-        image: "/assets/teide-pico-viejo.png",
-        alt: "Paisaje volcánico para un road trip por Tenerife"
+        eyebrow: "Canary.Hikes · road trips",
+        title: "Pronto tendrás aquí road trips por Tenerife.",
+        copy: "Estamos preparando días completos para recorrer la isla en coche: mar de nubes en el Teide, carreteras de Anaga, miradores, paseos cortos, paradas para comer, aparcamiento y tiempos realistas.",
+        cta: "Qué incluirán",
+        image: "/assets/teide-sunrise.png",
+        alt: "Amanecer sobre el mar de nubes y la cresta volcánica del Teide en Tenerife"
       },
-      products: [
-        ["North Tenerife Scenic Loop", "La Orotava, miradores, valles verdes, carreteras junto al mar y una ruta tranquila de día.", "Fácil", "1 día", "€11"],
-        ["Volcano & Wine Day", "Parque Nacional del Teide, vistas de lava, paradas de vino local y regreso antes de noche.", "Fácil", "1 día", "€12"],
-        ["Anaga Viewpoints Road Trip", "Ruta de montaña por Anaga con miradores, paseos cortos e ideas para comer.", "Carreteras curvas", "1 día", "€11"],
-        ["South Coast Hidden Beaches", "Ruta para un día cálido con calas tranquilas, puntos de atardecer y aparcamiento claro.", "Fácil", "Medio día", "€8"],
-        ["3-Day Tenerife Island Plan", "Plan compacto de isla: costa, volcán, Anaga y pueblos locales sin ir corriendo.", "Plan completo", "3 días", "€19"]
-      ]
+      products: [],
+      comingSoon: {
+        eyebrow: "En preparación",
+        title: "Todavía no hay road trips a la venta.",
+        copy: "No queremos publicar listas crudas de puntos en el mapa. Primero hacemos las rutas en coche, comprobamos el ritmo, el aparcamiento, el estado de las carreteras, las vistas, las paradas para comer y los planes B si cambia el tiempo.",
+        cards: [
+          ["01", "Una ruta de día con sentido", "No solo una lista de paradas, sino un día con ritmo natural: carretera, vistas, paseo corto, pausa y un final bonito."],
+          ["02", "Logística clara", "Dónde empezar, dónde aparcar, cuánto tiempo reservar y qué lugares no conviene meter en el mismo día."],
+          ["03", "Plan alternativo", "Si el Teide está cubierto, llueve en Anaga o salís más tarde, la guía incluirá una alternativa realista."]
+        ]
+      },
+      value: {
+        eyebrow: "Qué incluirán",
+        title: "No solo marcadores de Google Maps.",
+        copy: "Cada road trip estará pensado como un día completo por Tenerife: paradas en buen orden, tiempos, aparcamiento, carreteras bonitas, ideas para comer y detalles que se suelen pasar por alto al planificar por libre.",
+        cards: [
+          ["Ruta paso a paso", "Un orden claro de paradas para que el día no se convierta en conducir sin rumbo."],
+          ["Miradores y paseos cortos", "Lugares donde merece la pena bajarse del coche, caminar 10-40 minutos y ver otra cara de la isla."],
+          ["Comida y pausas", "Restaurantes, cafés y paradas tranquilas para que la ruta se sienta como un día de viaje, no como una carrera."],
+          ["Clima y temporada", "Dónde ir mejor por la mañana, dónde guardar el atardecer y qué cambiar si arriba hay nubes o viento."]
+        ]
+      },
+      searchAnswers: {
+        eyebrow: "Resumen para planificar",
+        title: "Qué saber sobre los próximos road trips",
+        items: [
+          ["¿Qué son los road trips de Canary.Hikes?", "Serán guías digitales para recorrer Tenerife en coche por libre: orden de paradas, miradores, aparcamiento, tiempos, ideas para comer y planes alternativos."],
+          ["¿Cuándo estarán disponibles?", "La sección está en preparación. Añadiremos rutas después de comprobarlas sobre el terreno para no vender planes incompletos o aleatorios."],
+          ["¿Qué zonas incluirán?", "Estamos preparando rutas por el Teide, Anaga, la costa norte, carreteras panorámicas, pueblos pequeños y lugares que funcionan bien como excursión de un día en coche."],
+          ["¿Es una excursión guiada o una ruta por libre?", "Es una guía digital para viajar por libre: vais con vuestro coche o coche de alquiler, y la ruta ayuda a organizar el día sin saltar entre mapas, notas y listas sueltas."]
+        ]
+      }
     }
   }
 };
@@ -1763,46 +1871,56 @@ function buildShopStructuredData(lang, page, pageUrl) {
       text: answer
     }
   }));
+  const pageTopics = page === "road"
+    ? [
+        "Tenerife road trips",
+        "self-guided Tenerife itinerary",
+        "Tenerife by car",
+        "Teide road trip",
+        "Anaga viewpoints"
+      ]
+    : [
+        "Tenerife hiking routes",
+        "self-guided hiking",
+        "digital hiking guides",
+        "Anaga hiking",
+        "Teide hiking"
+      ];
+  const graph = [
+    {
+      "@type": "WebPage",
+      "@id": `${pageUrl}#webpage`,
+      url: pageUrl,
+      name: pageData.seo.title,
+      description: pageData.seo.description,
+      inLanguage: lang,
+      isPartOf: {
+        "@type": "WebSite",
+        name: "Canary.Hikes",
+        url: window.location.origin
+      },
+      about: pageTopics
+    },
+    ...(products.length ? [{
+      "@type": "ItemList",
+      "@id": `${pageUrl}#route-guides`,
+      name: pageData.hero.title,
+      description: pageData.hero.copy,
+      itemListElement: products.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: product
+      }))
+    }] : []),
+    ...(faqItems.length ? [{
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faq`,
+      mainEntity: faqItems
+    }] : [])
+  ];
   return {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": `${pageUrl}#webpage`,
-        url: pageUrl,
-        name: pageData.seo.title,
-        description: pageData.seo.description,
-        inLanguage: lang,
-        isPartOf: {
-          "@type": "WebSite",
-          name: "Canary.Hikes",
-          url: window.location.origin
-        },
-        about: [
-          "Tenerife hiking routes",
-          "self-guided hiking",
-          "digital hiking guides",
-          "Anaga hiking",
-          "Teide hiking"
-        ]
-      },
-      {
-        "@type": "ItemList",
-        "@id": `${pageUrl}#route-guides`,
-        name: pageData.hero.title,
-        description: pageData.hero.copy,
-        itemListElement: products.map((product, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          item: product
-        }))
-      },
-      ...(faqItems.length ? [{
-        "@type": "FAQPage",
-        "@id": `${pageUrl}#faq`,
-        mainEntity: faqItems
-      }] : [])
-    ]
+    "@graph": graph
   };
 }
 
@@ -1943,6 +2061,7 @@ function renderTips(items) {
 function renderShop(lang, page) {
   const pageData = pageContent[lang][page];
   const ui = shopUi[lang];
+  const products = pageData.products || [];
   document.querySelector("main").className = "shop-page";
   document.querySelector("main").innerHTML = `
     <section class="shop-hero shop-hero-${page}">
@@ -1975,13 +2094,13 @@ function renderShop(lang, page) {
       </figure>
     </section>
     ` : ""}
-    <section id="products" class="shop-section section-pad">
+    ${products.length ? `<section id="products" class="shop-section section-pad">
       <div class="section-head">
         <p class="eyebrow">${ui.products}</p>
         <h2>${pageData.hero.cta}</h2>
       </div>
       <div class="product-grid">
-        ${pageData.products.map((product, index) => {
+        ${products.map((product, index) => {
           const [title, text, difficulty, time, price, image, tags] = product;
           const displayTags = Array.isArray(tags) && tags.length ? tags : [difficulty, time].filter(Boolean);
           return `
@@ -2004,7 +2123,24 @@ function renderShop(lang, page) {
         `;
         }).join("")}
       </div>
+    </section>` : pageData.comingSoon ? `
+    <section id="products" class="road-soon section-pad">
+      <div class="section-head">
+        <p class="eyebrow">${pageData.comingSoon.eyebrow}</p>
+        <h2>${pageData.comingSoon.title}</h2>
+        <p>${pageData.comingSoon.copy}</p>
+      </div>
+      <div class="road-soon-grid">
+        ${pageData.comingSoon.cards.map(([number, title, text]) => `
+          <article class="road-soon-card">
+            <span>${number}</span>
+            <h3>${title}</h3>
+            <p>${text}</p>
+          </article>
+        `).join("")}
+      </div>
     </section>
+    ` : ""}
     ${pageData.value ? `
     <section id="why-these-hikes" class="shop-trust section-pad">
       <div class="section-head">
